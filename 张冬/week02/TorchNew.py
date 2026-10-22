@@ -7,8 +7,6 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 import torch
 import torch.nn as nn
 import numpy as np
-import random
-import json
 import time
 import shutil
 import matplotlib.pyplot as plt
@@ -17,7 +15,8 @@ import matplotlib.pyplot as plt
 
 基于pytorch框架编写模型训练
 实现一个自行构造的找规律(机器学习)任务
-规律：x是一个5维向量，如果第1个数>第5个数，则为正样本，反之为负样本
+规律：x是一个5维向量，哪个维度上的数值最大，就属于哪一类（共5类）
+      标签 0~4 依次对应第1~5维最大，即多分类任务
 
 """
 
@@ -25,62 +24,52 @@ import matplotlib.pyplot as plt
 class TorchModel(nn.Module):
     def __init__(self, input_size):
         super(TorchModel, self).__init__()
-        self.linear = nn.Linear(input_size, 1)  # 线性层
-        self.activation = torch.sigmoid  # nn.Sigmoid() sigmoid归一化函数
-        self.loss = nn.functional.mse_loss  # loss函数采用均方差损失
+        self.linear = nn.Linear(input_size, input_size)  # 线性层，输出维度=类别数
+        self.loss = nn.functional.cross_entropy  # 多分类采用交叉熵损失（内部自带softmax）
 
-    # 当输入真实标签，返回loss值；无真实标签，返回预测值
+    # 当输入真实标签，返回loss值；无真实标签，返回各类别得分(logits)
     def forward(self, x, y=None):
-        x = self.linear(x)  # (page_size, input_size) -> (page_size, 1)
-        y_pred = self.activation(x)  # (page_size, 1) -> (page_size, 1)
+        y_pred = self.linear(x)  # (page_size, input_size) -> (page_size, 类别数)
         if y is not None:
-            return self.loss(y_pred, y)  # 预测值和真实值计算损失
+            return self.loss(y_pred, y)  # logits与类别标签计算损失
         else:
-            return y_pred  # 输出预测结果
+            return y_pred  # 输出各类别得分
 
 
 # 生成一个样本, 样本的生成方法，代表了我们要学习的规律
-# 随机生成一个5维向量，如果第一个值大于第五个值，认为是正样本，反之为负样本
+# 随机生成一个5维向量，最大值的下标即为该样本的类别（0~4）
 def build_sample():
     x = np.random.random(5)
-    if x[0] > x[4]:
-        return x, 1
-    else:
-        return x, 0
+    y = int(np.argmax(x))  # 最大值所在维度下标作为类别
+    return x, y
 
 
 # 随机生成一批样本
-# 正负样本均匀生成
 def build_dataset(total_sample_num):
     X = []
     Y = []
-    for i in range(total_sample_num):
+    for _ in range(total_sample_num):
         x, y = build_sample()
         X.append(x)
-        Y.append([y])
-    # print(X)
-    # print(Y)
-    return torch.FloatTensor(X), torch.FloatTensor(Y)
+        Y.append(y)  # 多分类标签为整数，形状 (N,)
+    return torch.FloatTensor(X), torch.LongTensor(Y)
 
-# 测试代码
-# 用来测试每轮模型的准确率
+# 测试代码，用来测试每轮模型的准确率
 def evaluate(model):
     model.eval()
     test_sample_num = 100
     x, y = build_dataset(test_sample_num)
-    print("本次预测集中共有%d个正样本，%d个负样本" % (sum(y), test_sample_num - sum(y)))
-    correct, wrong = 0, 0
+    class_count = [int((y == i).sum()) for i in range(5)]  # 统计各类别样本数量
+    print("本次预测集中各类别样本数(第1~5维最大)：%s" % class_count)
+    correct = 0
     with torch.no_grad():
         y_pred = model(x)  # 模型预测 model.forward(x)
+        y_pred = y_pred.argmax(dim=1)  # 取得分最大的类别作为预测类别
         for y_p, y_t in zip(y_pred, y):  # 与真实标签进行对比
-            if float(y_p) < 0.5 and int(y_t) == 0:
-                correct += 1  # 负样本判断正确
-            elif float(y_p) >= 0.5 and int(y_t) == 1:
-                correct += 1  # 正样本判断正确
-            else:
-                wrong += 1
-    print("正确预测个数：%d, 正确率：%f" % (correct, correct / (correct + wrong)))
-    return correct / (correct + wrong)
+            if int(y_p) == int(y_t):
+                correct += 1  # 类别判断正确
+    print("正确预测个数：%d, 正确率：%f" % (correct, correct / test_sample_num))
+    return correct / test_sample_num
 
 
 def main():
@@ -126,7 +115,6 @@ def main():
     plt.legend()
     plt.savefig("train_curve.png")  # 保存曲线图片，避免plt.show()阻塞
     plt.close()
-    return
 
 
 # 使用训练好的模型做预测
@@ -134,19 +122,21 @@ def predict(model_path, input_vec):
     input_size = 5
     model = TorchModel(input_size)
     model.load_state_dict(torch.load(model_path))  # 加载训练好的权重
-    print(model.state_dict())
-
     model.eval()  # 测试模式
     with torch.no_grad():  # 不计算梯度
-        result = model.forward(torch.FloatTensor(input_vec))  # 模型预测
+        result = model.forward(torch.FloatTensor(input_vec))  # 模型预测，得到各类别得分
+    result = torch.softmax(result, dim=1)  # 得分转概率
     for vec, res in zip(input_vec, result):
-        print("输入：%s, 预测类别：%d, 概率值：%f" % (vec, round(float(res)), res))  # 打印结果
+        pred = int(res.argmax())  # 概率最大的类别
+        print("输入：%s, 预测类别：%d(第%d维最大), 概率值：%f" % (np.round(vec, 2), pred, pred + 1, float(res[pred])))  # 打印结果
 
 
 if __name__ == "__main__":
     main()
-    test_vec = [[0.81889086,0.15229675,0.31082123,0.03504317,0.88920843],
-                [0.94963533,0.5524256,0.95758807,0.95520434,0.84890681],
-                [0.90797868,0.67482528,0.13625847,0.34675372,0.19871392],
-                [0.39349776,0.59416669,0.92579291,0.41567412,0.8358894]]
+    # 测试样本，每类各一条：最大值分别落在第1~5维，便于核对预测结果
+    test_vec = [[0.91370000,0.12480000,0.36250000,0.04190000,0.58060000],  # 第1维最大 -> 类别0
+                [0.21360000,0.88420000,0.34170000,0.49730000,0.27050000],  # 第2维最大 -> 类别1
+                [0.11740000,0.45280000,0.96030000,0.33910000,0.22870000],  # 第3维最大 -> 类别2
+                [0.28650000,0.13420000,0.40190000,0.89570000,0.52380000],  # 第4维最大 -> 类别3
+                [0.43820000,0.26170000,0.63140000,0.31050000,0.93160000]]  # 第5维最大 -> 类别4
     predict("model.bin", test_vec)

@@ -56,8 +56,6 @@ def build_dataset(total_sample_num):
         x, y = build_sample()
         X.append(x)
         Y.append([y])
-    # print(X)
-    # print(Y)
     return torch.FloatTensor(X), torch.FloatTensor(Y)
 
 # 测试代码
@@ -127,8 +125,6 @@ def predict(model_path, input_vec):
     input_size = 5
     model = TorchModel(input_size)
     model.load_state_dict(torch.load(model_path))  # 加载训练好的权重
-    print(model.state_dict())
-
     model.eval()  # 测试模式
     with torch.no_grad():  # 不计算梯度
         result = model.forward(torch.FloatTensor(input_vec))  # 模型预测
@@ -137,7 +133,7 @@ def predict(model_path, input_vec):
 
 
 if __name__ == "__main__":
-    # main()
+    main()
     test_vec = [[0.81889086,0.15229675,0.31082123,0.03504317,0.88920843],
                 [0.94963533,0.5524256,0.95758807,0.95520434,0.84890681],
                 [0.90797868,0.67482528,0.13625847,0.34675372,0.19871392],
