@@ -13,12 +13,12 @@ def sigmoid(x):
 def softmax(x):
     return np.exp(x) / np.sum(np.exp(x), axis=1, keepdims=True)
 
-# # 定义One-Hot标签矩阵函数
-# def to_one_hot(target, shape):
-#     one_hot_target = np.zeros(shape)
-#     for i, t in enumerate(target):
-#         one_hot_target[i][t] = 1
-#     return one_hot_target
+# 定义One-Hot标签矩阵函数
+def to_one_hot(target, shape):
+    one_hot_target = np.zeros(shape)
+    for i, t in enumerate(target):
+        one_hot_target[i][t] = 1
+    return one_hot_target
 
 # 定义交叉熵损失函数 - 预测越准，损失值越小；预测越偏，损失值越大。训练让损失值尽可能小。
 def corss_entropy(pred, target):
