@@ -1,3 +1,22 @@
+"""dataset.py — SFT 数据准备：模板编码、字表扩展、loss mask、padding
+
+一条样本的模板（课件 slide 27）：
+    <|user|> instruction <|assistant|> output <|end|>
+
+x / y 的构造（错一位，同 week4 口径）：
+    ids = [u] + instruction + [a] + output + [e]
+    x   = ids[:-1]   模型输入
+    y   = ids[1:]    每个位置的目标 = 下一个 token
+
+loss mask（课件 slide 28，Q4 共识）：
+    prompt 段（<|user|> + instruction + <|assistant|>）在 y 里对应的位置全部 -100；
+    output + <|end|> 参与损失。x 的末位（output 最后一个字）预测 <|end|>——
+    模型靠这个位置学会「答完就停」。
+
+两个 mask 各管各的（不要混淆）：
+    - causal mask（下三角，model.py）：注意力层面屏蔽「未来」
+    - loss mask（-100，本文件）：标签层面屏蔽「问题」
+"""
 import json
 import os
 import re
