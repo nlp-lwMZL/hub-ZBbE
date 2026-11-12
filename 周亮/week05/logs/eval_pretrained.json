@@ -1,0 +1,72 @@
+{
+  "run_name": "eval_pretrained",
+  "started_at": "2026-11-12 11:20:10",
+  "env": {
+    "torch": "2.14.1",
+    "device": "cpu"
+  },
+  "ckpt": "best_sft.pt",
+  "ckpt_args": {
+    "init_from": "/Users/zhouliang/Downloads/八斗/深度学习/homework/week5/../week4/tf_mask.pt",
+    "lr": 0.0003,
+    "epochs": 8,
+    "d_model": 192,
+    "heads": 4,
+    "layers": 4,
+    "max_len": 128,
+    "dropout": 0.1,
+    "seed": 42
+  },
+  "config": {
+    "batch_size": 64,
+    "n_questions": 100,
+    "max_new": 48,
+    "n_samples": 3,
+    "seed": 42
+  },
+  "ppl": {
+    "train": {
+      "loss": 2.0317894509407726,
+      "ppl": 7.627723590717556,
+      "n": 3000
+    },
+    "val": {
+      "loss": 2.745357492352059,
+      "ppl": 15.570179157331522,
+      "n": 200
+    }
+  },
+  "generation": {
+    "n": 100,
+    "n_stop": 80,
+    "stop_rate": 0.8,
+    "avg_gen_tokens": 23.18,
+    "budget": 48,
+    "decoding": "greedy",
+    "seed": 42
+  },
+  "samples": [
+    {
+      "question": "给出一个关于全球变暖的事实。",
+      "gold": "近一个世纪，地球表面温度已经上升了约1摄氏度，而且越来越多的科学研究表明这是由人类活动所引起的。",
+      "answer": "1. 中国的中国，2. 中国，2. 中国，3. 中国，3. 中国，3. 中国，4. 中国，4. ",
+      "stopped": false,
+      "gen_tokens": 48
+    },
+    {
+      "question": "给出一个包含五个数的列表，找出其中最大和最小的数字。 9, 13, 2, 7, 21",
+      "gold": "最大数字为21，最小数字为2。",
+      "answer": "最大的数字是1。",
+      "stopped": true,
+      "gen_tokens": 9
+    },
+    {
+      "question": "提供两个数，求它们的乘积。 数1： 246 数2： 38",
+      "gold": "数1和数2的乘积为 9348。",
+      "answer": "数1和数2的乘积是15。",
+      "stopped": true,
+      "gen_tokens": 13
+    }
+  ],
+  "finished_at": "2026-11-12 11:20:35"
+}
