@@ -1,0 +1,94 @@
+{
+  "run_name": "train_20261111_154709",
+  "started_at": "2026-11-11 15:47:09",
+  "env": {
+    "torch": "2.14.1",
+    "device": "cpu"
+  },
+  "config": {
+    "train_data": "/Users/zhouliang/Downloads/八斗/深度学习/homework/week5/data/sft_train.jsonl",
+    "val_data": "/Users/zhouliang/Downloads/八斗/深度学习/homework/week5/data/sft_val.jsonl",
+    "init_from": "/Users/zhouliang/Downloads/八斗/深度学习/homework/week5/../week4/tf_mask.pt",
+    "save": "best_sft.pt",
+    "epochs": 8,
+    "batch_size": 32,
+    "lr": 0.0003,
+    "max_len": 128,
+    "d_model": 192,
+    "heads": 4,
+    "layers": 4,
+    "dropout": 0.1,
+    "clip": 1.0,
+    "seed": 42,
+    "log_dir": "logs",
+    "run_name": null,
+    "lr_resolved": 0.0003,
+    "init_source": "tf_mask.pt",
+    "n_params": 2593728,
+    "vocab_size": 4111,
+    "n_train": 3000,
+    "n_val": 200
+  },
+  "sft_before_val_ppl": 194.8498440691729,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 4.1744625498851615,
+      "val_ppl": 31.08890837135922,
+      "seconds": 85.6,
+      "is_best": true
+    },
+    {
+      "epoch": 2,
+      "train_loss": 3.40565491107913,
+      "val_ppl": 23.426297532584154,
+      "seconds": 84.1,
+      "is_best": true
+    },
+    {
+      "epoch": 3,
+      "train_loss": 3.1267236863352847,
+      "val_ppl": 20.458302715651055,
+      "seconds": 100.3,
+      "is_best": true
+    },
+    {
+      "epoch": 4,
+      "train_loss": 2.9335118295603757,
+      "val_ppl": 18.778762768371795,
+      "seconds": 89.3,
+      "is_best": true
+    },
+    {
+      "epoch": 5,
+      "train_loss": 2.781625465299317,
+      "val_ppl": 17.431938159130087,
+      "seconds": 94.0,
+      "is_best": true
+    },
+    {
+      "epoch": 6,
+      "train_loss": 2.655153054264729,
+      "val_ppl": 16.578064564845892,
+      "seconds": 83.9,
+      "is_best": true
+    },
+    {
+      "epoch": 7,
+      "train_loss": 2.540741738584241,
+      "val_ppl": 16.06073329277479,
+      "seconds": 95.2,
+      "is_best": true
+    },
+    {
+      "epoch": 8,
+      "train_loss": 2.443973947507942,
+      "val_ppl": 15.570185720373772,
+      "seconds": 112.7,
+      "is_best": true
+    }
+  ],
+  "best_val_ppl": 15.570185720373772,
+  "checkpoint": "best_sft.pt",
+  "finished_at": "2026-11-11 15:59:38"
+}
