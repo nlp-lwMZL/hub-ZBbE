@@ -1,0 +1,4 @@
+{"instruction": "判断情感，回答积极或消极。", "input": "这家店值得推荐", "output": "积极"}
+{"instruction": "判断情感，回答积极或消极。", "input": "这家店太让人失望", "output": "消极"}
+{"instruction": "判断情感，回答积极或消极。", "input": "今天的天气真好", "output": "积极"}
+{"instruction": "判断情感，回答积极或消极。", "input": "今天的天气真糟糕", "output": "消极"}
