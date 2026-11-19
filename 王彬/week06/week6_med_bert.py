@@ -1,10 +1,6 @@
 """
 week6 分类任务 · 医疗问句 → 科室分诊（BERT 微调，单文件自包含版）
 
-作业说明：
-  老师的原始代码是分模块的（common/ labels、data、metrics + bert/ 训练、推理），
-  交作业只需看主实验这一条链路，所以把 5 个文件的必要部分合并成本文件，
-  不再依赖任何项目内模块——只依赖 torch / transformers / scikit-learn。
 
 做了什么：
   1. 标签口径：15 个分诊科室（顺序 = label id，与 data/train.json、val.json 一致）
