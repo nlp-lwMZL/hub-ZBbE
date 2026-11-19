@@ -1,0 +1,94 @@
+{
+  "run_name": "train_20261111_163149",
+  "started_at": "2026-11-11 16:31:49",
+  "env": {
+    "torch": "2.14.1",
+    "device": "cpu"
+  },
+  "config": {
+    "train_data": "/Users/zhouliang/Downloads/八斗/深度学习/homework/week5/data/sft_train.jsonl",
+    "val_data": "/Users/zhouliang/Downloads/八斗/深度学习/homework/week5/data/sft_val.jsonl",
+    "init_from": "none",
+    "save": "best_scratch.pt",
+    "epochs": 8,
+    "batch_size": 32,
+    "lr": 0.001,
+    "max_len": 128,
+    "d_model": 192,
+    "heads": 4,
+    "layers": 4,
+    "dropout": 0.1,
+    "clip": 1.0,
+    "seed": 42,
+    "log_dir": "logs",
+    "run_name": null,
+    "lr_resolved": 0.001,
+    "init_source": "从头训练（随机初始化）",
+    "n_params": 2593728,
+    "vocab_size": 4111,
+    "n_train": 3000,
+    "n_val": 200
+  },
+  "sft_before_val_ppl": 4350.176562750022,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 5.949146474926741,
+      "val_ppl": 200.9370314367755,
+      "seconds": 92.9,
+      "is_best": true
+    },
+    {
+      "epoch": 2,
+      "train_loss": 5.028314762322681,
+      "val_ppl": 104.80441733395276,
+      "seconds": 102.8,
+      "is_best": true
+    },
+    {
+      "epoch": 3,
+      "train_loss": 4.521545673432929,
+      "val_ppl": 73.0751691971705,
+      "seconds": 88.9,
+      "is_best": true
+    },
+    {
+      "epoch": 4,
+      "train_loss": 4.164679805003698,
+      "val_ppl": 58.30769307438428,
+      "seconds": 82.1,
+      "is_best": true
+    },
+    {
+      "epoch": 5,
+      "train_loss": 3.882436740140251,
+      "val_ppl": 47.47487325142376,
+      "seconds": 88.9,
+      "is_best": true
+    },
+    {
+      "epoch": 6,
+      "train_loss": 3.6394730368784884,
+      "val_ppl": 41.701539070252906,
+      "seconds": 83.1,
+      "is_best": true
+    },
+    {
+      "epoch": 7,
+      "train_loss": 3.4304747968715823,
+      "val_ppl": 36.78084415594898,
+      "seconds": 94.4,
+      "is_best": true
+    },
+    {
+      "epoch": 8,
+      "train_loss": 3.2371261790341825,
+      "val_ppl": 33.9020833728402,
+      "seconds": 82.2,
+      "is_best": true
+    }
+  ],
+  "best_val_ppl": 33.9020833728402,
+  "checkpoint": "best_scratch.pt",
+  "finished_at": "2026-11-11 16:43:48"
+}
