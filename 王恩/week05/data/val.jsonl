@@ -1,0 +1,4 @@
+{"instruction": "判断情感，回答积极或消极。", "input": "音乐很好听", "output": "积极"}
+{"instruction": "判断情感，回答积极或消极。", "input": "音乐很难听", "output": "消极"}
+{"instruction": "判断情感，回答积极或消极。", "input": "房间很干净", "output": "积极"}
+{"instruction": "判断情感，回答积极或消极。", "input": "房间很脏乱", "output": "消极"}
