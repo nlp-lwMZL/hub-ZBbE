@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.pyc
+
+# 本地预训练模型（体积大，不随作业提交）
+pretrain_models/
+
+# 第五周数据集（体积大，不提交）
+徐鹏/week05/alpaca_data/
