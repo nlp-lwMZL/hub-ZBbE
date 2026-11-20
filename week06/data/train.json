@@ -1,0 +1,2502 @@
+[
+  {
+    "idx": 0,
+    "sentence": "事故后我腿骨折了",
+    "label": 4
+  },
+  {
+    "idx": 1,
+    "sentence": "借条上写了还款日期但没还",
+    "label": 1
+  },
+  {
+    "idx": 2,
+    "sentence": "买方以卖方无资质为由主张合同无效",
+    "label": 2
+  },
+  {
+    "idx": 3,
+    "sentence": "买方要求卖方提供售后服务",
+    "label": 2
+  },
+  {
+    "idx": 4,
+    "sentence": "损失怎么评估",
+    "label": 8
+  },
+  {
+    "idx": 5,
+    "sentence": "公司要求员工赔偿客户损失",
+    "label": 3
+  },
+  {
+    "idx": 6,
+    "sentence": "借款人还钱时出借人没给收条",
+    "label": 1
+  },
+  {
+    "idx": 7,
+    "sentence": "信用卡关联还款账户余额不足",
+    "label": 7
+  },
+  {
+    "idx": 8,
+    "sentence": "保险公司迟迟不定损",
+    "label": 8
+  },
+  {
+    "idx": 9,
+    "sentence": "投保人对被保险人无保险利益",
+    "label": 8
+  },
+  {
+    "idx": 10,
+    "sentence": "工伤认定公司不配合",
+    "label": 3
+  },
+  {
+    "idx": 11,
+    "sentence": "二婚离婚，继子抚养费还要不要给",
+    "label": 0
+  },
+  {
+    "idx": 12,
+    "sentence": "税务处罚事实不清",
+    "label": 9
+  },
+  {
+    "idx": 13,
+    "sentence": "工作人员过失",
+    "label": 10
+  },
+  {
+    "idx": 14,
+    "sentence": "对方一直拖着不赔",
+    "label": 4
+  },
+  {
+    "idx": 15,
+    "sentence": "卡被冻结了",
+    "label": 7
+  },
+  {
+    "idx": 16,
+    "sentence": "等待期内出险",
+    "label": 8
+  },
+  {
+    "idx": 17,
+    "sentence": "员工离职后公司扣发工资",
+    "label": 3
+  },
+  {
+    "idx": 18,
+    "sentence": "离婚后一方去世，抚养费还要吗",
+    "label": 0
+  },
+  {
+    "idx": 19,
+    "sentence": "离婚时宠物狗归谁",
+    "label": 0
+  },
+  {
+    "idx": 20,
+    "sentence": "赔偿义务机关怎么定",
+    "label": 10
+  },
+  {
+    "idx": 21,
+    "sentence": "公司以年龄大为由辞退",
+    "label": 3
+  },
+  {
+    "idx": 22,
+    "sentence": "教育局处罚学校",
+    "label": 9
+  },
+  {
+    "idx": 23,
+    "sentence": "借款合同约定违约金",
+    "label": 6
+  },
+  {
+    "idx": 24,
+    "sentence": "借款人部分还款后不认账",
+    "label": 1
+  },
+  {
+    "idx": 25,
+    "sentence": "乘客开门撞到人",
+    "label": 4
+  },
+  {
+    "idx": 26,
+    "sentence": "离婚案件二审能否改判",
+    "label": 0
+  },
+  {
+    "idx": 27,
+    "sentence": "买卖双方对货物数量有争议",
+    "label": 2
+  },
+  {
+    "idx": 28,
+    "sentence": "持卡人死了欠款谁还",
+    "label": 7
+  },
+  {
+    "idx": 29,
+    "sentence": "员工请病假公司不批",
+    "label": 3
+  },
+  {
+    "idx": 30,
+    "sentence": "借条约定管辖法院",
+    "label": 1
+  },
+  {
+    "idx": 31,
+    "sentence": "卖方交付的货物颜色不符",
+    "label": 2
+  },
+  {
+    "idx": 32,
+    "sentence": "买卖合同约定所有权保留",
+    "label": 2
+  },
+  {
+    "idx": 33,
+    "sentence": "临时额度到期",
+    "label": 7
+  },
+  {
+    "idx": 34,
+    "sentence": "车辆被撞后对方不赔",
+    "label": 4
+  },
+  {
+    "idx": 35,
+    "sentence": "借款人改变用途出借人要提前收回",
+    "label": 6
+  },
+  {
+    "idx": 36,
+    "sentence": "出借人要求借款人支付律师费",
+    "label": 1
+  },
+  {
+    "idx": 37,
+    "sentence": "公司制度规定迟到罚款",
+    "label": 3
+  },
+  {
+    "idx": 38,
+    "sentence": "人去世了卡债怎么办",
+    "label": 7
+  },
+  {
+    "idx": 39,
+    "sentence": "有人盗用我的照片",
+    "label": 5
+  },
+  {
+    "idx": 40,
+    "sentence": "对方是外卖骑手",
+    "label": 4
+  },
+  {
+    "idx": 41,
+    "sentence": "借款人还款后借条未收回",
+    "label": 1
+  },
+  {
+    "idx": 42,
+    "sentence": "罚款退了",
+    "label": 10
+  },
+  {
+    "idx": 43,
+    "sentence": "员工请丧假公司不批",
+    "label": 3
+  },
+  {
+    "idx": 44,
+    "sentence": "保险金请求权转让",
+    "label": 8
+  },
+  {
+    "idx": 45,
+    "sentence": "赔偿标准",
+    "label": 10
+  },
+  {
+    "idx": 46,
+    "sentence": "卖方交付的货物有异味",
+    "label": 2
+  },
+  {
+    "idx": 47,
+    "sentence": "物业没修好路灯我摔伤",
+    "label": 5
+  },
+  {
+    "idx": 48,
+    "sentence": "商务局处罚",
+    "label": 9
+  },
+  {
+    "idx": 49,
+    "sentence": "出借人要求借款人提供反担保",
+    "label": 6
+  },
+  {
+    "idx": 50,
+    "sentence": "离婚后发现有未分割的遗产",
+    "label": 0
+  },
+  {
+    "idx": 51,
+    "sentence": "装修工人打穿了我家墙",
+    "label": 5
+  },
+  {
+    "idx": 52,
+    "sentence": "买方以货物包装破损拒收",
+    "label": 2
+  },
+  {
+    "idx": 53,
+    "sentence": "邻居半夜唱歌",
+    "label": 5
+  },
+  {
+    "idx": 54,
+    "sentence": "借款人主张借条系伪造",
+    "label": 1
+  },
+  {
+    "idx": 55,
+    "sentence": "保险金额约定不明",
+    "label": 8
+  },
+  {
+    "idx": 56,
+    "sentence": "海关处罚",
+    "label": 9
+  },
+  {
+    "idx": 57,
+    "sentence": "银行收取超限费",
+    "label": 7
+  },
+  {
+    "idx": 58,
+    "sentence": "婚后一方父母出资买房，写谁名字",
+    "label": 0
+  },
+  {
+    "idx": 59,
+    "sentence": "买方要求卖方承担三包责任",
+    "label": 2
+  },
+  {
+    "idx": 60,
+    "sentence": "公司要求员工签空白合同",
+    "label": 3
+  },
+  {
+    "idx": 61,
+    "sentence": "协议离婚时放弃抚养费，现在能反悔吗",
+    "label": 0
+  },
+  {
+    "idx": 62,
+    "sentence": "知识产权局决定",
+    "label": 9
+  },
+  {
+    "idx": 63,
+    "sentence": "保险公司行使代位求偿权",
+    "label": 8
+  },
+  {
+    "idx": 64,
+    "sentence": "孩子抚养费能一次性付清吗",
+    "label": 0
+  },
+  {
+    "idx": 65,
+    "sentence": "担保人被债权人起诉",
+    "label": 1
+  },
+  {
+    "idx": 66,
+    "sentence": "游泳池淹了人",
+    "label": 5
+  },
+  {
+    "idx": 67,
+    "sentence": "协议离婚需要什么材料",
+    "label": 0
+  },
+  {
+    "idx": 68,
+    "sentence": "复议机关维持原处罚",
+    "label": 9
+  },
+  {
+    "idx": 69,
+    "sentence": "给朋友买保险",
+    "label": 8
+  },
+  {
+    "idx": 70,
+    "sentence": "卖方开具的发票有问题",
+    "label": 2
+  },
+  {
+    "idx": 71,
+    "sentence": "保险事故发生后未及时通知",
+    "label": 8
+  },
+  {
+    "idx": 72,
+    "sentence": "离婚时对方要求返还嫁妆",
+    "label": 0
+  },
+  {
+    "idx": 73,
+    "sentence": "公司以业绩不达标降薪",
+    "label": 3
+  },
+  {
+    "idx": 74,
+    "sentence": "借条上只有借款人签字没写日期",
+    "label": 1
+  },
+  {
+    "idx": 75,
+    "sentence": "海关罚我",
+    "label": 9
+  },
+  {
+    "idx": 76,
+    "sentence": "买方要求卖方承担运费",
+    "label": 2
+  },
+  {
+    "idx": 77,
+    "sentence": "没给我讲清楚条款",
+    "label": 8
+  },
+  {
+    "idx": 78,
+    "sentence": "老公出轨，我能要求精神损害赔偿吗",
+    "label": 0
+  },
+  {
+    "idx": 79,
+    "sentence": "公司拖欠工资三个月",
+    "label": 3
+  },
+  {
+    "idx": 80,
+    "sentence": "文旅局罚我",
+    "label": 9
+  },
+  {
+    "idx": 81,
+    "sentence": "离婚后对方拖欠抚养费半年",
+    "label": 0
+  },
+  {
+    "idx": 82,
+    "sentence": "挂失后还被刷",
+    "label": 7
+  },
+  {
+    "idx": 83,
+    "sentence": "公司把我调去外地我不去",
+    "label": 3
+  },
+  {
+    "idx": 84,
+    "sentence": "借款合同约定去哪个法院",
+    "label": 6
+  },
+  {
+    "idx": 85,
+    "sentence": "卖方交付的货物数量多了",
+    "label": 2
+  },
+  {
+    "idx": 86,
+    "sentence": "违法扣押车辆停运损失",
+    "label": 10
+  },
+  {
+    "idx": 87,
+    "sentence": "环保局责令停产",
+    "label": 9
+  },
+  {
+    "idx": 88,
+    "sentence": "合同约定质量标准不明确",
+    "label": 2
+  },
+  {
+    "idx": 89,
+    "sentence": "商务局罚我",
+    "label": 9
+  },
+  {
+    "idx": 90,
+    "sentence": "出借人要我质押股票",
+    "label": 6
+  },
+  {
+    "idx": 91,
+    "sentence": "征收补偿违法要赔",
+    "label": 10
+  },
+  {
+    "idx": 92,
+    "sentence": "借条上写了“收到现金”",
+    "label": 1
+  },
+  {
+    "idx": 93,
+    "sentence": "出租车被撞要求停运损失",
+    "label": 4
+  },
+  {
+    "idx": 94,
+    "sentence": "提前还款要交违约金",
+    "label": 6
+  },
+  {
+    "idx": 95,
+    "sentence": "出借人先扣了利息，实际到手少",
+    "label": 1
+  },
+  {
+    "idx": 96,
+    "sentence": "土地征收补偿决定",
+    "label": 9
+  },
+  {
+    "idx": 97,
+    "sentence": "违法征收",
+    "label": 10
+  },
+  {
+    "idx": 98,
+    "sentence": "女职工产检请假公司扣工资",
+    "label": 3
+  },
+  {
+    "idx": 99,
+    "sentence": "买的电器爆炸伤了我",
+    "label": 5
+  },
+  {
+    "idx": 100,
+    "sentence": "信用卡逾期上征信",
+    "label": 7
+  },
+  {
+    "idx": 101,
+    "sentence": "买方要求卖方更换货物",
+    "label": 2
+  },
+  {
+    "idx": 102,
+    "sentence": "卡在我身上钱没了",
+    "label": 7
+  },
+  {
+    "idx": 103,
+    "sentence": "时效过了",
+    "label": 10
+  },
+  {
+    "idx": 104,
+    "sentence": "分期手续费不退",
+    "label": 7
+  },
+  {
+    "idx": 105,
+    "sentence": "卖方交付的货物规格不符",
+    "label": 2
+  },
+  {
+    "idx": 106,
+    "sentence": "入职三个月公司一直不签合同",
+    "label": 3
+  },
+  {
+    "idx": 107,
+    "sentence": "申请期限",
+    "label": 10
+  },
+  {
+    "idx": 108,
+    "sentence": "借款人被列为失信被执行人",
+    "label": 6
+  },
+  {
+    "idx": 109,
+    "sentence": "借款人部分还款未注明还的是哪笔",
+    "label": 1
+  },
+  {
+    "idx": 110,
+    "sentence": "消防救援机构处罚",
+    "label": 9
+  },
+  {
+    "idx": 111,
+    "sentence": "银行给我提额我没同意",
+    "label": 7
+  },
+  {
+    "idx": 112,
+    "sentence": "投保时没说病史保险公司拒赔",
+    "label": 8
+  },
+  {
+    "idx": 113,
+    "sentence": "规划许可影响我采光",
+    "label": 9
+  },
+  {
+    "idx": 114,
+    "sentence": "银行以卡养卡被降额",
+    "label": 7
+  },
+  {
+    "idx": 115,
+    "sentence": "行政赔偿的调解",
+    "label": 10
+  },
+  {
+    "idx": 116,
+    "sentence": "公司破产了经济补偿金怎么办",
+    "label": 3
+  },
+  {
+    "idx": 117,
+    "sentence": "信用卡还款到账延迟",
+    "label": 7
+  },
+  {
+    "idx": 118,
+    "sentence": "有人在网上发我隐私",
+    "label": 5
+  },
+  {
+    "idx": 119,
+    "sentence": "养殖场被拆",
+    "label": 10
+  },
+  {
+    "idx": 120,
+    "sentence": "妻子患重病，丈夫起诉离婚",
+    "label": 0
+  },
+  {
+    "idx": 121,
+    "sentence": "关错人了",
+    "label": 10
+  },
+  {
+    "idx": 122,
+    "sentence": "邻居家噪音扰民",
+    "label": 5
+  },
+  {
+    "idx": 123,
+    "sentence": "我没做好安全措施",
+    "label": 8
+  },
+  {
+    "idx": 124,
+    "sentence": "一方出轨，离婚时财产能多分吗",
+    "label": 0
+  },
+  {
+    "idx": 125,
+    "sentence": "持卡人主张银行未核实身份",
+    "label": 7
+  },
+  {
+    "idx": 126,
+    "sentence": "免赔额多少",
+    "label": 8
+  },
+  {
+    "idx": 127,
+    "sentence": "只有银行转账记录没有借条",
+    "label": 1
+  },
+  {
+    "idx": 128,
+    "sentence": "双方都同意离婚但对财产分割谈不拢",
+    "label": 0
+  },
+  {
+    "idx": 129,
+    "sentence": "出借人要求借款人配偶还",
+    "label": 6
+  },
+  {
+    "idx": 130,
+    "sentence": "借条上写的是“今借”还是“今借到”",
+    "label": 1
+  },
+  {
+    "idx": 131,
+    "sentence": "事故是不是保险责任",
+    "label": 8
+  },
+  {
+    "idx": 132,
+    "sentence": "卖方要求买方返还货物",
+    "label": 2
+  },
+  {
+    "idx": 133,
+    "sentence": "员工加班猝死算工伤吗",
+    "label": 3
+  },
+  {
+    "idx": 134,
+    "sentence": "信访答复不服",
+    "label": 9
+  },
+  {
+    "idx": 135,
+    "sentence": "老板口头说开除我但没书面通知",
+    "label": 3
+  },
+  {
+    "idx": 136,
+    "sentence": "猝死算不算意外",
+    "label": 8
+  },
+  {
+    "idx": 137,
+    "sentence": "离婚后发现对方婚内出轨，还能索赔吗",
+    "label": 0
+  },
+  {
+    "idx": 138,
+    "sentence": "出租车司机绕路",
+    "label": 5
+  },
+  {
+    "idx": 139,
+    "sentence": "被错抓了",
+    "label": 10
+  },
+  {
+    "idx": 140,
+    "sentence": "保险公司不赔",
+    "label": 8
+  },
+  {
+    "idx": 141,
+    "sentence": "出借人要求借款人支付罚息",
+    "label": 6
+  },
+  {
+    "idx": 142,
+    "sentence": "宠物狗吓到老人摔倒",
+    "label": 5
+  },
+  {
+    "idx": 143,
+    "sentence": "借钱说好开饭店结果去炒股",
+    "label": 6
+  },
+  {
+    "idx": 144,
+    "sentence": "对方是外地牌照",
+    "label": 4
+  },
+  {
+    "idx": 145,
+    "sentence": "医疗险既往症怎么认定",
+    "label": 8
+  },
+  {
+    "idx": 146,
+    "sentence": "出借人要求按LPR四倍计息",
+    "label": 1
+  },
+  {
+    "idx": 147,
+    "sentence": "对方车辆是报废车",
+    "label": 4
+  },
+  {
+    "idx": 148,
+    "sentence": "孩子在学校摔伤",
+    "label": 5
+  },
+  {
+    "idx": 149,
+    "sentence": "出借人和借款人是亲戚",
+    "label": 1
+  },
+  {
+    "idx": 150,
+    "sentence": "保险合同中的免赔额",
+    "label": 8
+  },
+  {
+    "idx": 151,
+    "sentence": "持卡人要求撤销不良征信",
+    "label": 7
+  },
+  {
+    "idx": 152,
+    "sentence": "借款人主张出借人暴力催收",
+    "label": 1
+  },
+  {
+    "idx": 153,
+    "sentence": "对方是外地车",
+    "label": 4
+  },
+  {
+    "idx": 154,
+    "sentence": "征地补偿太低",
+    "label": 9
+  },
+  {
+    "idx": 155,
+    "sentence": "借款人主张已过诉讼时效",
+    "label": 1
+  },
+  {
+    "idx": 156,
+    "sentence": "离婚后对方不让看孩子怎么办",
+    "label": 0
+  },
+  {
+    "idx": 157,
+    "sentence": "合同约定分批付款",
+    "label": 2
+  },
+  {
+    "idx": 158,
+    "sentence": "催收天天打电话",
+    "label": 7
+  },
+  {
+    "idx": 159,
+    "sentence": "两个借款人互相推",
+    "label": 6
+  },
+  {
+    "idx": 160,
+    "sentence": "对方车牌是假的",
+    "label": 4
+  },
+  {
+    "idx": 161,
+    "sentence": "借条约定分期还款",
+    "label": 1
+  },
+  {
+    "idx": 162,
+    "sentence": "男方长期家暴，女方想离婚并要孩子抚养权",
+    "label": 0
+  },
+  {
+    "idx": 163,
+    "sentence": "交通事故中的护理费",
+    "label": 4
+  },
+  {
+    "idx": 164,
+    "sentence": "买方签收后才发现货不对板",
+    "label": 2
+  },
+  {
+    "idx": 165,
+    "sentence": "住建局罚我",
+    "label": 9
+  },
+  {
+    "idx": 166,
+    "sentence": "出借人申请强制执行",
+    "label": 6
+  },
+  {
+    "idx": 167,
+    "sentence": "保险公司说我骗保",
+    "label": 8
+  },
+  {
+    "idx": 168,
+    "sentence": "精神损失赔多少",
+    "label": 10
+  },
+  {
+    "idx": 169,
+    "sentence": "邻居的狗天天叫",
+    "label": 5
+  },
+  {
+    "idx": 170,
+    "sentence": "出借人把债权转给别人没通知",
+    "label": 6
+  },
+  {
+    "idx": 171,
+    "sentence": "违法拆迁要求国家赔偿",
+    "label": 10
+  },
+  {
+    "idx": 172,
+    "sentence": "借条上写了见证人",
+    "label": 1
+  },
+  {
+    "idx": 173,
+    "sentence": "行政协议争议",
+    "label": 9
+  },
+  {
+    "idx": 174,
+    "sentence": "员工在试用期被辞退",
+    "label": 3
+  },
+  {
+    "idx": 175,
+    "sentence": "林业局处罚",
+    "label": 9
+  },
+  {
+    "idx": 176,
+    "sentence": "积分兑换不了",
+    "label": 7
+  },
+  {
+    "idx": 177,
+    "sentence": "信用卡在境外被盗刷",
+    "label": 7
+  },
+  {
+    "idx": 178,
+    "sentence": "银行要求持卡人一次性还款",
+    "label": 7
+  },
+  {
+    "idx": 179,
+    "sentence": "出借人起诉后借款人提反诉",
+    "label": 1
+  },
+  {
+    "idx": 180,
+    "sentence": "多次借款合并成一张借条",
+    "label": 1
+  },
+  {
+    "idx": 181,
+    "sentence": "两家公司之间的资金拆借",
+    "label": 6
+  },
+  {
+    "idx": 182,
+    "sentence": "双方都想要孩子，抚养权归谁",
+    "label": 0
+  },
+  {
+    "idx": 183,
+    "sentence": "复议前置",
+    "label": 10
+  },
+  {
+    "idx": 184,
+    "sentence": "学校被罚",
+    "label": 9
+  },
+  {
+    "idx": 185,
+    "sentence": "交通事故中的被扶养人生活费",
+    "label": 4
+  },
+  {
+    "idx": 186,
+    "sentence": "邻居家煤气罐爆炸",
+    "label": 5
+  },
+  {
+    "idx": 187,
+    "sentence": "我不想保了",
+    "label": 8
+  },
+  {
+    "idx": 188,
+    "sentence": "证被吊销了",
+    "label": 9
+  },
+  {
+    "idx": 189,
+    "sentence": "网上买到假货",
+    "label": 5
+  },
+  {
+    "idx": 190,
+    "sentence": "试用期被延长了两次",
+    "label": 3
+  },
+  {
+    "idx": 191,
+    "sentence": "抚养费标准按什么算",
+    "label": 0
+  },
+  {
+    "idx": 192,
+    "sentence": "快递把我的东西摔坏",
+    "label": 5
+  },
+  {
+    "idx": 193,
+    "sentence": "网络平台泄露我的信息",
+    "label": 5
+  },
+  {
+    "idx": 194,
+    "sentence": "持卡人要求银行提供交易明细",
+    "label": 7
+  },
+  {
+    "idx": 195,
+    "sentence": "小区大树倒了砸车",
+    "label": 5
+  },
+  {
+    "idx": 196,
+    "sentence": "公司没签劳动合同，员工要双倍工资",
+    "label": 3
+  },
+  {
+    "idx": 197,
+    "sentence": "借条上约定违约金每日千分之五",
+    "label": 1
+  },
+  {
+    "idx": 198,
+    "sentence": "公司要求员工每天加班到十点",
+    "label": 3
+  },
+  {
+    "idx": 199,
+    "sentence": "买卖合同中的样品封存",
+    "label": 2
+  },
+  {
+    "idx": 200,
+    "sentence": "吃了餐厅的菜拉肚子",
+    "label": 5
+  },
+  {
+    "idx": 201,
+    "sentence": "对方让我私了",
+    "label": 4
+  },
+  {
+    "idx": 202,
+    "sentence": "借款人主张已过保证期间",
+    "label": 6
+  },
+  {
+    "idx": 203,
+    "sentence": "借款用于家庭开支",
+    "label": 1
+  },
+  {
+    "idx": 204,
+    "sentence": "两种赔偿区别",
+    "label": 10
+  },
+  {
+    "idx": 205,
+    "sentence": "公司安排员工上夜班",
+    "label": 3
+  },
+  {
+    "idx": 206,
+    "sentence": "信用卡分期提前结清",
+    "label": 7
+  },
+  {
+    "idx": 207,
+    "sentence": "借款人用车辆抵押借款",
+    "label": 1
+  },
+  {
+    "idx": 208,
+    "sentence": "知识产权决定",
+    "label": 9
+  },
+  {
+    "idx": 209,
+    "sentence": "许可证被撤销",
+    "label": 9
+  },
+  {
+    "idx": 210,
+    "sentence": "工伤认定错了要赔",
+    "label": 10
+  },
+  {
+    "idx": 211,
+    "sentence": "关联账户没钱",
+    "label": 7
+  },
+  {
+    "idx": 212,
+    "sentence": "周末加班公司只给调休",
+    "label": 3
+  },
+  {
+    "idx": 213,
+    "sentence": "夫妻共同经营店铺的债务",
+    "label": 0
+  },
+  {
+    "idx": 214,
+    "sentence": "竞业限制补偿金公司不给",
+    "label": 3
+  },
+  {
+    "idx": 215,
+    "sentence": "借款人破产了",
+    "label": 6
+  },
+  {
+    "idx": 216,
+    "sentence": "借条上的金额大小写不一致",
+    "label": 1
+  },
+  {
+    "idx": 217,
+    "sentence": "处罚撤销后返还罚款",
+    "label": 10
+  },
+  {
+    "idx": 218,
+    "sentence": "事故责任书对方主责",
+    "label": 4
+  },
+  {
+    "idx": 219,
+    "sentence": "抵押的房子没登记",
+    "label": 6
+  },
+  {
+    "idx": 220,
+    "sentence": "违法吊销许可证",
+    "label": 10
+  },
+  {
+    "idx": 221,
+    "sentence": "学校老师体罚学生",
+    "label": 5
+  },
+  {
+    "idx": 222,
+    "sentence": "照相馆用我照片做广告",
+    "label": 5
+  },
+  {
+    "idx": 223,
+    "sentence": "出借人把债权转让给别人",
+    "label": 1
+  },
+  {
+    "idx": 224,
+    "sentence": "公司借了钱还不上",
+    "label": 6
+  },
+  {
+    "idx": 225,
+    "sentence": "买卖合同中的风险转移",
+    "label": 2
+  },
+  {
+    "idx": 226,
+    "sentence": "抚养权判给女方，男方不服上诉",
+    "label": 0
+  },
+  {
+    "idx": 227,
+    "sentence": "员工离职公司扣一个月工资",
+    "label": 3
+  },
+  {
+    "idx": 228,
+    "sentence": "违法行政造成财产损失",
+    "label": 10
+  },
+  {
+    "idx": 229,
+    "sentence": "公园设施老化伤人",
+    "label": 5
+  },
+  {
+    "idx": 230,
+    "sentence": "离婚后房产贷款还没还完",
+    "label": 0
+  },
+  {
+    "idx": 231,
+    "sentence": "离婚协议中违约金条款",
+    "label": 0
+  },
+  {
+    "idx": 232,
+    "sentence": "有人在我的照片上P图",
+    "label": 5
+  },
+  {
+    "idx": 233,
+    "sentence": "电梯困人我受伤了",
+    "label": 5
+  },
+  {
+    "idx": 234,
+    "sentence": "药品监管局处罚",
+    "label": 9
+  },
+  {
+    "idx": 235,
+    "sentence": "买方要求卖方赔偿停工损失",
+    "label": 2
+  },
+  {
+    "idx": 236,
+    "sentence": "公司拖欠社保导致员工无法报销",
+    "label": 3
+  },
+  {
+    "idx": 237,
+    "sentence": "小区健身器材伤人",
+    "label": 5
+  },
+  {
+    "idx": 238,
+    "sentence": "利率没写明白",
+    "label": 7
+  },
+  {
+    "idx": 239,
+    "sentence": "买方订了货不来提",
+    "label": 2
+  },
+  {
+    "idx": 240,
+    "sentence": "交通事故无责免赔条款",
+    "label": 8
+  },
+  {
+    "idx": 241,
+    "sentence": "离婚时一方有婚外情但无证据",
+    "label": 0
+  },
+  {
+    "idx": 242,
+    "sentence": "职业放贷人的借款合同效力",
+    "label": 1
+  },
+  {
+    "idx": 243,
+    "sentence": "高空抛物找不到人",
+    "label": 5
+  },
+  {
+    "idx": 244,
+    "sentence": "事故后我精神受创",
+    "label": 4
+  },
+  {
+    "idx": 245,
+    "sentence": "卫健委处罚",
+    "label": 9
+  },
+  {
+    "idx": 246,
+    "sentence": "交通事故中的精神抚慰金",
+    "label": 4
+  },
+  {
+    "idx": 247,
+    "sentence": "买了两份保险",
+    "label": 8
+  },
+  {
+    "idx": 248,
+    "sentence": "信用卡挂失后被盗刷",
+    "label": 7
+  },
+  {
+    "idx": 249,
+    "sentence": "账户被冻结",
+    "label": 10
+  },
+  {
+    "idx": 250,
+    "sentence": "借条上担保人只写了名字",
+    "label": 1
+  },
+  {
+    "idx": 251,
+    "sentence": "离婚时对方说欠了他爸妈钱",
+    "label": 0
+  },
+  {
+    "idx": 252,
+    "sentence": "借款人部分还款",
+    "label": 6
+  },
+  {
+    "idx": 253,
+    "sentence": "我要交易明细",
+    "label": 7
+  },
+  {
+    "idx": 254,
+    "sentence": "出借人要求拍卖抵押物",
+    "label": 1
+  },
+  {
+    "idx": 255,
+    "sentence": "离婚后孩子跟我，对方探视时间怎么定",
+    "label": 0
+  },
+  {
+    "idx": 256,
+    "sentence": "出借人要求质押股权",
+    "label": 6
+  },
+  {
+    "idx": 257,
+    "sentence": "孩子在学校被同学打伤",
+    "label": 5
+  },
+  {
+    "idx": 258,
+    "sentence": "投保人未按期缴费",
+    "label": 8
+  },
+  {
+    "idx": 259,
+    "sentence": "政府信息公开被拒",
+    "label": 9
+  },
+  {
+    "idx": 260,
+    "sentence": "工伤不认",
+    "label": 9
+  },
+  {
+    "idx": 261,
+    "sentence": "我的车被交警扣了",
+    "label": 4
+  },
+  {
+    "idx": 262,
+    "sentence": "诊所打针打错了",
+    "label": 5
+  },
+  {
+    "idx": 263,
+    "sentence": "出借人要求行使抵押权",
+    "label": 6
+  },
+  {
+    "idx": 264,
+    "sentence": "共同借款人之间怎么追偿",
+    "label": 6
+  },
+  {
+    "idx": 265,
+    "sentence": "工作人员故意",
+    "label": 10
+  },
+  {
+    "idx": 266,
+    "sentence": "员工请假公司按旷工处理",
+    "label": 3
+  },
+  {
+    "idx": 267,
+    "sentence": "年假没休完公司不给钱",
+    "label": 3
+  },
+  {
+    "idx": 268,
+    "sentence": "我的车被追尾对方不认",
+    "label": 4
+  },
+  {
+    "idx": 269,
+    "sentence": "注销卡还收年费",
+    "label": 7
+  },
+  {
+    "idx": 270,
+    "sentence": "免责条款没加粗",
+    "label": 8
+  },
+  {
+    "idx": 271,
+    "sentence": "买方要求卖方提供质检报告",
+    "label": 2
+  },
+  {
+    "idx": 272,
+    "sentence": "保险公司未履行赔付义务",
+    "label": 8
+  },
+  {
+    "idx": 273,
+    "sentence": "借款合同约定复利",
+    "label": 1
+  },
+  {
+    "idx": 274,
+    "sentence": "银行没提示风险",
+    "label": 7
+  },
+  {
+    "idx": 275,
+    "sentence": "对方只有交强险",
+    "label": 4
+  },
+  {
+    "idx": 276,
+    "sentence": "车转让没批改",
+    "label": 8
+  },
+  {
+    "idx": 277,
+    "sentence": "对方保险公司定损太低",
+    "label": 4
+  },
+  {
+    "idx": 278,
+    "sentence": "员工下班路上出车祸",
+    "label": 3
+  },
+  {
+    "idx": 279,
+    "sentence": "司法局罚律师",
+    "label": 9
+  },
+  {
+    "idx": 280,
+    "sentence": "人社局不认定工伤",
+    "label": 9
+  },
+  {
+    "idx": 281,
+    "sentence": "卖家发货后物流一直不动",
+    "label": 2
+  },
+  {
+    "idx": 282,
+    "sentence": "借条上借款人身份证号写错",
+    "label": 1
+  },
+  {
+    "idx": 283,
+    "sentence": "公司不给员工缴纳公积金",
+    "label": 3
+  },
+  {
+    "idx": 284,
+    "sentence": "借款展期后担保人还担不担责",
+    "label": 6
+  },
+  {
+    "idx": 285,
+    "sentence": "采光被挡了",
+    "label": 9
+  },
+  {
+    "idx": 286,
+    "sentence": "家暴只有报警记录没有伤情鉴定",
+    "label": 0
+  },
+  {
+    "idx": 287,
+    "sentence": "行政机关拒绝履行",
+    "label": 9
+  },
+  {
+    "idx": 288,
+    "sentence": "员工哺乳期被调岗",
+    "label": 3
+  },
+  {
+    "idx": 289,
+    "sentence": "还款没及时到账",
+    "label": 7
+  },
+  {
+    "idx": 290,
+    "sentence": "拒赔理由不成立",
+    "label": 8
+  },
+  {
+    "idx": 291,
+    "sentence": "买方收货后未及时检验",
+    "label": 2
+  },
+  {
+    "idx": 292,
+    "sentence": "撞我的人跑了",
+    "label": 4
+  },
+  {
+    "idx": 293,
+    "sentence": "借款合同约定分期还",
+    "label": 6
+  },
+  {
+    "idx": 294,
+    "sentence": "民政局不登记",
+    "label": 9
+  },
+  {
+    "idx": 295,
+    "sentence": "保险公司拒赔理由不充分",
+    "label": 8
+  },
+  {
+    "idx": 296,
+    "sentence": "意外险猝死赔不赔",
+    "label": 8
+  },
+  {
+    "idx": 297,
+    "sentence": "借款人主张合同无效",
+    "label": 6
+  },
+  {
+    "idx": 298,
+    "sentence": "司法局处罚律师",
+    "label": 9
+  },
+  {
+    "idx": 299,
+    "sentence": "代驾开车出事故",
+    "label": 4
+  },
+  {
+    "idx": 300,
+    "sentence": "事故后打车费用",
+    "label": 4
+  },
+  {
+    "idx": 301,
+    "sentence": "借条过期了还能起诉吗",
+    "label": 1
+  },
+  {
+    "idx": 302,
+    "sentence": "离职后年终奖还发不发",
+    "label": 3
+  },
+  {
+    "idx": 303,
+    "sentence": "烟草局罚我",
+    "label": 9
+  },
+  {
+    "idx": 304,
+    "sentence": "广告牌掉下来砸伤人",
+    "label": 5
+  },
+  {
+    "idx": 305,
+    "sentence": "出借人主张逾期利息",
+    "label": 1
+  },
+  {
+    "idx": 306,
+    "sentence": "POS机盗刷",
+    "label": 7
+  },
+  {
+    "idx": 307,
+    "sentence": "冤案平反赔偿",
+    "label": 10
+  },
+  {
+    "idx": 308,
+    "sentence": "婚后买的股票，离婚怎么分",
+    "label": 0
+  },
+  {
+    "idx": 309,
+    "sentence": "交通事故造成误工费怎么算",
+    "label": 4
+  },
+  {
+    "idx": 310,
+    "sentence": "卖方交付的货物侵犯他人知识产权",
+    "label": 2
+  },
+  {
+    "idx": 311,
+    "sentence": "小区保安打人",
+    "label": 5
+  },
+  {
+    "idx": 312,
+    "sentence": "公司口头承诺的奖金不兑现",
+    "label": 3
+  },
+  {
+    "idx": 313,
+    "sentence": "信用卡自动分期",
+    "label": 7
+  },
+  {
+    "idx": 314,
+    "sentence": "公司单方面调岗我不同意",
+    "label": 3
+  },
+  {
+    "idx": 315,
+    "sentence": "合同签了但对方不履行",
+    "label": 2
+  },
+  {
+    "idx": 316,
+    "sentence": "我没责任为什么不赔",
+    "label": 8
+  },
+  {
+    "idx": 317,
+    "sentence": "赔偿决定书",
+    "label": 10
+  },
+  {
+    "idx": 318,
+    "sentence": "征地补偿不合法",
+    "label": 10
+  },
+  {
+    "idx": 319,
+    "sentence": "事故后我住院半个月",
+    "label": 4
+  },
+  {
+    "idx": 320,
+    "sentence": "银行没通知就涨年费",
+    "label": 7
+  },
+  {
+    "idx": 321,
+    "sentence": "买方要求卖方开具增值税专用发票",
+    "label": 2
+  },
+  {
+    "idx": 322,
+    "sentence": "行政赔偿与民事赔偿的区别",
+    "label": 10
+  },
+  {
+    "idx": 323,
+    "sentence": "员工主动辞职有补偿吗",
+    "label": 3
+  },
+  {
+    "idx": 324,
+    "sentence": "信用卡溢缴款取回",
+    "label": 7
+  },
+  {
+    "idx": 325,
+    "sentence": "保险公司说不属于保险事故",
+    "label": 8
+  },
+  {
+    "idx": 326,
+    "sentence": "合同解除后还要还利息吗",
+    "label": 6
+  },
+  {
+    "idx": 327,
+    "sentence": "有人转发我的不实信息",
+    "label": 5
+  },
+  {
+    "idx": 328,
+    "sentence": "出借人主张口头约定利息",
+    "label": 1
+  },
+  {
+    "idx": 329,
+    "sentence": "保险标的转让未办理批改",
+    "label": 8
+  },
+  {
+    "idx": 330,
+    "sentence": "货物价格约定不明",
+    "label": 2
+  },
+  {
+    "idx": 331,
+    "sentence": "违法没收财物",
+    "label": 10
+  },
+  {
+    "idx": 332,
+    "sentence": "抵押物不够还",
+    "label": 6
+  },
+  {
+    "idx": 333,
+    "sentence": "行政机关工作人员故意",
+    "label": 10
+  },
+  {
+    "idx": 334,
+    "sentence": "影楼用我婚纱照宣传",
+    "label": 5
+  },
+  {
+    "idx": 335,
+    "sentence": "合同约定交货期限为一个月",
+    "label": 2
+  },
+  {
+    "idx": 336,
+    "sentence": "卖方要求涨价否则不发货",
+    "label": 2
+  },
+  {
+    "idx": 337,
+    "sentence": "借款合同违约金太高",
+    "label": 6
+  },
+  {
+    "idx": 338,
+    "sentence": "登记错了",
+    "label": 10
+  },
+  {
+    "idx": 339,
+    "sentence": "离职时公司扣押档案",
+    "label": 3
+  },
+  {
+    "idx": 340,
+    "sentence": "交强险能赔多少",
+    "label": 4
+  },
+  {
+    "idx": 341,
+    "sentence": "重复保险怎么分摊",
+    "label": 8
+  },
+  {
+    "idx": 342,
+    "sentence": "投保人主张保险合同无效",
+    "label": 8
+  },
+  {
+    "idx": 343,
+    "sentence": "银行收取全额罚息",
+    "label": 7
+  },
+  {
+    "idx": 344,
+    "sentence": "分期想提前结清",
+    "label": 7
+  },
+  {
+    "idx": 345,
+    "sentence": "夫妻共同债务认定，债权人起诉我们俩",
+    "label": 0
+  },
+  {
+    "idx": 346,
+    "sentence": "借款合同中的保证期间",
+    "label": 6
+  },
+  {
+    "idx": 347,
+    "sentence": "事故造成一人死亡",
+    "label": 4
+  },
+  {
+    "idx": 348,
+    "sentence": "离婚诉讼中对方不出庭",
+    "label": 0
+  },
+  {
+    "idx": 349,
+    "sentence": "签了劳务协议实际是劳动关系",
+    "label": 3
+  },
+  {
+    "idx": 350,
+    "sentence": "借款约定利滚利",
+    "label": 6
+  },
+  {
+    "idx": 351,
+    "sentence": "保险合同中的如实告知义务",
+    "label": 8
+  },
+  {
+    "idx": 352,
+    "sentence": "事故中我受了惊吓",
+    "label": 4
+  },
+  {
+    "idx": 353,
+    "sentence": "买方要求卖方承担退货运费",
+    "label": 2
+  },
+  {
+    "idx": 354,
+    "sentence": "行政赔偿决定书",
+    "label": 10
+  },
+  {
+    "idx": 355,
+    "sentence": "买方要求卖方开具收据",
+    "label": 2
+  },
+  {
+    "idx": 356,
+    "sentence": "银行未经同意提升额度",
+    "label": 7
+  },
+  {
+    "idx": 357,
+    "sentence": "买方付款后卖方失联",
+    "label": 2
+  },
+  {
+    "idx": 358,
+    "sentence": "行政赔偿与补偿的区别",
+    "label": 10
+  },
+  {
+    "idx": 359,
+    "sentence": "我没买过这个东西",
+    "label": 7
+  },
+  {
+    "idx": 360,
+    "sentence": "美容院给我用了假药",
+    "label": 5
+  },
+  {
+    "idx": 361,
+    "sentence": "一方有精神病，能否离婚",
+    "label": 0
+  },
+  {
+    "idx": 362,
+    "sentence": "怎么算赔偿",
+    "label": 10
+  },
+  {
+    "idx": 363,
+    "sentence": "政府不公开信息",
+    "label": 9
+  },
+  {
+    "idx": 364,
+    "sentence": "夫妻共同财产被一方挥霍",
+    "label": 0
+  },
+  {
+    "idx": 365,
+    "sentence": "违法强拆房屋",
+    "label": 10
+  },
+  {
+    "idx": 366,
+    "sentence": "投诉没人管",
+    "label": 9
+  },
+  {
+    "idx": 367,
+    "sentence": "合同约定的违约金太高",
+    "label": 2
+  },
+  {
+    "idx": 368,
+    "sentence": "离婚后一方再婚影响抚养权吗",
+    "label": 0
+  },
+  {
+    "idx": 369,
+    "sentence": "事故导致我流产",
+    "label": 4
+  },
+  {
+    "idx": 370,
+    "sentence": "我要退保费",
+    "label": 8
+  },
+  {
+    "idx": 371,
+    "sentence": "重疾定义符不符合",
+    "label": 8
+  },
+  {
+    "idx": 372,
+    "sentence": "保险公司主张投保人骗保",
+    "label": 8
+  },
+  {
+    "idx": 373,
+    "sentence": "合同约定付款方式为承兑汇票",
+    "label": 2
+  },
+  {
+    "idx": 374,
+    "sentence": "错误逮捕",
+    "label": 10
+  },
+  {
+    "idx": 375,
+    "sentence": "违法冻结账户",
+    "label": 10
+  },
+  {
+    "idx": 376,
+    "sentence": "离婚诉讼中申请财产保全",
+    "label": 0
+  },
+  {
+    "idx": 377,
+    "sentence": "滞纳金怎么收",
+    "label": 7
+  },
+  {
+    "idx": 378,
+    "sentence": "离婚时一方放弃财产有效吗",
+    "label": 0
+  },
+  {
+    "idx": 379,
+    "sentence": "银行没告诉我风险",
+    "label": 7
+  },
+  {
+    "idx": 380,
+    "sentence": "员工在工作中受伤公司不认工伤",
+    "label": 3
+  },
+  {
+    "idx": 381,
+    "sentence": "借款APP自动扣款金额不对",
+    "label": 6
+  },
+  {
+    "idx": 382,
+    "sentence": "统计局处罚",
+    "label": 9
+  },
+  {
+    "idx": 383,
+    "sentence": "代驾把我的车撞了",
+    "label": 4
+  },
+  {
+    "idx": 384,
+    "sentence": "借款合同中的管辖条款",
+    "label": 6
+  },
+  {
+    "idx": 385,
+    "sentence": "离婚后孩子户口迁移",
+    "label": 0
+  },
+  {
+    "idx": 386,
+    "sentence": "设备装好后验收不合格",
+    "label": 2
+  },
+  {
+    "idx": 387,
+    "sentence": "夫妻分居期间一方借的钱",
+    "label": 0
+  },
+  {
+    "idx": 388,
+    "sentence": "卖方晚交货半个月，买方要解除合同",
+    "label": 2
+  },
+  {
+    "idx": 389,
+    "sentence": "对交警处罚不服",
+    "label": 9
+  },
+  {
+    "idx": 390,
+    "sentence": "药监局罚我",
+    "label": 9
+  },
+  {
+    "idx": 391,
+    "sentence": "合同解除后利息怎么算",
+    "label": 6
+  },
+  {
+    "idx": 392,
+    "sentence": "公司经营借的钱",
+    "label": 6
+  },
+  {
+    "idx": 393,
+    "sentence": "离婚诉讼费谁来承担",
+    "label": 0
+  },
+  {
+    "idx": 394,
+    "sentence": "实际用钱的是别人",
+    "label": 6
+  },
+  {
+    "idx": 395,
+    "sentence": "保险公司定损两千",
+    "label": 4
+  },
+  {
+    "idx": 396,
+    "sentence": "买方以卖方迟延为由拒收",
+    "label": 2
+  },
+  {
+    "idx": 397,
+    "sentence": "有人把我的作品署他名",
+    "label": 5
+  },
+  {
+    "idx": 398,
+    "sentence": "公司以末位淘汰辞退员工",
+    "label": 3
+  },
+  {
+    "idx": 399,
+    "sentence": "出借人要求借款人配偶共同还",
+    "label": 1
+  },
+  {
+    "idx": 400,
+    "sentence": "离婚后孩子医疗费谁承担",
+    "label": 0
+  },
+  {
+    "idx": 401,
+    "sentence": "违法拆除养殖场",
+    "label": 10
+  },
+  {
+    "idx": 402,
+    "sentence": "公司把员工外包出去",
+    "label": 3
+  },
+  {
+    "idx": 403,
+    "sentence": "联名卡积分规则变了",
+    "label": 7
+  },
+  {
+    "idx": 404,
+    "sentence": "借条丢了只有复印件",
+    "label": 1
+  },
+  {
+    "idx": 405,
+    "sentence": "谁来举证",
+    "label": 10
+  },
+  {
+    "idx": 406,
+    "sentence": "信用卡积分兑换纠纷",
+    "label": 7
+  },
+  {
+    "idx": 407,
+    "sentence": "银行要我一次还清",
+    "label": 7
+  },
+  {
+    "idx": 408,
+    "sentence": "商场地面有水我摔倒了",
+    "label": 5
+  },
+  {
+    "idx": 409,
+    "sentence": "交强险不够赔，商业险怎么补",
+    "label": 4
+  },
+  {
+    "idx": 410,
+    "sentence": "离婚后前夫不让我看孩子",
+    "label": 0
+  },
+  {
+    "idx": 411,
+    "sentence": "员工辞职公司要求赔违约金",
+    "label": 3
+  },
+  {
+    "idx": 412,
+    "sentence": "保证期间已过",
+    "label": 6
+  },
+  {
+    "idx": 413,
+    "sentence": "交警没定责，双方各说各的",
+    "label": 4
+  },
+  {
+    "idx": 414,
+    "sentence": "自然资源局处罚",
+    "label": 9
+  },
+  {
+    "idx": 415,
+    "sentence": "公司考核不合格要辞退我",
+    "label": 3
+  },
+  {
+    "idx": 416,
+    "sentence": "空调外机掉下来",
+    "label": 5
+  },
+  {
+    "idx": 417,
+    "sentence": "退保能退多少",
+    "label": 8
+  },
+  {
+    "idx": 418,
+    "sentence": "有人给我店刷差评",
+    "label": 5
+  },
+  {
+    "idx": 419,
+    "sentence": "出借人拿着借条上门要钱",
+    "label": 1
+  },
+  {
+    "idx": 420,
+    "sentence": "买方要求退货卖方不同意",
+    "label": 2
+  },
+  {
+    "idx": 421,
+    "sentence": "违法查封财产",
+    "label": 10
+  },
+  {
+    "idx": 422,
+    "sentence": "复议晚了",
+    "label": 9
+  },
+  {
+    "idx": 423,
+    "sentence": "乘客下车开门撞了电动车",
+    "label": 4
+  },
+  {
+    "idx": 424,
+    "sentence": "卖方要求买方支付违约金",
+    "label": 2
+  },
+  {
+    "idx": 425,
+    "sentence": "行政赔偿申请期限",
+    "label": 10
+  },
+  {
+    "idx": 426,
+    "sentence": "离职后公司要求我遵守竞业限制",
+    "label": 3
+  },
+  {
+    "idx": 427,
+    "sentence": "国家赔偿计算方式",
+    "label": 10
+  },
+  {
+    "idx": 428,
+    "sentence": "保险公司以未如实告知解除合同",
+    "label": 8
+  },
+  {
+    "idx": 429,
+    "sentence": "分批交货有一批不合格",
+    "label": 2
+  },
+  {
+    "idx": 430,
+    "sentence": "事故造成孕妇流产",
+    "label": 4
+  },
+  {
+    "idx": 431,
+    "sentence": "受益人写的是“法定”",
+    "label": 8
+  },
+  {
+    "idx": 432,
+    "sentence": "财政局罚我",
+    "label": 9
+  },
+  {
+    "idx": 433,
+    "sentence": "借款合同无效后利息",
+    "label": 6
+  },
+  {
+    "idx": 434,
+    "sentence": "离婚时公积金算共同财产吗",
+    "label": 0
+  },
+  {
+    "idx": 435,
+    "sentence": "事故后对方找人顶包",
+    "label": 4
+  },
+  {
+    "idx": 436,
+    "sentence": "健身房器材坏了伤了我",
+    "label": 5
+  },
+  {
+    "idx": 437,
+    "sentence": "卖方把同一批货卖给了两家",
+    "label": 2
+  },
+  {
+    "idx": 438,
+    "sentence": "离婚时一方要求家务补偿",
+    "label": 0
+  },
+  {
+    "idx": 439,
+    "sentence": "出借人起诉需要什么证据",
+    "label": 1
+  },
+  {
+    "idx": 440,
+    "sentence": "离婚后前夫又来骚扰",
+    "label": 0
+  },
+  {
+    "idx": 441,
+    "sentence": "我家天花板渗水",
+    "label": 5
+  },
+  {
+    "idx": 442,
+    "sentence": "路上井盖没盖好",
+    "label": 5
+  },
+  {
+    "idx": 443,
+    "sentence": "行政机关工作人员重大过失",
+    "label": 10
+  },
+  {
+    "idx": 444,
+    "sentence": "邻居家着火烧到我家",
+    "label": 5
+  },
+  {
+    "idx": 445,
+    "sentence": "我孩子被车撞了",
+    "label": 4
+  },
+  {
+    "idx": 446,
+    "sentence": "卖方交付的货物有安全隐患",
+    "label": 2
+  },
+  {
+    "idx": 447,
+    "sentence": "保险公司不续保",
+    "label": 8
+  },
+  {
+    "idx": 448,
+    "sentence": "财产损失",
+    "label": 10
+  },
+  {
+    "idx": 449,
+    "sentence": "员工在工厂被机器夹伤",
+    "label": 3
+  },
+  {
+    "idx": 450,
+    "sentence": "借款人上了黑名单",
+    "label": 6
+  },
+  {
+    "idx": 451,
+    "sentence": "司机把我甩出车",
+    "label": 5
+  },
+  {
+    "idx": 452,
+    "sentence": "行人闯红灯被撞，司机要不要赔",
+    "label": 4
+  },
+  {
+    "idx": 453,
+    "sentence": "企业借款给个人",
+    "label": 6
+  },
+  {
+    "idx": 454,
+    "sentence": "年假公司说跨年作废",
+    "label": 3
+  },
+  {
+    "idx": 455,
+    "sentence": "电动车和汽车相撞，责任怎么分",
+    "label": 4
+  },
+  {
+    "idx": 456,
+    "sentence": "网上买的家电用了几天就坏了",
+    "label": 2
+  },
+  {
+    "idx": 457,
+    "sentence": "借款合同约定的服务费算不算利息",
+    "label": 6
+  },
+  {
+    "idx": 458,
+    "sentence": "利息算到哪天有争议",
+    "label": 6
+  },
+  {
+    "idx": 459,
+    "sentence": "退役军人局决定",
+    "label": 9
+  },
+  {
+    "idx": 460,
+    "sentence": "合同无效利息还要给吗",
+    "label": 6
+  },
+  {
+    "idx": 461,
+    "sentence": "对方是租来的车",
+    "label": 4
+  },
+  {
+    "idx": 462,
+    "sentence": "付了货款卖方一直不发货",
+    "label": 2
+  },
+  {
+    "idx": 463,
+    "sentence": "民间借贷利率多少合法",
+    "label": 1
+  },
+  {
+    "idx": 464,
+    "sentence": "寄养的猫跑丢了",
+    "label": 5
+  },
+  {
+    "idx": 465,
+    "sentence": "保险公司追偿",
+    "label": 8
+  },
+  {
+    "idx": 466,
+    "sentence": "持卡人主张银行承担盗刷损失",
+    "label": 7
+  },
+  {
+    "idx": 467,
+    "sentence": "复议期间还执行吗",
+    "label": 9
+  },
+  {
+    "idx": 468,
+    "sentence": "续保被拒",
+    "label": 8
+  },
+  {
+    "idx": 469,
+    "sentence": "事故中双方都有责任",
+    "label": 4
+  },
+  {
+    "idx": 470,
+    "sentence": "借款合同约定复利",
+    "label": 6
+  },
+  {
+    "idx": 471,
+    "sentence": "事故后需要人照顾",
+    "label": 4
+  },
+  {
+    "idx": 472,
+    "sentence": "路边树倒了砸了我的车",
+    "label": 5
+  },
+  {
+    "idx": 473,
+    "sentence": "大狗扑倒了我",
+    "label": 5
+  },
+  {
+    "idx": 474,
+    "sentence": "保险公司解除合同",
+    "label": 8
+  },
+  {
+    "idx": 475,
+    "sentence": "夫妻一方借钱，另一方不知情",
+    "label": 1
+  },
+  {
+    "idx": 476,
+    "sentence": "事故后我请假处理",
+    "label": 4
+  },
+  {
+    "idx": 477,
+    "sentence": "外卖小哥撞了我",
+    "label": 4
+  },
+  {
+    "idx": 478,
+    "sentence": "买卖合同中的质量保证期",
+    "label": 2
+  },
+  {
+    "idx": 479,
+    "sentence": "离婚时发现对方隐瞒了一套房产",
+    "label": 0
+  },
+  {
+    "idx": 480,
+    "sentence": "行政机关不作为",
+    "label": 9
+  },
+  {
+    "idx": 481,
+    "sentence": "积分突然清零",
+    "label": 7
+  },
+  {
+    "idx": 482,
+    "sentence": "行人横穿马路被撞",
+    "label": 4
+  },
+  {
+    "idx": 483,
+    "sentence": "借款人换了工作单位失联",
+    "label": 1
+  },
+  {
+    "idx": 484,
+    "sentence": "无责方能不能要精神损害赔偿",
+    "label": 4
+  },
+  {
+    "idx": 485,
+    "sentence": "借款人主张出借人是套路贷",
+    "label": 1
+  },
+  {
+    "idx": 486,
+    "sentence": "员工被同事打伤公司不管",
+    "label": 3
+  },
+  {
+    "idx": 487,
+    "sentence": "一方被宣告失踪，另一方起诉离婚",
+    "label": 0
+  },
+  {
+    "idx": 488,
+    "sentence": "公安治安处罚程序违法",
+    "label": 9
+  },
+  {
+    "idx": 489,
+    "sentence": "借条被篡改",
+    "label": 1
+  },
+  {
+    "idx": 490,
+    "sentence": "出借人委托律师发催款函",
+    "label": 1
+  },
+  {
+    "idx": 491,
+    "sentence": "我想提前还钱对方不同意",
+    "label": 6
+  },
+  {
+    "idx": 492,
+    "sentence": "借款用于子女留学",
+    "label": 1
+  },
+  {
+    "idx": 493,
+    "sentence": "银行没尽告知义务",
+    "label": 7
+  },
+  {
+    "idx": 494,
+    "sentence": "利息从哪天开始算",
+    "label": 6
+  },
+  {
+    "idx": 495,
+    "sentence": "违法拘留",
+    "label": 10
+  },
+  {
+    "idx": 496,
+    "sentence": "机关追偿",
+    "label": 10
+  },
+  {
+    "idx": 497,
+    "sentence": "公司不给员工办退休手续",
+    "label": 3
+  },
+  {
+    "idx": 498,
+    "sentence": "银行该不该赔",
+    "label": 7
+  },
+  {
+    "idx": 499,
+    "sentence": "有人在群里骂我",
+    "label": 5
+  }
+]
