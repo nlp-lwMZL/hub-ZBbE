@@ -1,0 +1,18 @@
+触发词炼成：99 条（自动 82 + 人工 37，含去重）
+公司名词典：3679 个
+推理完成：930 句，耗时 0.75s（0.805 ms/句，纯 CPU）
+样本数 930（缺预测 0 条）
+  trigger      P=0.6175 R=0.6161 F1=0.6168 (tp=573 fp=355 fn=357)
+  argument     P=0.1738 R=0.1742 F1=0.1740 (tp=718 fp=3413 fn=3404)
+  event_exact  P=0.0162 R=0.0161 F1=0.0161 (tp=15 fp=913 fn=915)
+  type_macro_f1 = 0.8118
+  指标已写入 → F:\ai\LLM\7\第七周 抽取任务\week07\outputs\metrics\disc\rule.json
+
+【规则基线失败分析】
+  arg_spurious     517 条 (55.6%)
+  wrong_trigger    214 条 (23.0%)
+  wrong_type       141 条 (15.2%)
+  arg_missing       41 条 (4.4%)
+  exact             15 条 (1.6%)
+  no_trigger         2 条 (0.2%)
+  触发词命中率（整句有事件的比例）：99.8%

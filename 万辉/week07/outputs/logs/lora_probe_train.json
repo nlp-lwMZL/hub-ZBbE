@@ -1,0 +1,65 @@
+{
+  "method": "lora_probe",
+  "argv": [
+    "llm_lora/train_sft.py",
+    "--max_steps",
+    "2",
+    "--num_train",
+    "400",
+    "--output_dir",
+    "outputs/llm/ckpt_probe",
+    "--run_name",
+    "lora_probe"
+  ],
+  "args": {
+    "model_path": "F:\\ai\\LLM\\7\\第七周 抽取任务\\week07\\pretrain_models\\Qwen3-0.6B",
+    "data_dir": "F:\\ai\\LLM\\7\\第七周 抽取任务\\week07\\data\\processed",
+    "output_dir": "outputs/llm/ckpt_probe",
+    "num_train": 400,
+    "epochs": 1,
+    "batch_size": 2,
+    "grad_accum": 8,
+    "lr": 0.0002,
+    "max_length": 1280,
+    "full_ft": false,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "dtype": "auto",
+    "grad_ckpt": false,
+    "seed": 42,
+    "log_every": 50,
+    "run_name": "lora_probe",
+    "max_steps": 2,
+    "val_size": 200,
+    "std_logits": false
+  },
+  "env": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "time": "2026-11-25 23:01:35",
+    "torch": "2.3.1+cu121",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "transformers": "4.51.3"
+  },
+  "params": 2293760,
+  "log_every": 50,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.386042,
+      "elapsed_s": 101.0,
+      "val": {
+        "val_loss": 0.3299
+      },
+      "optimizer_steps": 2
+    }
+  ],
+  "total_elapsed_s": 139.8,
+  "finished": true,
+  "optimizer_steps": 2,
+  "best_val_loss": 0.32991875093089473,
+  "peak_gpu_mb": 8008.1,
+  "notes": "LoRA SFT（Qwen3-0.6B 生成式链路）"
+}

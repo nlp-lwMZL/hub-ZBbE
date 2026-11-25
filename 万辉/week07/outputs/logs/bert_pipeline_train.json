@@ -1,0 +1,88 @@
+{
+  "method": "bert_pipeline",
+  "argv": [
+    "bert_pipeline\\train.py",
+    "--only_experts",
+    "--arg_epochs",
+    "3",
+    "--arg_lr",
+    "8e-5",
+    "--arg_layers",
+    "4",
+    "--log_every",
+    "20"
+  ],
+  "args": {
+    "bert_path": "F:\\ai\\LLM\\7\\第七周 抽取任务\\week07\\pretrain_models\\roberta-base-chinese",
+    "cls_epochs": 2,
+    "detect_limit": 0,
+    "cls_lr": 2e-05,
+    "cls_batch_size": 64,
+    "cls_max_len": 192,
+    "arg_epochs": 3,
+    "arg_lr": 8e-05,
+    "arg_batch_size": 32,
+    "max_len": 256,
+    "arg_layers": 4,
+    "dropout": 0.1,
+    "device": "",
+    "seed": 42,
+    "skip_train": false,
+    "log_every": 20,
+    "only_experts": true,
+    "mock": false,
+    "data_dir": ""
+  },
+  "env": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "time": "2026-11-25 23:57:41",
+    "torch": "2.3.1+cu121",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "transformers": "4.51.3"
+  },
+  "params": null,
+  "log_every": 20,
+  "epochs": [
+    {
+      "epoch": 3,
+      "train_loss": 0.0,
+      "elapsed_s": 178.2,
+      "val": {
+        "中标": 21.0,
+        "亏损": 19.5,
+        "企业收购": 21.6,
+        "企业破产": 5.3,
+        "企业融资": 12.7,
+        "公司上市": 10.6,
+        "股东减持": 15.8,
+        "股东增持": 5.4,
+        "股份回购": 28.2,
+        "被约谈": 2.0,
+        "解除质押": 7.6,
+        "质押": 12.0,
+        "高管变动": 8.3
+      },
+      "stage": "13_argument_experts"
+    }
+  ],
+  "total_elapsed_s": 234.7,
+  "finished": true,
+  "diag": {
+    "n_detect_dropped": 233,
+    "n_type_wrong": 39,
+    "type_accuracy_on_dev_extract": 0.9581,
+    "n_arg_truncated": 100
+  },
+  "dev_metrics": {
+    "trigger": 0.5459,
+    "argument": 0.2892,
+    "event_exact": 0.0566
+  },
+  "inference_latency_ms": 25.96,
+  "peak_gpu_mb": 1594.5,
+  "pipeline_stages": 3,
+  "num_models": 16,
+  "notes": "两段式：检测器 + 13 分类 + 13 个类型条件论元专家"
+}

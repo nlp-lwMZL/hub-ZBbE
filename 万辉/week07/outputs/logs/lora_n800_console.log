@@ -1,0 +1,2 @@
+Epoch 1/1 | train_loss=0.1566 val_loss=0.1111 | 302s（6.05s/step）
+  ✓ LoRA adapter已保存 → F:\ai\LLM\7\第七周 抽取任务\week07\outputs\llm\ckpt\sft_adapter

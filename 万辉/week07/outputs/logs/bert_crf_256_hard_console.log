@@ -1,0 +1,29 @@
+  epoch 1 step 50/162 loss=578.0370
+  epoch 1 step 100/162 loss=443.2745
+  epoch 1 step 150/162 loss=375.2720
+epoch 1/3 | train_loss=361.1636 | inner_loss=275.2271 inner_spanF1=0.0000 | dev_spanF1(监控)=0.0000 | 434s
+  ★ 内层验证最优 → 保存 bert_crf_256_hard.pt
+  epoch 2 step 50/162 loss=227.1337
+  epoch 2 step 100/162 loss=219.4064
+  epoch 2 step 150/162 loss=198.1773
+epoch 2/3 | train_loss=193.3393 | inner_loss=252.9445 inner_spanF1=0.2645 | dev_spanF1(监控)=0.2501 | 436s
+  ★ 内层验证最优 → 保存 bert_crf_256_hard.pt
+  epoch 3 step 50/162 loss=132.1317
+  epoch 3 step 100/162 loss=190.2475
+  epoch 3 step 150/162 loss=184.4216
+epoch 3/3 | train_loss=180.1541 | inner_loss=247.4737 inner_spanF1=0.4747 | dev_spanF1(监控)=0.4913 | 457s
+  ★ 内层验证最优 → 保存 bert_crf_256_hard.pt
+加载最优 checkpoint（epoch 3，内层验证 spanF1=0.4747）
+dev 解码：930 句，其中没抽到触发词 393 句
+样本数 930（缺预测 0 条）
+  trigger      P=0.7635 R=0.4409 F1=0.5590 (tp=410 fp=127 fn=520)
+  argument     P=0.5922 R=0.3428 F1=0.4342 (tp=1413 fp=973 fn=2709)
+  event_exact  P=0.1322 R=0.0763 F1=0.0968 (tp=71 fp=466 fn=859)
+  type_macro_f1 = 0.3996
+  指标已写入 → F:\ai\LLM\7\第七周 抽取任务\week07\outputs\metrics\disc\bert_crf_256_hard.json
+
+【非法 BIO 统计（dev，模型原始输出）】
+  序列数 930：含非法序列 100 条（10.8%），其中非法开头 0 处、非法转移 202 处
+  训练集对照：含非法序列 587 条（11.3%）
+
+训练耗时 1328s | 推理延迟 18.97 ms/句 | 峰值显存 1849 MiB

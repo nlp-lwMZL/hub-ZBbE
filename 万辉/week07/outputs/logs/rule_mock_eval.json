@@ -1,0 +1,35 @@
+{
+  "method": "rule_mock",
+  "argv": [
+    "rule/run_rule.py",
+    "--mock"
+  ],
+  "args": null,
+  "env": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "time": "2026-11-24 22:40:23",
+    "torch": "2.3.1+cu121",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "transformers": "4.51.3"
+  },
+  "runtime_s": 1.97,
+  "metrics": {
+    "trigger": 0.7647,
+    "argument": 0.4865,
+    "event_exact": 0.1176
+  },
+  "type_macro_f1": 0.9487,
+  "num_triggers": 37,
+  "num_company_dict": 7,
+  "trigger_hit_rate": 0.8,
+  "failure_counts": {
+    "exact": 2,
+    "wrong_trigger": 3,
+    "arg_spurious": 8,
+    "arg_missing": 3,
+    "no_trigger": 4
+  },
+  "notes": "L0 规则基线（触发词词典 + 正则论元）"
+}

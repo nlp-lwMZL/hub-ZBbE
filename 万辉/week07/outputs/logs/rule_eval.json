@@ -1,0 +1,35 @@
+{
+  "method": "rule",
+  "argv": [
+    "F:\\ai\\LLM\\7\\第七周 抽取任务\\week07\\rule\\run_rule.py"
+  ],
+  "args": null,
+  "env": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "time": "2026-11-24 21:49:11",
+    "torch": "2.3.1+cu121",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "transformers": "4.51.3"
+  },
+  "runtime_s": 2.78,
+  "metrics": {
+    "trigger": 0.6168,
+    "argument": 0.174,
+    "event_exact": 0.0161
+  },
+  "type_macro_f1": 0.8118,
+  "num_triggers": 99,
+  "num_company_dict": 3679,
+  "trigger_hit_rate": 0.9978,
+  "failure_counts": {
+    "wrong_trigger": 214,
+    "arg_spurious": 517,
+    "wrong_type": 141,
+    "exact": 15,
+    "arg_missing": 41,
+    "no_trigger": 2
+  },
+  "notes": "L0 规则基线（触发词词典 + 正则论元）"
+}

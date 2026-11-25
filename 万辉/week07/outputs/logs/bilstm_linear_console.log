@@ -1,0 +1,21 @@
+epoch 1/5 | train_loss=2.0894 | inner_loss=1.0543 inner_spanF1=0.0006 | 5s
+  ★ 内层验证最优 → 保存 bilstm_linear.pt
+epoch 2/5 | train_loss=0.7932 | inner_loss=0.5976 inner_spanF1=0.2692 | 4s
+  ★ 内层验证最优 → 保存 bilstm_linear.pt
+epoch 3/5 | train_loss=0.5402 | inner_loss=0.4475 inner_spanF1=0.3252 | 6s
+  ★ 内层验证最优 → 保存 bilstm_linear.pt
+epoch 4/5 | train_loss=0.4372 | inner_loss=0.3931 inner_spanF1=0.4200 | 7s
+  ★ 内层验证最优 → 保存 bilstm_linear.pt
+epoch 5/5 | train_loss=0.3794 | inner_loss=0.3509 inner_spanF1=0.4624 | 7s
+  ★ 内层验证最优 → 保存 bilstm_linear.pt
+样本数 930（缺预测 0 条）
+  trigger      P=0.8084 R=0.6849 F1=0.7416 (tp=637 fp=151 fn=293)
+  argument     P=0.4309 R=0.4129 F1=0.4217 (tp=1702 fp=2248 fn=2420)
+  event_exact  P=0.0736 R=0.0624 F1=0.0675 (tp=58 fp=730 fn=872)
+  type_macro_f1 = 0.7631
+  指标已写入 → F:\ai\LLM\7\第七周 抽取任务\week07\outputs\metrics\disc\bilstm_linear.json
+
+【非法 BIO 统计（dev，模型原始输出）】
+  序列数 930：含非法序列 739 条（79.5%），非法开头 88 处 / 非法转移 1942 处
+
+训练耗时 30s | 延迟 0.71 ms/句

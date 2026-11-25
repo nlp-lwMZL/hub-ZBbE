@@ -1,0 +1,20 @@
+epoch 1/5 | train_loss=305.5924 | inner_loss=110.4226 inner_spanF1=0.0878 | 33s
+  ★ 内层验证最优 → 保存 bilstm_crf.pt
+epoch 2/5 | train_loss=89.1928 | inner_loss=63.6051 inner_spanF1=0.3971 | 40s
+  ★ 内层验证最优 → 保存 bilstm_crf.pt
+epoch 3/5 | train_loss=59.7308 | inner_loss=48.5263 inner_spanF1=0.5583 | 33s
+  ★ 内层验证最优 → 保存 bilstm_crf.pt
+epoch 4/5 | train_loss=45.7363 | inner_loss=40.4288 inner_spanF1=0.6204 | 34s
+  ★ 内层验证最优 → 保存 bilstm_crf.pt
+epoch 5/5 | train_loss=36.9884 | inner_loss=33.7477 inner_spanF1=0.6041 | 32s
+样本数 930（缺预测 0 条）
+  trigger      P=0.9222 R=0.7516 F1=0.8282 (tp=699 fp=59 fn=231)
+  argument     P=0.6646 R=0.4966 F1=0.5685 (tp=2047 fp=1033 fn=2075)
+  event_exact  P=0.1306 R=0.1065 F1=0.1173 (tp=99 fp=659 fn=831)
+  type_macro_f1 = 0.7742
+  指标已写入 → F:\ai\LLM\7\第七周 抽取任务\week07\outputs\metrics\disc\bilstm_crf.json
+
+【非法 BIO 统计（dev，模型原始输出）】
+  序列数 930：含非法序列 301 条（32.4%），非法开头 17 处 / 非法转移 394 处
+
+训练耗时 172s | 延迟 3.03 ms/句

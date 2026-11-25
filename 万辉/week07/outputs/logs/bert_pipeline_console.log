@@ -1,0 +1,46 @@
+  [only_experts] 跳过检测器/类型分类训练，复用现有 checkpoint
+   检测器 dev_detect：P=0.7974 R=0.7778 F1=0.7875 acc=0.9066
+   检测器 clean(4815)：P=0.7991 R=0.7841 F1=0.7915 acc=0.8999
+
+(c) 训练 13 个类型条件论元抽取专家（依次训练，训完即释放显存）...
+  [arg:中标] 706 句 × 3 epoch loss=0.5347
+  [arg:亏损] 648 句 × 3 epoch loss=0.4114
+  [arg:企业收购] 746 句 × 3 epoch loss=0.5021
+  [arg:企业破产] 177 句 × 3 epoch loss=0.6229
+  [arg:企业融资] 423 句 × 3 epoch loss=0.6280
+  [arg:公司上市] 369 句 × 3 epoch loss=0.5446
+  [arg:股东减持] 543 句 × 3 epoch loss=0.6881
+  [arg:股东增持] 162 句 × 3 epoch loss=1.0620
+  [arg:股份回购] 979 句 × 3 epoch loss=0.3057
+  [arg:被约谈] 53 句 × 3 epoch loss=1.2309
+  [arg:解除质押] 255 句 × 3 epoch loss=1.0408
+  [arg:质押] 398 句 × 3 epoch loss=0.8087
+  [arg:高管变动] 288 句 × 3 epoch loss=0.8907
+
+组合三段 → dev_extract 端到端评测...
+   诊断：检测器丢掉 233 句 / 类型判错 39 句 / dev_extract 上类型准确率 0.9581
+样本数 930（缺预测 0 条）
+  trigger      P=0.9444 R=0.3839 F1=0.5459 (tp=357 fp=21 fn=573)
+  argument     P=0.4165 R=0.2215 F1=0.2892 (tp=913 fp=1279 fn=3209)
+  event_exact  P=0.0979 R=0.0398 F1=0.0566 (tp=37 fp=341 fn=893)
+  type_macro_f1 = 0.2552
+  detection    P=1.0000 R=0.5912 F1=0.7431 acc=0.9091
+  n200 子集：trigger F1=0.5199 arg F1=0.2828 → pipeline_n200.json
+  指标已写入 → F:\ai\LLM\7\第七周 抽取任务\week07\outputs\metrics\disc\pipeline.json
+
+上界分析：类型用金标（隔离出「类型判错」造成的损失）...
+样本数 930（缺预测 0 条）
+  trigger      P=0.9495 R=0.3839 F1=0.5467 (tp=357 fp=19 fn=573)
+  argument     P=0.4180 R=0.2215 F1=0.2896 (tp=913 fp=1271 fn=3209)
+  event_exact  P=0.0984 R=0.0398 F1=0.0567 (tp=37 fp=339 fn=893)
+  type_macro_f1 = 0.2559
+  n200 子集：trigger F1=0.5236 arg F1=0.2846 → pipeline_oracle_type_n200.json
+  指标已写入 → F:\ai\LLM\7\第七周 抽取任务\week07\outputs\metrics\disc\pipeline_oracle_type.json
+
+======================================================================
+方法                          trigger F1    arg F1  event F1
+----------------------------------------------------------------------
+流水线（端到端）                        0.5459    0.2892    0.0566
+流水线（类型金标上界）                     0.5467    0.2896    0.0567
+======================================================================
+总耗时 235s，延迟 25.96 ms/句

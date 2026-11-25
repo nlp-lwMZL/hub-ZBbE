@@ -1,0 +1,3 @@
+Epoch 1/1 | train_loss=0.3848 val_loss=0.3307 | 12s（6.15s/step）
+  ✓ LoRA adapter已保存 → outputs\llm\ckpt_probe3\sft_adapter
+  已达 --max_steps=2，结束
