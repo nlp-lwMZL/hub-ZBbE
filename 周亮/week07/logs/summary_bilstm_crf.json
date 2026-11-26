@@ -1,0 +1,108 @@
+{
+  "run_name": "bilstm_crf",
+  "method": "BiLSTM+crf",
+  "best_epoch": 5,
+  "best_val_entity_f1": 0.20994475138121546,
+  "val_metrics": {
+    "num_samples": 309,
+    "gold_entities": 367,
+    "pred_entities": 195,
+    "precision": 0.2923,
+    "recall": 0.1553,
+    "f1": 0.2028,
+    "type_macro_f1": 0.1717,
+    "per_type": {
+      "Attacker": {
+        "precision": 0.4068,
+        "recall": 0.2376,
+        "f1": 0.3,
+        "support": 101
+      },
+      "Campaign": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      },
+      "Industry": {
+        "precision": 0.3714,
+        "recall": 0.1605,
+        "f1": 0.2241,
+        "support": 81
+      },
+      "Region": {
+        "precision": 0.3455,
+        "recall": 0.3016,
+        "f1": 0.322,
+        "support": 63
+      },
+      "Tools": {
+        "precision": 0.0217,
+        "recall": 0.0088,
+        "f1": 0.0125,
+        "support": 114
+      }
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.849989,
+      "val_loss": 0.323758,
+      "val_entity_f1": 0.0,
+      "timestamp": "2026-11-23T05:00:17"
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.270577,
+      "val_loss": 0.24829,
+      "val_entity_f1": 0.004819,
+      "timestamp": "2026-11-23T05:00:44"
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.210747,
+      "val_loss": 0.203769,
+      "val_entity_f1": 0.088421,
+      "timestamp": "2026-11-23T05:01:10"
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.17743,
+      "val_loss": 0.185347,
+      "val_entity_f1": 0.180039,
+      "timestamp": "2026-11-23T05:01:36"
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.16127,
+      "val_loss": 0.174305,
+      "val_entity_f1": 0.209945,
+      "timestamp": "2026-11-23T05:02:02"
+    }
+  ],
+  "checkpoint": "/content/drive/MyDrive/week7_runs/checkpoints/bilstm_crf.pt",
+  "pred_path": "/content/drive/MyDrive/week7_runs/outputs/preds/bilstm_crf_val.jsonl",
+  "args": {
+    "decoder": "crf",
+    "run_name": "bilstm_crf",
+    "emb_dim": 128,
+    "hidden": 256,
+    "num_layers": 1,
+    "dropout": 0.3,
+    "max_length": 256,
+    "epochs": 5,
+    "batch_size": 32,
+    "eval_batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "max_grad_norm": 5.0,
+    "inner_val": 0.1,
+    "seed": 42,
+    "device": "auto",
+    "max_steps": 0,
+    "eval_max_batches": 0,
+    "num_train": 0
+  },
+  "finished": "2026-11-23T05:02:04"
+}
