@@ -1,0 +1,63 @@
+{
+  "method": "local_zero_n60",
+  "argv": [
+    "llm_zero_shot/llm_extract.py",
+    "--backend",
+    "local",
+    "--mode",
+    "zero",
+    "--n",
+    "60",
+    "--gen_batch",
+    "8",
+    "--tag",
+    "local_zero_n60"
+  ],
+  "args": "Namespace(backend='local', mode='zero', n=60, seed=42, data=None, tag='local_zero_n60', out='', model='deepseek-v4-flash', model_path=None, max_tokens=512, max_new_tokens=384, gen_batch=8, dtype='auto', max_length=1280, retries=3, dry_run=False, print_prompt=False, no_eval=False, from_raw='')",
+  "env": {
+    "python": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "time": "2026-11-18 20:51:11",
+    "torch": "2.6.0+cu126",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "transformers": "5.5.3"
+  },
+  "runtime_s": 491.45,
+  "metrics": {
+    "trigger": 0.4068,
+    "argument": 0.1167,
+    "event_exact": 0.0
+  },
+  "type_macro_f1": 0.3817,
+  "report": {
+    "tag": "local_zero_n60",
+    "backend": "local",
+    "mode": "zero",
+    "n": 60,
+    "model": "None",
+    "seed": 42,
+    "few_shot_examples": 0,
+    "json_valid_rate": 96.67,
+    "parse_fail": 2,
+    "empty_reply": 0,
+    "repaired": 18,
+    "noise_stripped": 4,
+    "type_invalid": 6,
+    "role_invalid": 26,
+    "trigger_not_in_source": 6,
+    "arg_not_in_source": 11,
+    "latency_mean_s": 7.922,
+    "latency_p50_s": 4.995,
+    "total_s": 475.9,
+    "prompt_tokens": 52979,
+    "completion_tokens": 12400,
+    "total_tokens": 65379,
+    "api_errors": 0,
+    "pred_path": "outputs/llm\\pred_local_zero_n60.jsonl",
+    "gold_subset": "outputs/llm\\gold_n60.jsonl",
+    "eval_ids": "outputs/llm\\eval_ids.json",
+    "is_mock": false
+  },
+  "notes": "LLM local/zero 事件抽取"
+}

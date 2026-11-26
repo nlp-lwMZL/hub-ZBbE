@@ -1,0 +1,73 @@
+{
+  "method": "llm_lora",
+  "argv": [
+    "llm_lora/train_sft.py",
+    "--epochs",
+    "1",
+    "--num_train",
+    "3500",
+    "--batch_size",
+    "3",
+    "--grad_accum",
+    "5",
+    "--max_length",
+    "1280",
+    "--grad_ckpt",
+    "--dtype",
+    "bf16",
+    "--log_every",
+    "50",
+    "--run_name",
+    "llm_lora"
+  ],
+  "args": {
+    "model_path": "pretrain_models/Qwen3-0.6B",
+    "data_dir": "data/processed",
+    "output_dir": "outputs/llm\\ckpt",
+    "num_train": 3500,
+    "epochs": 1,
+    "batch_size": 3,
+    "grad_accum": 5,
+    "lr": 0.0002,
+    "max_length": 1280,
+    "full_ft": false,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "dtype": "bf16",
+    "grad_ckpt": true,
+    "seed": 42,
+    "log_every": 50,
+    "run_name": "llm_lora",
+    "max_steps": 0,
+    "val_size": 200,
+    "std_logits": false
+  },
+  "env": {
+    "python": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "time": "2026-11-18 20:22:44",
+    "torch": "2.6.0+cu126",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "transformers": "5.5.3"
+  },
+  "params": 2293760,
+  "log_every": 50,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.1001,
+      "val_loss": 0.0742,
+      "elapsed_s": 2297.6,
+      "optimizer_steps": 233
+    }
+  ],
+  "total_elapsed_s": 2326.8,
+  "finished": true,
+  "optimizer_steps": 233,
+  "best_val_loss": 0.0742,
+  "peak_gpu_mb": 4097.0,
+  "notes": "LoRA SFT（Qwen3-0.6B 生成式链路）",
+  "epochs_source": "merged from outputs/llm/ckpt/train_log_sft.json (同一次运行的 history；脚本自带日志)"
+}

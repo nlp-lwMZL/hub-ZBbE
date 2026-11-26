@@ -1,0 +1,45 @@
+{
+  "mode": "lora",
+  "args": {
+    "model_path": "D:/workspace/nlp_study/pretrain_models/Qwen2-0.5B",
+    "data_dir": "D:\\workspace\\nlp_study\\徐鹏\\week07\\data\\processed",
+    "output_dir": "outputs/llm/ckpt_qwen2",
+    "num_train": 3500,
+    "epochs": 1,
+    "batch_size": 3,
+    "grad_accum": 5,
+    "lr": 0.0002,
+    "max_length": 1280,
+    "full_ft": false,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "dtype": "bf16",
+    "grad_ckpt": true,
+    "seed": 42,
+    "log_every": 50,
+    "run_name": "qwen2_lora",
+    "max_steps": 0,
+    "val_size": 200,
+    "std_logits": false
+  },
+  "num_train": 3499,
+  "num_val": 200,
+  "prompt_truncated": 1,
+  "target_truncated": 8,
+  "optimizer_steps": 233,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.1308,
+      "val_loss": 0.0924,
+      "elapsed_s": 768.0,
+      "optimizer_steps": 233
+    }
+  ],
+  "best_val_loss": 0.0924,
+  "total_train_s": 782.9,
+  "trainable_params": 1081344,
+  "all_params": 495114112,
+  "gpu_peak_mem_gib": 3.74
+}

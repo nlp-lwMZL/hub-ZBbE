@@ -1,0 +1,10 @@
+加载 bert_crf_256.pt（epoch 3，内层验证 spanF1=0.6409，解码器=crf）
+样本数 930（缺预测 0 条）
+  trigger      P=0.8531 R=0.8118 F1=0.8320 (tp=755 fp=130 fn=175)
+  argument     P=0.5414 R=0.6281 F1=0.5815 (tp=2589 fp=2193 fn=1533)
+  event_exact  P=0.1740 R=0.1656 F1=0.1697 (tp=154 fp=731 fn=776)
+  type_macro_f1 = 0.7741
+  n200 子集：trigger F1=0.8278 arg F1=0.5672 → bert_crf_256_eval_n200.json
+  指标已写入 → outputs/metrics\disc\bert_crf_256_eval.json
+
+非法统计（dev）：含非法序列 581 条（62.5%），非法转移 1242 处 / 非法开头 0 处

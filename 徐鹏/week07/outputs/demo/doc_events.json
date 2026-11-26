@@ -1,0 +1,503 @@
+[
+  {
+    "doc_id": "8874c4a7816f9f95ecbf5d8c4a0f2ab7",
+    "title": "天舟文化：袁雄贵及一致行动人部分股权解除质押及再质押",
+    "events": [
+      {
+        "type": "解除质押",
+        "trigger": {
+          "text": "解除质押",
+          "start": 42,
+          "end": 46
+        },
+        "args": [
+          {
+            "role": "质押物所属公司",
+            "text": "天舟文化",
+            "start": 4,
+            "end": 8,
+            "source": "model"
+          },
+          {
+            "role": "质押方",
+            "text": "袁雄贵",
+            "start": 29,
+            "end": 32,
+            "source": "model"
+          },
+          {
+            "role": "质押物",
+            "text": "股",
+            "start": 40,
+            "end": 41,
+            "source": "model"
+          },
+          {
+            "role": "披露时间",
+            "text": "9月30日",
+            "start": 64,
+            "end": 69,
+            "source": "model"
+          },
+          {
+            "role": "质押方",
+            "text": "樟树市悦玩投资管理中心(有限合伙)",
+            "start": 109,
+            "end": 126,
+            "source": "model"
+          },
+          {
+            "role": "质押股票/股份数量",
+            "text": "300万",
+            "start": 173,
+            "end": 177,
+            "source": "model"
+          },
+          {
+            "role": "质押股票/股份数量",
+            "text": "约3218.29万",
+            "start": 196,
+            "end": 205,
+            "source": "model"
+          }
+        ],
+        "sent_idx": 0,
+        "confidence": 0.9711
+      },
+      {
+        "type": "质押",
+        "trigger": {
+          "text": "质押",
+          "start": 250,
+          "end": 252
+        },
+        "args": [
+          {
+            "role": "事件时间",
+            "text": "截止目前",
+            "start": 208,
+            "end": 212,
+            "source": "model"
+          },
+          {
+            "role": "质押方",
+            "text": "袁雄贵",
+            "start": 213,
+            "end": 216,
+            "source": "model"
+          },
+          {
+            "role": "质押物",
+            "text": "股份",
+            "start": 220,
+            "end": 222,
+            "source": "model"
+          },
+          {
+            "role": "质押股票/股份数量",
+            "text": "约4239.59万",
+            "start": 265,
+            "end": 274,
+            "source": "model"
+          },
+          {
+            "role": "质押物占持股比",
+            "text": "76.76%",
+            "start": 287,
+            "end": 293,
+            "source": "model"
+          },
+          {
+            "role": "质押物占总股比",
+            "text": "5.02%",
+            "start": 301,
+            "end": 306,
+            "source": "model"
+          }
+        ],
+        "sent_idx": 1,
+        "confidence": 0.976
+      },
+      {
+        "type": "质押",
+        "trigger": {
+          "text": "质押",
+          "start": 350,
+          "end": 352
+        },
+        "args": [
+          {
+            "role": "质押方",
+            "text": "樟树悦玩",
+            "start": 313,
+            "end": 317,
+            "source": "model"
+          },
+          {
+            "role": "质押物",
+            "text": "股份",
+            "start": 321,
+            "end": 323,
+            "source": "model"
+          },
+          {
+            "role": "质押方",
+            "text": "袁雄贵",
+            "start": 366,
+            "end": 369,
+            "source": "model"
+          },
+          {
+            "role": "质押股票/股份数量",
+            "text": "约4239.59万",
+            "start": 441,
+            "end": 450,
+            "source": "model"
+          },
+          {
+            "role": "质押物占持股比",
+            "text": "68.14%",
+            "start": 465,
+            "end": 471,
+            "source": "model"
+          },
+          {
+            "role": "质押物占总股比",
+            "text": "5.02%",
+            "start": 479,
+            "end": 484,
+            "source": "model"
+          }
+        ],
+        "sent_idx": 2,
+        "confidence": 0.9647
+      }
+    ],
+    "needs_review": false
+  },
+  {
+    "doc_id": "0cd99e819fc82a05647370527a03d5b0",
+    "title": "恒大再以4873万港元回购308.4万股股份 5月累计回购约6.6亿港元",
+    "events": [
+      {
+        "type": "股份回购",
+        "trigger": {
+          "text": "回购",
+          "start": 133,
+          "end": 135
+        },
+        "args": [
+          {
+            "role": "交易金额",
+            "text": "4873万港元",
+            "start": 126,
+            "end": 133,
+            "source": "model"
+          },
+          {
+            "role": "回购股份数量",
+            "text": "308.4万",
+            "start": 135,
+            "end": 141,
+            "source": "model"
+          },
+          {
+            "role": "交易金额",
+            "text": "约6.6亿港元",
+            "start": 151,
+            "end": 158,
+            "source": "model"
+          },
+          {
+            "role": "每股交易价格",
+            "text": "6.6亿港元",
+            "start": 152,
+            "end": 158,
+            "source": "regex"
+          },
+          {
+            "role": "占公司总股本比例",
+            "text": "0.11%",
+            "start": 182,
+            "end": 187,
+            "source": "regex"
+          }
+        ],
+        "sent_idx": 1,
+        "confidence": 0.9781
+      },
+      {
+        "type": "股份回购",
+        "trigger": {
+          "text": "回购",
+          "start": 205,
+          "end": 207
+        },
+        "args": [
+          {
+            "role": "回购方",
+            "text": "恒大",
+            "start": 194,
+            "end": 196,
+            "source": "model"
+          },
+          {
+            "role": "交易金额",
+            "text": "4873万港元",
+            "start": 198,
+            "end": 205,
+            "source": "model"
+          },
+          {
+            "role": "回购股份数量",
+            "text": "308.4万",
+            "start": 207,
+            "end": 213,
+            "source": "model"
+          },
+          {
+            "role": "交易金额",
+            "text": "约6.6亿港元",
+            "start": 223,
+            "end": 230,
+            "source": "model"
+          },
+          {
+            "role": "披露时间",
+            "text": "5月15日",
+            "start": 231,
+            "end": 236,
+            "source": "model"
+          },
+          {
+            "role": "回购方",
+            "text": "中国恒大集团",
+            "start": 237,
+            "end": 243,
+            "source": "model"
+          },
+          {
+            "role": "每股交易价格",
+            "text": "15.72港元",
+            "start": 255,
+            "end": 262,
+            "source": "model"
+          },
+          {
+            "role": "每股交易价格",
+            "text": "15.9港元",
+            "start": 265,
+            "end": 271,
+            "source": "model"
+          },
+          {
+            "role": "交易金额",
+            "text": "4872.64万港元",
+            "start": 295,
+            "end": 305,
+            "source": "model"
+          }
+        ],
+        "sent_idx": 2,
+        "confidence": 0.9791
+      },
+      {
+        "type": "股份回购",
+        "trigger": {
+          "text": "回购",
+          "start": 330,
+          "end": 332
+        },
+        "args": [
+          {
+            "role": "回购方",
+            "text": "中国恒大",
+            "start": 320,
+            "end": 324,
+            "source": "model"
+          },
+          {
+            "role": "披露时间",
+            "text": "近日",
+            "start": 324,
+            "end": 326,
+            "source": "model"
+          },
+          {
+            "role": "回购完成时间",
+            "text": "5月14日",
+            "start": 338,
+            "end": 343,
+            "source": "model"
+          },
+          {
+            "role": "回购股份数量",
+            "text": "1506.4万",
+            "start": 347,
+            "end": 354,
+            "source": "model"
+          },
+          {
+            "role": "每股交易价格",
+            "text": "15.08港元至15.66港元",
+            "start": 360,
+            "end": 375,
+            "source": "model"
+          },
+          {
+            "role": "交易金额",
+            "text": "2.33亿港元",
+            "start": 378,
+            "end": 385,
+            "source": "model"
+          }
+        ],
+        "sent_idx": 3,
+        "confidence": 0.9901
+      },
+      {
+        "type": "股份回购",
+        "trigger": {
+          "text": "回购",
+          "start": 395,
+          "end": 397
+        },
+        "args": [
+          {
+            "role": "回购完成时间",
+            "text": "5月13日",
+            "start": 390,
+            "end": 395,
+            "source": "model"
+          },
+          {
+            "role": "回购股份数量",
+            "text": "约1009.9万",
+            "start": 398,
+            "end": 406,
+            "source": "model"
+          },
+          {
+            "role": "每股交易价格",
+            "text": "14.84至15.48港元",
+            "start": 415,
+            "end": 428,
+            "source": "model"
+          },
+          {
+            "role": "交易金额",
+            "text": "约1.54亿港元",
+            "start": 432,
+            "end": 440,
+            "source": "model"
+          },
+          {
+            "role": "回购完成时间",
+            "text": "5",
+            "start": 442,
+            "end": 443,
+            "source": "model"
+          },
+          {
+            "role": "交易金额",
+            "text": "约3754.43万港元",
+            "start": 450,
+            "end": 461,
+            "source": "model"
+          },
+          {
+            "role": "披露时间",
+            "text": "5月12日",
+            "start": 442,
+            "end": 447,
+            "source": "regex"
+          }
+        ],
+        "sent_idx": 4,
+        "confidence": 0.9748
+      },
+      {
+        "type": "股份回购",
+        "trigger": {
+          "text": "回购",
+          "start": 500,
+          "end": 502
+        },
+        "args": [
+          {
+            "role": "回购完成时间",
+            "text": "5月7日",
+            "start": 479,
+            "end": 483,
+            "source": "model"
+          },
+          {
+            "role": "回购方",
+            "text": "中国恒大",
+            "start": 484,
+            "end": 488,
+            "source": "model"
+          },
+          {
+            "role": "交易金额",
+            "text": "2918.5万港元",
+            "start": 490,
+            "end": 499,
+            "source": "model"
+          },
+          {
+            "role": "回购股份数量",
+            "text": "202.8万",
+            "start": 503,
+            "end": 509,
+            "source": "model"
+          },
+          {
+            "role": "回购完成时间",
+            "text": "5月4日至5日",
+            "start": 512,
+            "end": 519,
+            "source": "model"
+          },
+          {
+            "role": "回购股份数量",
+            "text": "1181.2万",
+            "start": 525,
+            "end": 532,
+            "source": "model"
+          },
+          {
+            "role": "交易金额",
+            "text": "约1.58亿港元",
+            "start": 539,
+            "end": 547,
+            "source": "model"
+          },
+          {
+            "role": "每股交易价格",
+            "text": "1.58亿港元",
+            "start": 540,
+            "end": 547,
+            "source": "regex"
+          },
+          {
+            "role": "披露时间",
+            "text": "5月4日",
+            "start": 512,
+            "end": 516,
+            "source": "regex"
+          }
+        ],
+        "sent_idx": 5,
+        "confidence": 0.9758
+      }
+    ],
+    "needs_review": true
+  },
+  {
+    "doc_id": "10be7f956da35f15fa4a9ad2a4556960",
+    "title": "北京市监局约谈美团、饿了么等6家网络平台，严禁销售长江禁捕水域水产品",
+    "events": [],
+    "needs_review": true
+  }
+]

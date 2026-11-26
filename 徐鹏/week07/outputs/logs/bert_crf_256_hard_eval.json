@@ -1,0 +1,34 @@
+{
+  "method": "bert_crf_256_hard",
+  "argv": [
+    "bert/evaluate_hard_constraint.py"
+  ],
+  "args": "Namespace(ckpt='', run_name='bert_crf_256_hard', soft_json='bert_crf_256', device='')",
+  "env": {
+    "python": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "time": "2026-11-18 21:00:24",
+    "torch": "2.6.0+cu126",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "transformers": "5.5.3"
+  },
+  "runtime_s": 38.49,
+  "metrics": {
+    "trigger": 0.8464,
+    "argument": 0.6566,
+    "event_exact": 0.2177
+  },
+  "illegal_dev": {
+    "illegal_start": 0,
+    "illegal_transition": 155,
+    "total_seqs": 930,
+    "illegal_seqs": 69,
+    "total_illegal": 155,
+    "illegal_seq_rate": 0.0742,
+    "illegal_per_seq": 0.167
+  },
+  "ckpt": "outputs/checkpoints/bert_crf_256.pt",
+  "constraint_note": "解码期硬约束（token 级非法归零）",
+  "notes": "纯评测：从 checkpoint 复评 dev（不训练）"
+}

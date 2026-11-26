@@ -1,0 +1,30 @@
+  epoch 1 step 50/162 loss=2.6494
+  epoch 1 step 100/162 loss=1.7993
+  epoch 1 step 150/162 loss=1.4052
+epoch 1/3 | train_loss=1.3387 | inner_loss=0.4394 inner_spanF1=0.3989 | dev_spanF1(监控)=0.4169 | 189s
+  ★ 内层验证最优 → 保存 bert_linear_256.pt
+  epoch 2 step 50/162 loss=0.4077
+  epoch 2 step 100/162 loss=0.3754
+  epoch 2 step 150/162 loss=0.3520
+epoch 2/3 | train_loss=0.3482 | inner_loss=0.2668 inner_spanF1=0.6015 | dev_spanF1(监控)=0.6034 | 219s
+  ★ 内层验证最优 → 保存 bert_linear_256.pt
+  epoch 3 step 50/162 loss=0.2639
+  epoch 3 step 100/162 loss=0.2575
+  epoch 3 step 150/162 loss=0.2502
+epoch 3/3 | train_loss=0.2498 | inner_loss=0.2426 inner_spanF1=0.6311 | dev_spanF1(监控)=0.6432 | 220s
+  ★ 内层验证最优 → 保存 bert_linear_256.pt
+加载最优 checkpoint（epoch 3，内层验证 spanF1=0.6311）
+dev 解码：930 句，其中没抽到触发词 44 句
+样本数 930（缺预测 0 条）
+  trigger      P=0.8499 R=0.8097 F1=0.8293 (tp=753 fp=133 fn=177)
+  argument     P=0.5153 R=0.6203 F1=0.5630 (tp=2557 fp=2405 fn=1565)
+  event_exact  P=0.1603 R=0.1527 F1=0.1564 (tp=142 fp=744 fn=788)
+  type_macro_f1 = 0.7654
+  n200 子集：trigger F1=0.8123 arg F1=0.5598 → bert_linear_256_n200.json
+  指标已写入 → outputs/metrics\disc\bert_linear_256.json
+
+【非法 BIO 统计（dev，模型原始输出）】
+  序列数 930：含非法序列 622 条（66.9%），其中非法开头 0 处、非法转移 1520 处
+  训练集对照：含非法序列 3487 条（67.4%）
+
+训练耗时 637s | 推理延迟 11.26 ms/句 | 峰值显存 1842 MiB

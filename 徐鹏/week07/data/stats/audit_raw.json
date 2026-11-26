@@ -1,0 +1,32 @@
+{
+  "train": {
+    "n_events": 9440,
+    "n_spans": 52863,
+    "n_span_with_index": 52395,
+    "n_span_index_consistent": 52395,
+    "n_span_index_differs_from_first_find": 0,
+    "n_span_without_index": 468,
+    "n_no_index_recoverable_by_find": 32,
+    "n_no_index_not_in_sentence": 436,
+    "n_spans_string_ambiguous": 18123,
+    "no_index_by_role": {
+      "环节": 468
+    },
+    "diff_examples": []
+  },
+  "dev": {
+    "n_events": 1523,
+    "n_spans": 8629,
+    "n_span_with_index": 8554,
+    "n_span_index_consistent": 8554,
+    "n_span_index_differs_from_first_find": 0,
+    "n_span_without_index": 75,
+    "n_no_index_recoverable_by_find": 2,
+    "n_no_index_not_in_sentence": 73,
+    "n_spans_string_ambiguous": 2920,
+    "no_index_by_role": {
+      "环节": 75
+    },
+    "diff_examples": []
+  }
+}

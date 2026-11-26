@@ -1,0 +1,39 @@
+{
+  "method": "bert_crf_256_eval",
+  "argv": [
+    "bert/evaluate.py",
+    "--ckpt",
+    "outputs/checkpoints/bert_crf_256.pt",
+    "--run_name",
+    "bert_crf_256_eval"
+  ],
+  "args": "Namespace(ckpt='outputs/checkpoints/bert_crf_256.pt', run_name='bert_crf_256_eval', data_dir='', split='dev', batch_size=32, train_sample=0, device='')",
+  "env": {
+    "python": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "time": "2026-11-18 20:52:53",
+    "torch": "2.6.0+cu126",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "transformers": "5.5.3"
+  },
+  "runtime_s": 37.7,
+  "metrics": {
+    "trigger": 0.832,
+    "argument": 0.5815,
+    "event_exact": 0.1697
+  },
+  "type_macro_f1": 0.7741,
+  "illegal_dev": {
+    "illegal_start": 0,
+    "illegal_transition": 1242,
+    "total_seqs": 930,
+    "illegal_seqs": 581,
+    "total_illegal": 1242,
+    "illegal_seq_rate": 0.6247,
+    "illegal_per_seq": 1.335
+  },
+  "inference_latency_ms": 39.31,
+  "ckpt": "outputs/checkpoints/bert_crf_256.pt",
+  "notes": "纯评测：从 checkpoint 复评 dev（不训练）"
+}
