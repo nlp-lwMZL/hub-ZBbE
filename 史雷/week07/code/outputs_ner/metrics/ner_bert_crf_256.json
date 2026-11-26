@@ -1,0 +1,53 @@
+{
+  "run_name": "ner_bert_crf_256",
+  "decoder": "crf",
+  "bert_layers": "full",
+  "max_len": 256,
+  "epochs": 10,
+  "lr": 2e-05,
+  "batch_size": 16,
+  "best_epoch": 9,
+  "dev_f1": 0.782,
+  "test": {
+    "overall": {
+      "precision": 0.761,
+      "recall": 0.8041,
+      "f1": 0.782,
+      "support": 194
+    },
+    "by_type": {
+      "人物": {
+        "precision": 0.9273,
+        "recall": 0.8793,
+        "f1": 0.9027,
+        "support": 58
+      },
+      "地理位置": {
+        "precision": 0.7901,
+        "recall": 0.7619,
+        "f1": 0.7758,
+        "support": 84
+      },
+      "组织机构": {
+        "precision": 0.5942,
+        "recall": 0.7885,
+        "f1": 0.6777,
+        "support": 52
+      }
+    }
+  },
+  "illegal_test": {
+    "illegal_start": 0,
+    "illegal_transition": 13,
+    "total_seqs": 100,
+    "illegal_seqs": 11,
+    "total_illegal": 13,
+    "illegal_seq_rate": 0.11,
+    "illegal_per_seq": 0.13
+  },
+  "params_m": 102.3,
+  "train_s": 222.0,
+  "ms_per_sentence": 16.74,
+  "seed": 42,
+  "selection_note": "按 dev.csv 选 epoch；test.csv 只用于最终评测"
+}
