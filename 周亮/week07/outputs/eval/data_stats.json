@@ -1,0 +1,243 @@
+{
+  "data_dir": "/Users/zhouliang/Downloads/badou/nlp/homework/week7/code/data/cdtier/clean",
+  "splits": {
+    "train": {
+      "sentences": 3091,
+      "total_tokens": 312352,
+      "total_entities": 3738,
+      "entity_types": {
+        "Attacker": 1156,
+        "Tools": 963,
+        "Region": 891,
+        "Industry": 650,
+        "Campaign": 78
+      },
+      "sent_len": {
+        "p50": 66,
+        "p90": 183,
+        "p95": 276,
+        "p99": 694,
+        "max": 2232,
+        "min": 1
+      },
+      "ent_len_by_type": {
+        "Attacker": {
+          "n": 1156,
+          "mean": 5.81,
+          "median": 5,
+          "max": 25
+        },
+        "Campaign": {
+          "n": 78,
+          "mean": 5.79,
+          "median": 4,
+          "max": 17
+        },
+        "Industry": {
+          "n": 650,
+          "mean": 3.58,
+          "median": 3,
+          "max": 39
+        },
+        "Region": {
+          "n": 891,
+          "mean": 2.88,
+          "median": 2,
+          "max": 9
+        },
+        "Tools": {
+          "n": 963,
+          "mean": 7.16,
+          "median": 7,
+          "max": 26
+        }
+      },
+      "truncation": {
+        "256": {
+          "n": 175,
+          "rate": 0.0566
+        },
+        "384": {
+          "n": 98,
+          "rate": 0.0317
+        },
+        "512": {
+          "n": 62,
+          "rate": 0.0201
+        }
+      },
+      "dup_groups": {
+        "1": 2877,
+        "2": 194,
+        "6": 1,
+        "7": 2,
+        "3": 12,
+        "4": 4,
+        "5": 1
+      },
+      "original_split": {
+        "train": 2701,
+        "validation": 301,
+        "test": 89
+      }
+    },
+    "validation": {
+      "sentences": 387,
+      "total_tokens": 40793,
+      "total_entities": 443,
+      "entity_types": {
+        "Tools": 135,
+        "Attacker": 132,
+        "Region": 102,
+        "Industry": 66,
+        "Campaign": 8
+      },
+      "sent_len": {
+        "p50": 69,
+        "p90": 187,
+        "p95": 284,
+        "p99": 738,
+        "max": 2857,
+        "min": 2
+      },
+      "ent_len_by_type": {
+        "Attacker": {
+          "n": 132,
+          "mean": 5.55,
+          "median": 5,
+          "max": 15
+        },
+        "Campaign": {
+          "n": 8,
+          "mean": 4.75,
+          "median": 3,
+          "max": 10
+        },
+        "Industry": {
+          "n": 66,
+          "mean": 3.38,
+          "median": 3,
+          "max": 11
+        },
+        "Region": {
+          "n": 102,
+          "mean": 3.18,
+          "median": 3,
+          "max": 16
+        },
+        "Tools": {
+          "n": 135,
+          "mean": 7.39,
+          "median": 7,
+          "max": 26
+        }
+      },
+      "truncation": {
+        "256": {
+          "n": 22,
+          "rate": 0.0568
+        },
+        "384": {
+          "n": 12,
+          "rate": 0.031
+        },
+        "512": {
+          "n": 7,
+          "rate": 0.0181
+        }
+      },
+      "dup_groups": {
+        "1": 357,
+        "2": 28,
+        "3": 2
+      },
+      "original_split": {
+        "train": 347,
+        "validation": 35,
+        "test": 5
+      }
+    },
+    "test": {
+      "sentences": 387,
+      "total_tokens": 37720,
+      "total_entities": 432,
+      "entity_types": {
+        "Tools": 133,
+        "Attacker": 129,
+        "Region": 95,
+        "Industry": 67,
+        "Campaign": 8
+      },
+      "sent_len": {
+        "p50": 64,
+        "p90": 186,
+        "p95": 280,
+        "p99": 764,
+        "max": 1257,
+        "min": 6
+      },
+      "ent_len_by_type": {
+        "Attacker": {
+          "n": 129,
+          "mean": 5.67,
+          "median": 5,
+          "max": 16
+        },
+        "Campaign": {
+          "n": 8,
+          "mean": 5.75,
+          "median": 4,
+          "max": 11
+        },
+        "Industry": {
+          "n": 67,
+          "mean": 4.27,
+          "median": 4,
+          "max": 39
+        },
+        "Region": {
+          "n": 95,
+          "mean": 2.82,
+          "median": 2,
+          "max": 6
+        },
+        "Tools": {
+          "n": 133,
+          "mean": 6.3,
+          "median": 6,
+          "max": 14
+        }
+      },
+      "truncation": {
+        "256": {
+          "n": 22,
+          "rate": 0.0568
+        },
+        "384": {
+          "n": 11,
+          "rate": 0.0284
+        },
+        "512": {
+          "n": 8,
+          "rate": 0.0207
+        }
+      },
+      "dup_groups": {
+        "1": 362,
+        "2": 23,
+        "3": 2
+      },
+      "original_split": {
+        "train": 340,
+        "validation": 35,
+        "test": 12
+      }
+    }
+  },
+  "split_text_overlap": {
+    "train-validation": 0,
+    "train-test": 0,
+    "validation-test": 0
+  },
+  "imbalance_ratio_train": 14.82
+}

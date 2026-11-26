@@ -1,0 +1,61 @@
+{
+  "run_name": "qwen_lora_sft",
+  "method": "Qwen3-0.6B LoRA SFT",
+  "split": "test",
+  "num_samples": 387,
+  "metrics": {
+    "num_samples": 387,
+    "gold_entities": 432,
+    "pred_entities": 324,
+    "precision": 0.716,
+    "recall": 0.537,
+    "f1": 0.6138,
+    "type_macro_f1": 0.5627,
+    "per_type": {
+      "Attacker": {
+        "precision": 0.9175,
+        "recall": 0.6899,
+        "f1": 0.7876,
+        "support": 129
+      },
+      "Campaign": {
+        "precision": 0.4286,
+        "recall": 0.375,
+        "f1": 0.4,
+        "support": 8
+      },
+      "Industry": {
+        "precision": 0.4928,
+        "recall": 0.5075,
+        "f1": 0.5,
+        "support": 67
+      },
+      "Region": {
+        "precision": 0.7333,
+        "recall": 0.6947,
+        "f1": 0.7135,
+        "support": 95
+      },
+      "Tools": {
+        "precision": 0.6557,
+        "recall": 0.3008,
+        "f1": 0.4124,
+        "support": 133
+      }
+    }
+  },
+  "engineering": {
+    "json_valid": 383,
+    "repaired": 0,
+    "noise_stripped": 0,
+    "illegal_type": 0,
+    "text_not_found": 0,
+    "empty_or_no_json": 4,
+    "unrepairable": 0,
+    "avg_latency_s": 0.633,
+    "avg_gen_tokens": 65.6
+  },
+  "ckpt": "/content/drive/MyDrive/week7_runs/checkpoints/qwen_lora_sft/adapter",
+  "mode": "LoRA",
+  "pred_path": "/content/drive/MyDrive/week7_runs/outputs/preds/qwen_lora_sft_test.jsonl"
+}

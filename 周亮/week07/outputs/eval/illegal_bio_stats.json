@@ -1,0 +1,143 @@
+{
+  "split": "test",
+  "gold_floor": {
+    "illegal_start": 0,
+    "illegal_transition": 0,
+    "total_seqs": 387,
+    "illegal_seqs": 0,
+    "detail": {},
+    "total_illegal": 0,
+    "illegal_seq_rate": 0.0,
+    "illegal_per_seq": 0.0,
+    "gold_overlap_pairs": 0,
+    "note": "cdtier 平铺 NER，gold 无重叠论元 → 地板值应为 0；老师事件抽取因重叠论元投影，金标自带约 1.9% 非法（必须一起报，否则归因错误）"
+  },
+  "teacher_baseline": {
+    "linear_total_illegal": 1516,
+    "linear_illegal_seqs": 623,
+    "linear_per_seq": 1.63,
+    "crf_total_illegal": 1242,
+    "crf_illegal_seqs": 581,
+    "crf_per_seq": 1.34,
+    "reduction_pct": 18.1,
+    "total_seqs": 930,
+    "seq_rate_linear": 0.67,
+    "seq_rate_crf": 0.625,
+    "source": "老师 PPT P25 / outputs/metrics/disc/bert_linear_256.json + bert_crf_256.json"
+  },
+  "runs": {
+    "bilstm_linear": {
+      "label": "L1 BiLSTM+Linear",
+      "family": "bilstm",
+      "span_structural": {
+        "num_sentences": 387,
+        "num_nonempty_pred": 130,
+        "overlap_char_count": 0,
+        "overlap_span_pairs": 0,
+        "overlap_char_rate": 0.0,
+        "out_of_range_spans": 0,
+        "type_hallucination_spans": 0,
+        "note": "重叠 span = 同一字符被两个实体覆盖，在 BIO 单标签体系下不可能，是非法 BIO 在 span 层的等价表征；gold 中此类为 0（实测）。"
+      },
+      "illegal_bio": null,
+      "raw_tags_source": null,
+      "raw_tags_coverage": 0
+    },
+    "bilstm_crf": {
+      "label": "L1 BiLSTM+CRF",
+      "family": "bilstm",
+      "span_structural": {
+        "num_sentences": 387,
+        "num_nonempty_pred": 113,
+        "overlap_char_count": 0,
+        "overlap_span_pairs": 0,
+        "overlap_char_rate": 0.0,
+        "out_of_range_spans": 0,
+        "type_hallucination_spans": 0,
+        "note": "重叠 span = 同一字符被两个实体覆盖，在 BIO 单标签体系下不可能，是非法 BIO 在 span 层的等价表征；gold 中此类为 0（实测）。"
+      },
+      "illegal_bio": null,
+      "raw_tags_source": null,
+      "raw_tags_coverage": 0
+    },
+    "roberta_linear": {
+      "label": "L2 RoBERTa+Linear",
+      "family": "roberta",
+      "span_structural": {
+        "num_sentences": 387,
+        "num_nonempty_pred": 169,
+        "overlap_char_count": 0,
+        "overlap_span_pairs": 0,
+        "overlap_char_rate": 0.0,
+        "out_of_range_spans": 0,
+        "type_hallucination_spans": 0,
+        "note": "重叠 span = 同一字符被两个实体覆盖，在 BIO 单标签体系下不可能，是非法 BIO 在 span 层的等价表征；gold 中此类为 0（实测）。"
+      },
+      "illegal_bio": null,
+      "raw_tags_source": null,
+      "raw_tags_coverage": 0
+    },
+    "roberta_crf": {
+      "label": "L2 RoBERTa+CRF",
+      "family": "roberta",
+      "span_structural": {
+        "num_sentences": 387,
+        "num_nonempty_pred": 180,
+        "overlap_char_count": 0,
+        "overlap_span_pairs": 0,
+        "overlap_char_rate": 0.0,
+        "out_of_range_spans": 0,
+        "type_hallucination_spans": 0,
+        "note": "重叠 span = 同一字符被两个实体覆盖，在 BIO 单标签体系下不可能，是非法 BIO 在 span 层的等价表征；gold 中此类为 0（实测）。"
+      },
+      "illegal_bio": null,
+      "raw_tags_source": null,
+      "raw_tags_coverage": 0
+    },
+    "qwen_lora_sft": {
+      "label": "L4 Qwen3-LoRA-SFT",
+      "family": "sft",
+      "span_structural": {
+        "num_sentences": 387,
+        "num_nonempty_pred": 157,
+        "overlap_char_count": 236,
+        "overlap_span_pairs": 84,
+        "overlap_char_rate": 0.006257,
+        "out_of_range_spans": 0,
+        "type_hallucination_spans": 0,
+        "note": "重叠 span = 同一字符被两个实体覆盖，在 BIO 单标签体系下不可能，是非法 BIO 在 span 层的等价表征；gold 中此类为 0（实测）。"
+      },
+      "illegal_bio": null,
+      "raw_tags_source": null,
+      "raw_tags_coverage": 0
+    },
+    "qwen_full_sft": {
+      "label": "L4 Qwen3-full-SFT",
+      "family": "sft",
+      "span_structural": {
+        "num_sentences": 387,
+        "num_nonempty_pred": 165,
+        "overlap_char_count": 294,
+        "overlap_span_pairs": 151,
+        "overlap_char_rate": 0.007794,
+        "out_of_range_spans": 0,
+        "type_hallucination_spans": 0,
+        "note": "重叠 span = 同一字符被两个实体覆盖，在 BIO 单标签体系下不可能，是非法 BIO 在 span 层的等价表征；gold 中此类为 0（实测）。"
+      },
+      "illegal_bio": null,
+      "raw_tags_source": null,
+      "raw_tags_coverage": 0
+    }
+  },
+  "generated_at": "2026-11-25T12:37:33",
+  "comparisons": [
+    {
+      "pair": "L1 BiLSTM: Linear → CRF",
+      "status": "need_rawtags"
+    },
+    {
+      "pair": "L2 RoBERTa: Linear → CRF",
+      "status": "need_rawtags"
+    }
+  ]
+}
