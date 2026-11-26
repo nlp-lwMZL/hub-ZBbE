@@ -1,0 +1,3 @@
+{"epoch": 1, "train_loss": 0.378253, "val_loss": 0.139475, "val_entity_f1": 0.466586, "timestamp": "2026-11-23T05:11:57"}
+{"epoch": 2, "train_loss": 0.102067, "val_loss": 0.107064, "val_entity_f1": 0.535492, "timestamp": "2026-11-23T05:14:45"}
+{"epoch": 3, "train_loss": 0.067665, "val_loss": 0.105236, "val_entity_f1": 0.579674, "timestamp": "2026-11-23T05:17:37"}

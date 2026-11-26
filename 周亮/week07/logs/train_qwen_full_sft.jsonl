@@ -1,0 +1,3 @@
+{"epoch": 1, "avg_loss": 0.088095, "opt_steps": 384, "timestamp": "2026-11-23T13:40:21"}
+{"epoch": 2, "avg_loss": 0.033297, "opt_steps": 768, "timestamp": "2026-11-23T14:05:23"}
+{"epoch": 3, "avg_loss": 0.011794, "opt_steps": 1152, "timestamp": "2026-11-23T14:30:25"}

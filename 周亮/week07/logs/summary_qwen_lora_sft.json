@@ -1,0 +1,55 @@
+{
+  "run_name": "qwen_lora_sft",
+  "method": "Qwen3-0.6B LORA SFT",
+  "mode": "lora",
+  "ckpt_dir": "/content/drive/MyDrive/week7_runs/checkpoints/qwen_lora_sft/adapter",
+  "history": [
+    {
+      "epoch": 1,
+      "avg_loss": 0.107298,
+      "opt_steps": 384,
+      "timestamp": "2026-11-23T12:46:05"
+    },
+    {
+      "epoch": 2,
+      "avg_loss": 0.04665,
+      "opt_steps": 768,
+      "timestamp": "2026-11-23T12:56:31"
+    },
+    {
+      "epoch": 3,
+      "avg_loss": 0.02909,
+      "opt_steps": 1152,
+      "timestamp": "2026-11-23T13:07:02"
+    }
+  ],
+  "args": {
+    "mode": "lora",
+    "model_path": null,
+    "run_name": "qwen_lora_sft",
+    "max_length": 640,
+    "epochs": 3,
+    "batch_size": 1,
+    "grad_accum": 8,
+    "lr": 0.0002,
+    "weight_decay": 0.0,
+    "warmup_ratio": 0.03,
+    "max_grad_norm": 1.0,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "layer_decay": 0.95,
+    "embed_head_lr_mult": 1.0,
+    "optim": "adamw",
+    "dtype": "auto",
+    "grad_ckpt": false,
+    "num_train": 0,
+    "seed": 42,
+    "max_steps": 0,
+    "device": "auto"
+  },
+  "n_prompt_truncated": 18,
+  "n_target_truncated": 9,
+  "layer_decay": null,
+  "finished": "2026-11-23T13:07:02"
+}

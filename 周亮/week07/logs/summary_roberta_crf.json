@@ -1,0 +1,95 @@
+{
+  "run_name": "roberta_crf",
+  "method": "RoBERTa+crf",
+  "best_epoch": 3,
+  "best_val_entity_f1": 0.5796737766624843,
+  "val_metrics": {
+    "num_samples": 309,
+    "gold_entities": 367,
+    "pred_entities": 451,
+    "precision": 0.3991,
+    "recall": 0.4905,
+    "f1": 0.4401,
+    "type_macro_f1": 0.3751,
+    "per_type": {
+      "Attacker": {
+        "precision": 0.528,
+        "recall": 0.6535,
+        "f1": 0.5841,
+        "support": 101
+      },
+      "Campaign": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      },
+      "Industry": {
+        "precision": 0.375,
+        "recall": 0.4074,
+        "f1": 0.3905,
+        "support": 81
+      },
+      "Region": {
+        "precision": 0.5747,
+        "recall": 0.7937,
+        "f1": 0.6667,
+        "support": 63
+      },
+      "Tools": {
+        "precision": 0.2053,
+        "recall": 0.2719,
+        "f1": 0.234,
+        "support": 114
+      }
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.378253,
+      "val_loss": 0.139475,
+      "val_entity_f1": 0.466586,
+      "timestamp": "2026-11-23T05:11:57"
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.102067,
+      "val_loss": 0.107064,
+      "val_entity_f1": 0.535492,
+      "timestamp": "2026-11-23T05:14:45"
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.067665,
+      "val_loss": 0.105236,
+      "val_entity_f1": 0.579674,
+      "timestamp": "2026-11-23T05:17:37"
+    }
+  ],
+  "checkpoint": "/content/drive/MyDrive/week7_runs/checkpoints/roberta_crf.pt",
+  "pred_path": "/content/drive/MyDrive/week7_runs/outputs/preds/roberta_crf_val.jsonl",
+  "args": {
+    "decoder": "crf",
+    "bert_path": null,
+    "tokenizer": null,
+    "run_name": "roberta_crf",
+    "max_length": 256,
+    "dropout": 0.1,
+    "epochs": 3,
+    "batch_size": 16,
+    "eval_batch_size": 32,
+    "lr": 2e-05,
+    "head_lr_mult": 5.0,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0,
+    "inner_val": 0.1,
+    "seed": 42,
+    "device": "auto",
+    "max_steps": 0,
+    "eval_max_batches": 0,
+    "num_train": 0
+  },
+  "finished": "2026-11-23T05:17:45"
+}
