@@ -1,0 +1,35 @@
+{
+  "method": "rule",
+  "argv": [
+    "D:\\人工智能\\大模型AI课程\\八斗课程\\第七周 抽取任务\\week7-信息抽取\\code\\rule\\run_rule.py"
+  ],
+  "args": null,
+  "env": {
+    "python": "3.10.17",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "time": "2026-11-24 21:36:50",
+    "torch": "2.7.0+cu118",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060",
+    "transformers": "5.20.2"
+  },
+  "runtime_s": 3.95,
+  "metrics": {
+    "trigger": 0.6168,
+    "argument": 0.174,
+    "event_exact": 0.0161
+  },
+  "type_macro_f1": 0.8118,
+  "num_triggers": 99,
+  "num_company_dict": 3679,
+  "trigger_hit_rate": 0.9978,
+  "failure_counts": {
+    "wrong_trigger": 214,
+    "arg_spurious": 517,
+    "wrong_type": 141,
+    "exact": 15,
+    "arg_missing": 41,
+    "no_trigger": 2
+  },
+  "notes": "L0 规则基线（触发词词典 + 正则论元）"
+}

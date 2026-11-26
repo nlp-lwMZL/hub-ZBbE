@@ -1,0 +1,16 @@
+# Week 7「信息抽取（事件抽取）」教学项目依赖
+# 本机实测版本（2026-11，Windows + RTX 4060 Laptop 8GB）
+# 说明：以本机实际安装版本为准；不要为了装某个库去升降级（见 项目材料准备/CLAUDE.md §4.5）
+
+torch==2.6.0
+transformers==5.5.3
+peft>=0.14.0            # LoRA / PEFT；全量微调不需要也能跑（代码里是条件导入）
+accelerate>=1.0.0       # transformers 5.x 的 from_pretrained(device_map=...) 需要
+datasets>=3.0.0         # 本项目只用来读/写 jsonl 与可选的数据下载，不是硬依赖
+seqeval>=1.2.2          # 实体级 F1（项目里也自带一份 span 级实现，seqeval 用于交叉校验）
+scikit-learn>=1.3.0     # 规则/工具与指标辅助
+matplotlib>=3.8.0       # 出图（PPT 与文档用）
+tqdm>=4.66.0            # 进度条
+pandas>=2.0.0           # 数据探索
+numpy>=1.26.0           # 本机 Anaconda 自带 numpy 1.26.4（与 scipy/pyarrow 兼容）
+openai>=1.40.0          # L3 大模型 Prompt 走 OpenAI 兼容接口（DeepSeek 等）

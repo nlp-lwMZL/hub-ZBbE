@@ -1,0 +1,21 @@
+{
+  "tag": "sft_lora_n200",
+  "backend": "sft",
+  "ckpt_type": "lora",
+  "ckpt_dir": "outputs/llm\\ckpt\\sft_adapter",
+  "model_path": "pretrain_models/Qwen3-0.6B",
+  "n": 200,
+  "seed": 42,
+  "json_valid_rate": 100.0,
+  "parse_fail": 0,
+  "empty_reply": 0,
+  "repaired": 0,
+  "noise_stripped": 0,
+  "type_invalid": 2,
+  "role_invalid": 4,
+  "trigger_not_in_source": 4,
+  "arg_not_in_source": 4,
+  "latency_mean_s": 5.431,
+  "latency_p50_s": 5.417,
+  "total_s": 1087.5
+}

@@ -1,0 +1,21 @@
+{
+  "tag": "qwen2_lora_n200",
+  "backend": "sft",
+  "ckpt_type": "lora",
+  "ckpt_dir": "D:\\workspace\\nlp_study\\徐鹏\\week07\\outputs\\llm\\ckpt_qwen2\\sft_adapter",
+  "model_path": "D:\\workspace\\nlp_study\\pretrain_models\\Qwen2-0.5B",
+  "n": 200,
+  "seed": 42,
+  "json_valid_rate": 100.0,
+  "parse_fail": 0,
+  "empty_reply": 0,
+  "repaired": 0,
+  "noise_stripped": 0,
+  "type_invalid": 3,
+  "role_invalid": 9,
+  "trigger_not_in_source": 4,
+  "arg_not_in_source": 13,
+  "latency_mean_s": 0.653,
+  "latency_p50_s": 0.558,
+  "total_s": 130.8
+}

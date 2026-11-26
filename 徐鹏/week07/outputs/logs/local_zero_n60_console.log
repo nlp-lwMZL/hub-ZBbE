@@ -1,0 +1,28 @@
+数据：dev_extract.jsonl → 采样 60 条（seed=42，规则见 event_data.canonical_order）
+输出：outputs/llm\pred_local_zero_n60.jsonl
+[gpu] 当前显存占用 480 MiB（阈值 1500 MiB）
+[local] 设备=cuda 模型=pretrain_models/Qwen3-0.6B batch=8 dtype=auto
+  [ 16/60] 合法 16 条，平均 4.64s/条
+  [ 24/60] 合法 23 条，平均 7.49s/条
+  [ 32/60] 合法 31 条，平均 6.18s/条
+  [ 40/60] 合法 39 条，平均 5.66s/条
+  [ 56/60] 合法 55 条，平均 6.64s/条
+  [ 60/60] 合法 58 条，平均 7.93s/条
+
+统计 → outputs/llm\report_local_zero_n60.json（总耗时 476s）
+
+==============================================================================
+结果：local_zero_n60（local/zero，60 条）
+==============================================================================
+  trigger F1   : 0.4068   (P=0.4138 R=0.4000)
+  argument F1  : 0.1167   (P=0.1930 R=0.0837)
+  event  F1    : 0.0000
+  type_macro_f1: 0.3817
+  JSON 合法率  : 96.67%（结构性修复 18 条，围栏/废话剥离 4 条）
+  解析失败     : 2 条 | 空回复 0 条
+  幻觉论元     : 11 次 | 触发词找不到 6 次
+  平均延迟     : 7.922s/条（p50=4.995s）
+  token        : prompt 52979 + completion 12400 = 65379
+统一评测 → outputs/metrics\llm\local_zero_n60.json
+
+下一步：把这条预测和其它方案一起画进对比图（eval/plot_compare.py）

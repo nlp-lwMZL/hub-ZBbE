@@ -1,0 +1,28 @@
+数据：dev_extract.jsonl → 采样 60 条（seed=42，规则见 event_data.canonical_order）
+输出：D:\workspace\nlp_study\徐鹏\week07\outputs\llm\pred_qwen2_zero_n60.jsonl
+[gpu] 当前显存占用 1420 MiB（阈值 1500 MiB）
+[local] 设备=cuda 模型=D:/workspace/nlp_study/pretrain_models/Qwen2-0.5B batch=8 dtype=auto
+  [ 16/60] 合法 0 条，平均 1.52s/条
+  [ 24/60] 合法 0 条，平均 1.47s/条
+  [ 32/60] 合法 0 条，平均 1.46s/条
+  [ 40/60] 合法 0 条，平均 1.46s/条
+  [ 56/60] 合法 0 条，平均 1.44s/条
+  [ 60/60] 合法 0 条，平均 1.53s/条
+
+统计 → D:\workspace\nlp_study\徐鹏\week07\outputs\llm\report_qwen2_zero_n60.json（总耗时 92s）
+
+==============================================================================
+结果：qwen2_zero_n60（local/zero，60 条）
+==============================================================================
+  trigger F1   : 0.0000   (P=0.0000 R=0.0000)
+  argument F1  : 0.0000   (P=0.0000 R=0.0000)
+  event  F1    : 0.0000
+  type_macro_f1: 0.0000
+  JSON 合法率  : 0.0%（结构性修复 0 条，围栏/废话剥离 32 条）
+  解析失败     : 60 条 | 空回复 0 条
+  幻觉论元     : 0 次 | 触发词找不到 0 次
+  平均延迟     : 1.529s/条（p50=1.448s）
+  token        : prompt 52889 + completion 23040 = 75929
+统一评测 → D:\workspace\nlp_study\徐鹏\week07\outputs\metrics\llm\qwen2_zero_n60.json
+
+下一步：把这条预测和其它方案一起画进对比图（eval/plot_compare.py）

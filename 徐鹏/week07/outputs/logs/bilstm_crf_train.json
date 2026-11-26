@@ -1,0 +1,112 @@
+{
+  "method": "bilstm_crf",
+  "argv": [
+    "bilstm_crf/train.py"
+  ],
+  "args": {
+    "decoder": "crf",
+    "max_len": 256,
+    "epochs": 5,
+    "batch_size": 32,
+    "emb_dim": 128,
+    "hidden": 256,
+    "num_layers": 1,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.3,
+    "max_grad_norm": 5.0,
+    "warmup_steps": 100,
+    "inner_val": 0.1,
+    "hard_constraint": false,
+    "device": "",
+    "log_every": 50,
+    "seed": 42,
+    "run_name": "bilstm_crf",
+    "mock": false,
+    "data_dir": ""
+  },
+  "env": {
+    "python": "3.10.17",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "time": "2026-11-24 22:33:45",
+    "torch": "2.7.0+cu118",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060",
+    "transformers": "5.20.2"
+  },
+  "params": 1307896,
+  "log_every": 50,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 305.111864,
+      "elapsed_s": 35.9,
+      "val": {
+        "inner_loss": 111.35876380072699,
+        "inner_span_f1": 0.13800368712141164
+      },
+      "best_so_far": -1.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 90.581174,
+      "elapsed_s": 36.2,
+      "val": {
+        "inner_loss": 65.77639834086101,
+        "inner_span_f1": 0.3997407087294728
+      },
+      "best_so_far": 0.138004
+    },
+    {
+      "epoch": 3,
+      "train_loss": 61.299808,
+      "elapsed_s": 36.3,
+      "val": {
+        "inner_loss": 48.76427035861545,
+        "inner_span_f1": 0.5394223263075723
+      },
+      "best_so_far": 0.399741
+    },
+    {
+      "epoch": 4,
+      "train_loss": 46.40867,
+      "elapsed_s": 37.0,
+      "val": {
+        "inner_loss": 40.511199633280434,
+        "inner_span_f1": 0.6055732186272675
+      },
+      "best_so_far": 0.539422
+    },
+    {
+      "epoch": 5,
+      "train_loss": 37.33418,
+      "elapsed_s": 52.4,
+      "val": {
+        "inner_loss": 33.15250248379178,
+        "inner_span_f1": 0.6123715338375024
+      },
+      "best_so_far": 0.605573
+    }
+  ],
+  "total_elapsed_s": 198.7,
+  "finished": true,
+  "best_epoch": 5,
+  "best_inner_val_span_f1": 0.612372,
+  "dev_metrics": {
+    "trigger": 0.8372,
+    "argument": 0.5737,
+    "event_exact": 0.155
+  },
+  "inference_latency_ms": 9.74,
+  "peak_gpu_mb": 206.7,
+  "illegal_dev": {
+    "illegal_start": 16,
+    "illegal_transition": 278,
+    "total_seqs": 930,
+    "illegal_seqs": 232,
+    "total_illegal": 294,
+    "illegal_seq_rate": 0.2495,
+    "illegal_per_seq": 0.316
+  },
+  "notes": "BiLSTM-CRF（字符级，无预训练）训练过程"
+}

@@ -1,0 +1,20 @@
+{"id": "mockdoc000", "sent_id": "mocks000", "events": [], "has_event": 0}
+{"id": "mockdoc001", "sent_id": "mocks001", "events": [], "has_event": 0}
+{"id": "mockdoc002", "sent_id": "mocks002", "events": [], "has_event": 0}
+{"id": "mockdoc003", "sent_id": "mocks003", "events": [{"type": "质押", "trigger": {"text": "给", "start": 19, "end": 20}, "args": [{"role": "质押股票/股份数量", "text": "张", "start": 4, "end": 5}, {"role": "质押物", "text": "将", "start": 6, "end": 7}, {"role": "质押物", "text": "持", "start": 8, "end": 9}, {"role": "质押方", "text": "的", "start": 10, "end": 11}, {"role": "披露时间", "text": "3", "start": 11, "end": 12}, {"role": "质押物", "text": "0", "start": 12, "end": 13}, {"role": "披露时间", "text": "00万", "start": 13, "end": 16}, {"role": "质押物占持股比", "text": "质", "start": 17, "end": 18}, {"role": "质押方", "text": "押", "start": 18, "end": 19}, {"role": "质押物占总股比", "text": "中信信", "start": 20, "end": 23}, {"role": "质押物占总股比", "text": "托", "start": 23, "end": 24}, {"role": "质押物", "text": "。", "start": 24, "end": 25}]}], "has_event": 1}
+{"id": "mockdoc004", "sent_id": "mocks004", "events": [], "has_event": 1}
+{"id": "mockdoc005", "sent_id": "mocks005", "events": [], "has_event": 0}
+{"id": "mockdoc006", "sent_id": "mocks006", "events": [], "has_event": 0}
+{"id": "mockdoc007", "sent_id": "mocks007", "events": [], "has_event": 0}
+{"id": "mockdoc008", "sent_id": "mocks008", "events": [], "has_event": 0}
+{"id": "mockdoc009", "sent_id": "mocks009", "events": [], "has_event": 0}
+{"id": "mockdoc010", "sent_id": "mocks010", "events": [{"type": "被约谈", "trigger": {"text": "息", "start": 4, "end": 5}, "args": [{"role": "被约谈时间", "text": "公", "start": 0, "end": 1}, {"role": "披露时间", "text": "司", "start": 1, "end": 2}, {"role": "披露时间", "text": "因", "start": 2, "end": 3}, {"role": "披露时间", "text": "规", "start": 8, "end": 9}, {"role": "被约谈时间", "text": "被", "start": 9, "end": 10}, {"role": "公司名称", "text": "上", "start": 10, "end": 11}, {"role": "被约谈时间", "text": "所", "start": 12, "end": 13}, {"role": "披露时间", "text": "约", "start": 13, "end": 14}, {"role": "披露时间", "text": "。", "start": 15, "end": 16}]}], "has_event": 1}
+{"id": "mockdoc011", "sent_id": "mocks011", "events": [], "has_event": 0}
+{"id": "mockdoc012", "sent_id": "mocks012", "events": [], "has_event": 0}
+{"id": "mockdoc900", "sent_id": "mocke900", "events": [], "has_event": 0}
+{"id": "mockdoc901", "sent_id": "mocke901", "events": [], "has_event": 1}
+{"id": "mockdoc902", "sent_id": "mocke902", "events": [], "has_event": 0}
+{"id": "mockdoc903", "sent_id": "mocke903", "events": [], "has_event": 0}
+{"id": "mockdoc904", "sent_id": "mocke904", "events": [], "has_event": 0}
+{"id": "mockdoc905", "sent_id": "mocke905", "events": [], "has_event": 0}
+{"id": "mockdoc906", "sent_id": "mocke906", "events": [], "has_event": 0}

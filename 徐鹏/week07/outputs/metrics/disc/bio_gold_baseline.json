@@ -1,0 +1,22 @@
+{
+  "label_scheme": "joint(149 标签)",
+  "splits": {
+    "dev": {
+      "n": 930,
+      "illegal": {
+        "illegal_start": 0,
+        "illegal_transition": 18,
+        "total_seqs": 930,
+        "illegal_seqs": 18,
+        "total_illegal": 18,
+        "illegal_seq_rate": 0.0194,
+        "illegal_per_seq": 0.019
+      },
+      "overlap_conflicts": {
+        "arg": 67,
+        "trigger": 40
+      }
+    }
+  },
+  "note": "金标自身因「重叠论元投影到 BIO」就有少量非法，这是不可消除的地板值；模型预测的非法率应和这个地板值比，而不是和 0 比。"
+}
