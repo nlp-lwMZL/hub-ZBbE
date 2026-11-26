@@ -1,0 +1,40 @@
+{
+  "method": "hw7_crf_roberta_hard",
+  "argv": [
+    "bert/evaluate_hard_constraint.py",
+    "--ckpt",
+    "F:\\learn\\ai-llm\\badou\\course\\week7\\week7-信息抽取\\code\\outputs\\checkpoints\\hw7_crf_roberta.pt",
+    "--run_name",
+    "hw7_crf_roberta_hard",
+    "--soft_json",
+    "hw7_crf_roberta"
+  ],
+  "args": "Namespace(ckpt='F:\\\\learn\\\\ai-llm\\\\badou\\\\course\\\\week7\\\\week7-信息抽取\\\\code\\\\outputs\\\\checkpoints\\\\hw7_crf_roberta.pt', run_name='hw7_crf_roberta_hard', soft_json='hw7_crf_roberta', device='')",
+  "env": {
+    "python": "3.12.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "time": "2026-11-26 15:57:10",
+    "torch": "2.11.0+cu128",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 5070",
+    "transformers": "5.17.0"
+  },
+  "runtime_s": 6.79,
+  "metrics": {
+    "trigger": 0.8387,
+    "argument": 0.6653,
+    "event_exact": 0.2234
+  },
+  "illegal_dev": {
+    "illegal_start": 0,
+    "illegal_transition": 186,
+    "total_seqs": 930,
+    "illegal_seqs": 76,
+    "total_illegal": 186,
+    "illegal_seq_rate": 0.0817,
+    "illegal_per_seq": 0.2
+  },
+  "ckpt": "F:\\learn\\ai-llm\\badou\\course\\week7\\week7-信息抽取\\code\\outputs\\checkpoints\\hw7_crf_roberta.pt",
+  "constraint_note": "解码期硬约束（token 级非法归零）",
+  "notes": "纯评测：从 checkpoint 复评 dev（不训练）"
+}

@@ -1,0 +1,14 @@
+硬约束已装载：禁止 10878 个非法转移对、74 个非法起始标签
+硬约束解码后非法统计：非法开头 0 处 / 非法转移 155 处（含非法序列 69 句）
+样本数 930（缺预测 0 条）
+  trigger      P=0.8793 R=0.8226 F1=0.8500 (tp=765 fp=105 fn=165)
+  argument     P=0.6506 R=0.6604 F1=0.6554 (tp=2722 fp=1462 fn=1400)
+  event_exact  P=0.2172 R=0.2032 F1=0.2100 (tp=189 fp=681 fn=741)
+  type_macro_f1 = 0.7438
+  n200 子集：trigger F1=0.8438 arg F1=0.6481 → hw7_crf_baseline_hard_n200.json
+  指标已写入 → F:\learn\ai-llm\badou\course\week7\week7-信息抽取\code\outputs\metrics\disc\hw7_crf_baseline_hard.json
+
+【软约束 vs 硬约束（同 checkpoint / 同 dev）】
+  非法序列：600 句 → 69 句
+  非法转移：1261 处 → 155 处
+  论元 F1 ：0.5812 → 0.6554
