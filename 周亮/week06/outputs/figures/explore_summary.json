@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-11-18T20:23:15",
+  "data_dir": "/Users/zhouliang/Downloads/badou/nlp/homework/week6/data",
+  "seed": 42,
+  "overview": {
+    "train": {
+      "rows": 5000,
+      "dist": {
+        "高": 1788,
+        "中": 2767,
+        "低": 445
+      },
+      "low_pct": 8.9,
+      "char_len_mean": 146.08,
+      "char_len_median": 138.0
+    },
+    "val": {
+      "rows": 2000,
+      "dist": {
+        "高": 715,
+        "中": 1107,
+        "低": 178
+      },
+      "low_pct": 8.9,
+      "char_len_mean": 144.17,
+      "char_len_median": 136.5
+    },
+    "test": {
+      "rows": 3000,
+      "dist": {
+        "高": 1073,
+        "中": 1660,
+        "低": 267
+      },
+      "low_pct": 8.9,
+      "char_len_mean": 145.67,
+      "char_len_median": 137.0
+    },
+    "pool": {
+      "rows": 103866,
+      "dist": {
+        "高": 37138,
+        "中": 57483,
+        "低": 9245
+      },
+      "low_pct": 8.9009,
+      "char_len_mean": 145.43,
+      "char_len_median": 138.0
+    },
+    "all_rows": 113866
+  },
+  "label_dist": {
+    "train": {
+      "高": 1788,
+      "中": 2767,
+      "低": 445
+    },
+    "val": {
+      "高": 715,
+      "中": 1107,
+      "低": 178
+    },
+    "test": {
+      "高": 1073,
+      "中": 1660,
+      "低": 267
+    }
+  },
+  "char_length_train": {
+    "mean": 146.0788,
+    "median": 138.0,
+    "p95": 245.0
+  },
+  "token_length_train": {
+    "mean": 97.8906,
+    "median": 94.0,
+    "p95": 154.0,
+    "truncation_pct": {
+      "64": 89.56,
+      "128": 16.56,
+      "192": 0.82,
+      "256": 0.06
+    }
+  },
+  "ablation": {
+    "rule": "train_N = train_5k + shuffle(train_pool, seed)[:N-5000]",
+    "seed": 42,
+    "pool_dist": {
+      "高": 37138,
+      "中": 57483,
+      "低": 9245
+    },
+    "pool_low_pct": 8.9009,
+    "sizes": [
+      {
+        "N": 5000,
+        "dist": {
+          "高": 1788,
+          "中": 2767,
+          "低": 445
+        },
+        "low_pct": 8.9,
+        "dev_vs_pool_pp": -0.0009,
+        "low_count": 445,
+        "char_len_mean": 146.08,
+        "nested": true
+      },
+      {
+        "N": 10000,
+        "dist": {
+          "高": 3582,
+          "中": 5487,
+          "低": 931
+        },
+        "low_pct": 9.31,
+        "dev_vs_pool_pp": 0.4091,
+        "low_count": 931,
+        "char_len_mean": 146.37,
+        "nested": true
+      },
+      {
+        "N": 20000,
+        "dist": {
+          "高": 7127,
+          "中": 11007,
+          "低": 1866
+        },
+        "low_pct": 9.33,
+        "dev_vs_pool_pp": 0.4291,
+        "low_count": 1866,
+        "char_len_mean": 145.91,
+        "nested": true
+      },
+      {
+        "N": 50000,
+        "dist": {
+          "高": 17824,
+          "中": 27659,
+          "低": 4517
+        },
+        "low_pct": 9.034,
+        "dev_vs_pool_pp": 0.1331,
+        "low_count": 4517,
+        "char_len_mean": 145.63,
+        "nested": true
+      }
+    ]
+  }
+}

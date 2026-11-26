@@ -1,0 +1,154 @@
+{
+  "args": {
+    "data_dir": "/Users/wangen/py_workspace/badou/deep-learning/homework/week03/v12",
+    "output_dir": "outputs/smoke-missing-model",
+    "methods": [
+      "rule",
+      "encoder_frozen"
+    ],
+    "seed": 42,
+    "train_per_class": 2,
+    "eval_per_class": 1,
+    "epochs": 1,
+    "batch_size": 64,
+    "max_length": 96,
+    "lr": 0.001,
+    "encoder_lr": 2e-05,
+    "encoder": "/tmp/badou-week06-no-such-model",
+    "device": "cpu",
+    "threads": 2,
+    "save_models": false
+  },
+  "data": {
+    "source": "/Users/wangen/py_workspace/badou/deep-learning/homework/week03/v12",
+    "seed": 42,
+    "labels": [
+      "ar",
+      "en",
+      "es",
+      "hi",
+      "ja",
+      "ko",
+      "pt",
+      "ru",
+      "th",
+      "tr",
+      "vi",
+      "zh"
+    ],
+    "removed_duplicates": {
+      "train": 0,
+      "dev": 0,
+      "test": 0
+    },
+    "fingerprint": "4bce2dcaf1b84b9dcda943b0f2f607213d332c0abebe1abd5dd54618cc8dc72d",
+    "counts": {
+      "train": {
+        "th": 2,
+        "tr": 2,
+        "pt": 2,
+        "ja": 2,
+        "ar": 2,
+        "hi": 2,
+        "vi": 2,
+        "en": 2,
+        "ko": 2,
+        "zh": 2,
+        "es": 2,
+        "ru": 2
+      },
+      "dev": {
+        "th": 1,
+        "es": 1,
+        "ko": 1,
+        "en": 1,
+        "ar": 1,
+        "pt": 1,
+        "tr": 1,
+        "hi": 1,
+        "vi": 1,
+        "ru": 1,
+        "ja": 1,
+        "zh": 1
+      },
+      "test": {
+        "pt": 1,
+        "ja": 1,
+        "ko": 1,
+        "en": 1,
+        "th": 1,
+        "hi": 1,
+        "ar": 1,
+        "ru": 1,
+        "tr": 1,
+        "vi": 1,
+        "zh": 1,
+        "es": 1
+      }
+    }
+  },
+  "environment": {
+    "python": "3.12.13 (main, Mar  3 2026, 12:39:30) [Clang 17.0.0 (clang-1700.6.4.2)]",
+    "platform": "macOS-15.1-arm64-arm-64bit",
+    "numpy": "2.5.5",
+    "scikit-learn": "1.5.2",
+    "torch": "2.15.0",
+    "transformers": "5.23.0"
+  },
+  "split_ids": {
+    "train": [
+      "train:3820",
+      "train:1803",
+      "train:5154",
+      "train:2548",
+      "train:8733",
+      "train:701",
+      "train:4148",
+      "train:8343",
+      "train:4280",
+      "train:5722",
+      "train:6470",
+      "train:8052",
+      "train:4484",
+      "train:7073",
+      "train:3629",
+      "train:5872",
+      "train:9035",
+      "train:5497",
+      "train:2387",
+      "train:4971",
+      "train:4732",
+      "train:3574",
+      "train:6652",
+      "train:1406"
+    ],
+    "dev": [
+      "dev:237",
+      "dev:483",
+      "dev:535",
+      "dev:769",
+      "dev:502",
+      "dev:499",
+      "dev:1145",
+      "dev:724",
+      "dev:14",
+      "dev:704",
+      "dev:819",
+      "dev:207"
+    ],
+    "test": [
+      "test:1743",
+      "test:415",
+      "test:959",
+      "test:1441",
+      "test:1652",
+      "test:1050",
+      "test:701",
+      "test:1797",
+      "test:827",
+      "test:418",
+      "test:248",
+      "test:1763"
+    ]
+  }
+}

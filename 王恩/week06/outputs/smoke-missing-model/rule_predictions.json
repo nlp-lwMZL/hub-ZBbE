@@ -1,0 +1,91 @@
+{
+  "fingerprint": "4bce2dcaf1b84b9dcda943b0f2f607213d332c0abebe1abd5dd54618cc8dc72d",
+  "labels": [
+    "ar",
+    "en",
+    "es",
+    "hi",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "th",
+    "tr",
+    "vi",
+    "zh"
+  ],
+  "predictions": [
+    {
+      "id": "test:1743",
+      "text": "Fiquei sentado certo tempo e depois retirei-me.",
+      "label": "pt",
+      "pred": "pt"
+    },
+    {
+      "id": "test:415",
+      "text": "その子は成长して伟大な政治家になった。",
+      "label": "ja",
+      "pred": "ja"
+    },
+    {
+      "id": "test:959",
+      "text": "톰이 마실 수 있는 것은 오직 물 뿐이야.",
+      "label": "ko",
+      "pred": "ko"
+    },
+    {
+      "id": "test:1441",
+      "text": "You're my man.",
+      "label": "en",
+      "pred": "en"
+    },
+    {
+      "id": "test:1652",
+      "text": "พ่อของฉันว่ายน้ำเก่งมาก",
+      "label": "th",
+      "pred": "th"
+    },
+    {
+      "id": "test:1050",
+      "text": "हम फिर से जीत गये हैं।",
+      "label": "hi",
+      "pred": "hi"
+    },
+    {
+      "id": "test:701",
+      "text": "هل تعرف كيف تنسج سللا؟",
+      "label": "ar",
+      "pred": "ar"
+    },
+    {
+      "id": "test:1797",
+      "text": "У меня кровь.",
+      "label": "ru",
+      "pred": "ru"
+    },
+    {
+      "id": "test:827",
+      "text": "Bir renk seç.",
+      "label": "tr",
+      "pred": "tr"
+    },
+    {
+      "id": "test:418",
+      "text": "Sờ thử đi nào.",
+      "label": "vi",
+      "pred": "th"
+    },
+    {
+      "id": "test:248",
+      "text": "看电视是一种被动的活动。",
+      "label": "zh",
+      "pred": "zh"
+    },
+    {
+      "id": "test:1763",
+      "text": "El final es el principio de lo imposible.",
+      "label": "es",
+      "pred": "es"
+    }
+  ]
+}

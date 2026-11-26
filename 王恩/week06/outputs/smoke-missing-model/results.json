@@ -1,0 +1,340 @@
+{
+  "data": {
+    "source": "/Users/wangen/py_workspace/badou/deep-learning/homework/week03/v12",
+    "seed": 42,
+    "labels": [
+      "ar",
+      "en",
+      "es",
+      "hi",
+      "ja",
+      "ko",
+      "pt",
+      "ru",
+      "th",
+      "tr",
+      "vi",
+      "zh"
+    ],
+    "removed_duplicates": {
+      "train": 0,
+      "dev": 0,
+      "test": 0
+    },
+    "fingerprint": "4bce2dcaf1b84b9dcda943b0f2f607213d332c0abebe1abd5dd54618cc8dc72d",
+    "counts": {
+      "train": {
+        "th": 2,
+        "tr": 2,
+        "pt": 2,
+        "ja": 2,
+        "ar": 2,
+        "hi": 2,
+        "vi": 2,
+        "en": 2,
+        "ko": 2,
+        "zh": 2,
+        "es": 2,
+        "ru": 2
+      },
+      "dev": {
+        "th": 1,
+        "es": 1,
+        "ko": 1,
+        "en": 1,
+        "ar": 1,
+        "pt": 1,
+        "tr": 1,
+        "hi": 1,
+        "vi": 1,
+        "ru": 1,
+        "ja": 1,
+        "zh": 1
+      },
+      "test": {
+        "pt": 1,
+        "ja": 1,
+        "ko": 1,
+        "en": 1,
+        "th": 1,
+        "hi": 1,
+        "ar": 1,
+        "ru": 1,
+        "tr": 1,
+        "vi": 1,
+        "zh": 1,
+        "es": 1
+      }
+    }
+  },
+  "reports": {
+    "rule": {
+      "status": "ok",
+      "accuracy": 0.9166666666666666,
+      "macro_f1": 0.8888888888888888,
+      "per_class": {
+        "ar": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1.0
+        },
+        "en": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1.0
+        },
+        "es": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1.0
+        },
+        "hi": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1.0
+        },
+        "ja": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1.0
+        },
+        "ko": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1.0
+        },
+        "pt": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1.0
+        },
+        "ru": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1.0
+        },
+        "th": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1-score": 0.6666666666666666,
+          "support": 1.0
+        },
+        "tr": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1.0
+        },
+        "vi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "zh": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1.0
+        },
+        "accuracy": 0.9166666666666666,
+        "macro avg": {
+          "precision": 0.875,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.8888888888888888,
+          "support": 12.0
+        },
+        "weighted avg": {
+          "precision": 0.875,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.8888888888888888,
+          "support": 12.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "fit_seconds": 0.00012824998702853918,
+      "predict_seconds": 0.0017803749651648104
+    },
+    "encoder_frozen": {
+      "status": "failed",
+      "error": "OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/tmp/badou-week06-no-such-model'. Use `repo_type` argument if needed."
+    }
+  }
+}
