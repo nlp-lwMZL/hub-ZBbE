@@ -1,0 +1,37 @@
+{
+  "model": "BERT+CRF",
+  "dataset": "peoples_daily",
+  "split": "validation",
+  "n_samples": 2318,
+  "ckpt_epoch": 5,
+  "max_length": 512,
+  "precision": 0.957374,
+  "recall": 0.962914,
+  "f1": 0.960136,
+  "illegal_stats": {
+    "illegal_start": 0,
+    "illegal_transition": 30,
+    "total_seqs": 2318,
+    "total_illegal": 30
+  },
+  "per_type": {
+    "LOC": {
+      "precision": 0.9640102827763496,
+      "recall": 0.9694932781799379,
+      "f1-score": 0.9667440061871616,
+      "support": 1934
+    },
+    "ORG": {
+      "precision": 0.9207622868605817,
+      "recall": 0.9329268292682927,
+      "f1-score": 0.9268046441191318,
+      "support": 984
+    },
+    "PER": {
+      "precision": 0.9841269841269841,
+      "recall": 0.9819004524886877,
+      "f1-score": 0.9830124575311437,
+      "support": 884
+    }
+  }
+}
