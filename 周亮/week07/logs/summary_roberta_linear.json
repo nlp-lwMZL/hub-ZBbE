@@ -1,0 +1,95 @@
+{
+  "run_name": "roberta_linear",
+  "method": "RoBERTa+linear",
+  "best_epoch": 2,
+  "best_val_entity_f1": 0.5762273901808785,
+  "val_metrics": {
+    "num_samples": 309,
+    "gold_entities": 367,
+    "pred_entities": 428,
+    "precision": 0.4182,
+    "recall": 0.4877,
+    "f1": 0.4503,
+    "type_macro_f1": 0.3864,
+    "per_type": {
+      "Attacker": {
+        "precision": 0.5517,
+        "recall": 0.6337,
+        "f1": 0.5899,
+        "support": 101
+      },
+      "Campaign": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      },
+      "Industry": {
+        "precision": 0.3636,
+        "recall": 0.3951,
+        "f1": 0.3787,
+        "support": 81
+      },
+      "Region": {
+        "precision": 0.642,
+        "recall": 0.8254,
+        "f1": 0.7222,
+        "support": 63
+      },
+      "Tools": {
+        "precision": 0.2168,
+        "recall": 0.2719,
+        "f1": 0.2412,
+        "support": 114
+      }
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.393751,
+      "val_loss": 0.148423,
+      "val_entity_f1": 0.490832,
+      "timestamp": "2026-11-23T05:04:41"
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.106149,
+      "val_loss": 0.108461,
+      "val_entity_f1": 0.576227,
+      "timestamp": "2026-11-23T05:06:44"
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.072963,
+      "val_loss": 0.105023,
+      "val_entity_f1": 0.561713,
+      "timestamp": "2026-11-23T05:08:54"
+    }
+  ],
+  "checkpoint": "/content/drive/MyDrive/week7_runs/checkpoints/roberta_linear.pt",
+  "pred_path": "/content/drive/MyDrive/week7_runs/outputs/preds/roberta_linear_val.jsonl",
+  "args": {
+    "decoder": "linear",
+    "bert_path": null,
+    "tokenizer": null,
+    "run_name": "roberta_linear",
+    "max_length": 256,
+    "dropout": 0.1,
+    "epochs": 3,
+    "batch_size": 16,
+    "eval_batch_size": 32,
+    "lr": 2e-05,
+    "head_lr_mult": 5.0,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0,
+    "inner_val": 0.1,
+    "seed": 42,
+    "device": "auto",
+    "max_steps": 0,
+    "eval_max_batches": 0,
+    "num_train": 0
+  },
+  "finished": "2026-11-23T05:08:59"
+}

@@ -1,0 +1,51 @@
+{
+  "run_name": "roberta_crf",
+  "method": "RoBERTa+crf",
+  "split": "test",
+  "num_samples": 387,
+  "avg_loss": 0.080502,
+  "metrics": {
+    "num_samples": 387,
+    "gold_entities": 432,
+    "pred_entities": 516,
+    "precision": 0.4496,
+    "recall": 0.537,
+    "f1": 0.4895,
+    "type_macro_f1": 0.4043,
+    "per_type": {
+      "Attacker": {
+        "precision": 0.5205,
+        "recall": 0.5891,
+        "f1": 0.5527,
+        "support": 129
+      },
+      "Campaign": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      },
+      "Industry": {
+        "precision": 0.3778,
+        "recall": 0.5075,
+        "f1": 0.4331,
+        "support": 67
+      },
+      "Region": {
+        "precision": 0.6752,
+        "recall": 0.8316,
+        "f1": 0.7453,
+        "support": 95
+      },
+      "Tools": {
+        "precision": 0.2638,
+        "recall": 0.3233,
+        "f1": 0.2905,
+        "support": 133
+      }
+    }
+  },
+  "checkpoint": "/content/drive/MyDrive/week7_runs/checkpoints/roberta_crf.pt",
+  "pred_path": "/content/drive/MyDrive/week7_runs/outputs/preds/roberta_crf_test.jsonl",
+  "timestamp": "2026-11-25T04:24:33"
+}

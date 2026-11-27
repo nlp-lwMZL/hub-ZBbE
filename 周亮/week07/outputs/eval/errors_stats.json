@@ -1,0 +1,759 @@
+{
+  "methods": {
+    "bilstm_linear": {
+      "counts": {
+        "tp": 67,
+        "type_error": 1,
+        "boundary_error": 139,
+        "both_error": 17,
+        "missed": 208,
+        "spurious": 101
+      },
+      "gold_spans": 432,
+      "rates": {
+        "tp_rate": 0.1551,
+        "type_error_rate": 0.0023,
+        "boundary_error_rate": 0.3218,
+        "missed_rate": 0.4815
+      },
+      "top_type_confusions": [
+        {
+          "gold": "Tools",
+          "pred": "Attacker",
+          "n": 7
+        },
+        {
+          "gold": "Attacker",
+          "pred": "Tools",
+          "n": 4
+        },
+        {
+          "gold": "Region",
+          "pred": "Industry",
+          "n": 2
+        },
+        {
+          "gold": "Industry",
+          "pred": "Region",
+          "n": 2
+        },
+        {
+          "gold": "Industry",
+          "pred": "Attacker",
+          "n": 2
+        },
+        {
+          "gold": "Campaign",
+          "pred": "Attacker",
+          "n": 1
+        }
+      ],
+      "boundary_examples": [
+        {
+          "gold": "Tools[64:75]=GoogleDrive",
+          "pred": "Tools[66:70]=ogle"
+        },
+        {
+          "gold": "Tools[97:106]=MoleStage",
+          "pred": "Tools[99:105]=leStag"
+        },
+        {
+          "gold": "Tools[82:91]=MoleStage",
+          "pred": "Tools[87:88]=t"
+        },
+        {
+          "gold": "Tools[64:73]=MoleStage",
+          "pred": "Tools[66:72]=leStag"
+        },
+        {
+          "gold": "Tools[41:50]=MoleStage",
+          "pred": "Tools[43:49]=leStag"
+        },
+        {
+          "gold": "Tools[13:22]=MoleStage",
+          "pred": "Tools[15:21]=leStag"
+        },
+        {
+          "gold": "Attacker[108:122]=DomesticKitten",
+          "pred": "Attacker[109:120]=omesticKitt"
+        },
+        {
+          "gold": "Attacker[161:175]=DomesticKitten",
+          "pred": "Attacker[163:168]=mesti"
+        },
+        {
+          "gold": "Tools[26:35]=KidLogger",
+          "pred": "Tools[32:34]=ge"
+        },
+        {
+          "gold": "Tools[187:196]=KidLogger",
+          "pred": "Tools[193:194]=g"
+        }
+      ],
+      "type_examples": [
+        {
+          "gold": "Tools[80:86]=Ramsay",
+          "pred": "Attacker[80:86]=Ramsay"
+        }
+      ]
+    },
+    "bilstm_crf": {
+      "counts": {
+        "tp": 70,
+        "type_error": 1,
+        "boundary_error": 113,
+        "both_error": 14,
+        "missed": 234,
+        "spurious": 48
+      },
+      "gold_spans": 432,
+      "rates": {
+        "tp_rate": 0.162,
+        "type_error_rate": 0.0023,
+        "boundary_error_rate": 0.2616,
+        "missed_rate": 0.5417
+      },
+      "top_type_confusions": [
+        {
+          "gold": "Tools",
+          "pred": "Attacker",
+          "n": 6
+        },
+        {
+          "gold": "Attacker",
+          "pred": "Tools",
+          "n": 4
+        },
+        {
+          "gold": "Region",
+          "pred": "Industry",
+          "n": 2
+        },
+        {
+          "gold": "Campaign",
+          "pred": "Attacker",
+          "n": 1
+        },
+        {
+          "gold": "Industry",
+          "pred": "Attacker",
+          "n": 1
+        },
+        {
+          "gold": "Industry",
+          "pred": "Region",
+          "n": 1
+        }
+      ],
+      "boundary_examples": [
+        {
+          "gold": "Tools[64:75]=GoogleDrive",
+          "pred": "Tools[66:70]=ogle"
+        },
+        {
+          "gold": "Tools[97:106]=MoleStage",
+          "pred": "Tools[99:105]=leStag"
+        },
+        {
+          "gold": "Tools[82:91]=MoleStage",
+          "pred": "Tools[84:90]=leStag"
+        },
+        {
+          "gold": "Tools[64:73]=MoleStage",
+          "pred": "Tools[66:72]=leStag"
+        },
+        {
+          "gold": "Tools[41:50]=MoleStage",
+          "pred": "Tools[43:49]=leStag"
+        },
+        {
+          "gold": "Tools[13:22]=MoleStage",
+          "pred": "Tools[15:21]=leStag"
+        },
+        {
+          "gold": "Attacker[108:122]=DomesticKitten",
+          "pred": "Attacker[110:120]=mesticKitt"
+        },
+        {
+          "gold": "Attacker[161:175]=DomesticKitten",
+          "pred": "Attacker[163:168]=mesti"
+        },
+        {
+          "gold": "Region[2:6]=亚美尼亚",
+          "pred": "Region[5:6]=亚"
+        },
+        {
+          "gold": "Region[5:7]=东亚",
+          "pred": "Region[6:7]=亚"
+        }
+      ],
+      "type_examples": [
+        {
+          "gold": "Tools[80:86]=Ramsay",
+          "pred": "Attacker[80:86]=Ramsay"
+        }
+      ]
+    },
+    "roberta_linear": {
+      "counts": {
+        "tp": 215,
+        "type_error": 6,
+        "boundary_error": 98,
+        "both_error": 19,
+        "missed": 94,
+        "spurious": 144
+      },
+      "gold_spans": 432,
+      "rates": {
+        "tp_rate": 0.4977,
+        "type_error_rate": 0.0139,
+        "boundary_error_rate": 0.2269,
+        "missed_rate": 0.2176
+      },
+      "top_type_confusions": [
+        {
+          "gold": "Tools",
+          "pred": "Attacker",
+          "n": 6
+        },
+        {
+          "gold": "Attacker",
+          "pred": "Tools",
+          "n": 6
+        },
+        {
+          "gold": "Campaign",
+          "pred": "Attacker",
+          "n": 5
+        },
+        {
+          "gold": "Region",
+          "pred": "Industry",
+          "n": 3
+        },
+        {
+          "gold": "Campaign",
+          "pred": "Industry",
+          "n": 1
+        },
+        {
+          "gold": "Industry",
+          "pred": "Tools",
+          "n": 1
+        },
+        {
+          "gold": "Industry",
+          "pred": "Region",
+          "n": 1
+        },
+        {
+          "gold": "Tools",
+          "pred": "Industry",
+          "n": 1
+        },
+        {
+          "gold": "Attacker",
+          "pred": "Region",
+          "n": 1
+        }
+      ],
+      "boundary_examples": [
+        {
+          "gold": "Attacker[9:11]=灵猫",
+          "pred": "Attacker[8:10]=“灵"
+        },
+        {
+          "gold": "Tools[56:63]=Dropbox",
+          "pred": "Tools[62:63]=x"
+        },
+        {
+          "gold": "Tools[64:75]=GoogleDrive",
+          "pred": "Tools[67:68]=g"
+        },
+        {
+          "gold": "Tools[41:50]=MoleStage",
+          "pred": "Tools[41:49]=MoleStag"
+        },
+        {
+          "gold": "Tools[187:196]=KidLogger",
+          "pred": "Tools[190:196]=Logger"
+        },
+        {
+          "gold": "Tools[140:149]=KidLogger",
+          "pred": "Tools[143:149]=Logger"
+        },
+        {
+          "gold": "Tools[83:92]=KidLogger",
+          "pred": "Tools[86:92]=Logger"
+        },
+        {
+          "gold": "Region[37:39]=韩国",
+          "pred": "Region[37:38]=韩"
+        },
+        {
+          "gold": "Attacker[34:42]=KonniAPT",
+          "pred": "Attacker[34:40]=KonniA"
+        },
+        {
+          "gold": "Industry[134:136]=能源",
+          "pred": "Industry[133:137]=、能源和"
+        }
+      ],
+      "type_examples": [
+        {
+          "gold": "Region[25:27]=德国",
+          "pred": "Industry[25:27]=德国"
+        },
+        {
+          "gold": "Region[8:12]=伊斯兰国",
+          "pred": "Industry[8:12]=伊斯兰国"
+        },
+        {
+          "gold": "Campaign[2:5]=血茜草",
+          "pred": "Attacker[2:5]=血茜草"
+        },
+        {
+          "gold": "Campaign[44:47]=血茜草",
+          "pred": "Attacker[44:47]=血茜草"
+        },
+        {
+          "gold": "Tools[80:86]=Ramsay",
+          "pred": "Attacker[80:86]=Ramsay"
+        },
+        {
+          "gold": "Tools[15:21]=Ramsay",
+          "pred": "Attacker[15:21]=Ramsay"
+        }
+      ]
+    },
+    "roberta_crf": {
+      "counts": {
+        "tp": 232,
+        "type_error": 8,
+        "boundary_error": 101,
+        "both_error": 12,
+        "missed": 79,
+        "spurious": 163
+      },
+      "gold_spans": 432,
+      "rates": {
+        "tp_rate": 0.537,
+        "type_error_rate": 0.0185,
+        "boundary_error_rate": 0.2338,
+        "missed_rate": 0.1829
+      },
+      "top_type_confusions": [
+        {
+          "gold": "Campaign",
+          "pred": "Attacker",
+          "n": 5
+        },
+        {
+          "gold": "Tools",
+          "pred": "Attacker",
+          "n": 4
+        },
+        {
+          "gold": "Region",
+          "pred": "Industry",
+          "n": 3
+        },
+        {
+          "gold": "Industry",
+          "pred": "Region",
+          "n": 2
+        },
+        {
+          "gold": "Attacker",
+          "pred": "Tools",
+          "n": 2
+        },
+        {
+          "gold": "Campaign",
+          "pred": "Industry",
+          "n": 1
+        },
+        {
+          "gold": "Industry",
+          "pred": "Tools",
+          "n": 1
+        },
+        {
+          "gold": "Tools",
+          "pred": "Industry",
+          "n": 1
+        },
+        {
+          "gold": "Attacker",
+          "pred": "Region",
+          "n": 1
+        }
+      ],
+      "boundary_examples": [
+        {
+          "gold": "Tools[64:75]=GoogleDrive",
+          "pred": "Tools[62:73]=x或GoogleDri"
+        },
+        {
+          "gold": "Tools[56:63]=Dropbox",
+          "pred": "Tools[54:61]=指向Dropb"
+        },
+        {
+          "gold": "Attacker[9:11]=灵猫",
+          "pred": "Attacker[8:10]=“灵"
+        },
+        {
+          "gold": "Tools[41:50]=MoleStage",
+          "pred": "Tools[43:46]=leS"
+        },
+        {
+          "gold": "Industry[14:16]=军工",
+          "pred": "Industry[14:17]=军工企"
+        },
+        {
+          "gold": "Attacker[34:42]=KonniAPT",
+          "pred": "Attacker[34:40]=KonniA"
+        },
+        {
+          "gold": "Tools[6:10]=驱动人生",
+          "pred": "Tools[5:9]=“驱动人"
+        },
+        {
+          "gold": "Industry[134:136]=能源",
+          "pred": "Industry[133:137]=、能源和"
+        },
+        {
+          "gold": "Tools[17:23]=Outlaw",
+          "pred": "Tools[15:21]=使用Outl"
+        },
+        {
+          "gold": "Industry[131:133]=政府",
+          "pred": "Industry[130:132]=、政"
+        }
+      ],
+      "type_examples": [
+        {
+          "gold": "Region[25:27]=德国",
+          "pred": "Industry[25:27]=德国"
+        },
+        {
+          "gold": "Region[8:12]=伊斯兰国",
+          "pred": "Industry[8:12]=伊斯兰国"
+        },
+        {
+          "gold": "Tools[42:52]=WarzoneRAT",
+          "pred": "Attacker[42:52]=WarzoneRAT"
+        },
+        {
+          "gold": "Campaign[2:5]=血茜草",
+          "pred": "Attacker[2:5]=血茜草"
+        },
+        {
+          "gold": "Campaign[44:47]=血茜草",
+          "pred": "Attacker[44:47]=血茜草"
+        },
+        {
+          "gold": "Tools[80:86]=Ramsay",
+          "pred": "Attacker[80:86]=Ramsay"
+        },
+        {
+          "gold": "Tools[15:21]=Ramsay",
+          "pred": "Attacker[15:21]=Ramsay"
+        },
+        {
+          "gold": "Tools[3:13]=WarzoneRAT",
+          "pred": "Attacker[3:13]=WarzoneRAT"
+        }
+      ]
+    },
+    "qwen_lora_sft": {
+      "counts": {
+        "tp": 231,
+        "type_error": 7,
+        "boundary_error": 18,
+        "both_error": 1,
+        "missed": 175,
+        "spurious": 129
+      },
+      "gold_spans": 432,
+      "rates": {
+        "tp_rate": 0.5347,
+        "type_error_rate": 0.0162,
+        "boundary_error_rate": 0.0417,
+        "missed_rate": 0.4051
+      },
+      "top_type_confusions": [
+        {
+          "gold": "Tools",
+          "pred": "Attacker",
+          "n": 2
+        },
+        {
+          "gold": "Attacker",
+          "pred": "Campaign",
+          "n": 2
+        },
+        {
+          "gold": "Region",
+          "pred": "Attacker",
+          "n": 1
+        },
+        {
+          "gold": "Attacker",
+          "pred": "Tools",
+          "n": 1
+        },
+        {
+          "gold": "Industry",
+          "pred": "Region",
+          "n": 1
+        },
+        {
+          "gold": "Tools",
+          "pred": "Region",
+          "n": 1
+        }
+      ],
+      "boundary_examples": [
+        {
+          "gold": "Region[25:29]=半岛地区",
+          "pred": "Region[25:27]=半岛"
+        },
+        {
+          "gold": "Tools[34:43]=HallajPro",
+          "pred": "Tools[34:46]=HallajProRAT"
+        },
+        {
+          "gold": "Tools[84:91]=Houdini",
+          "pred": "Tools[84:94]=HoudiniRAT"
+        },
+        {
+          "gold": "Tools[53:59]=Xtreme",
+          "pred": "Tools[53:62]=XtremeRAT"
+        },
+        {
+          "gold": "Tools[72:79]=Revenge",
+          "pred": "Tools[72:83]=Revenge-RAT"
+        },
+        {
+          "gold": "Industry[40:79]=美国阿拉巴马州亨茨维尔市公共事业公司“HuntsvilleUtilities”",
+          "pred": "Industry[52:79]=公共事业公司“HuntsvilleUtilities”"
+        },
+        {
+          "gold": "Industry[87:89]=政府",
+          "pred": "Industry[85:89]=印度政府"
+        },
+        {
+          "gold": "Tools[12:18]=Quasar",
+          "pred": "Tools[12:21]=QuasarRAT"
+        },
+        {
+          "gold": "Tools[101:107]=Quasar",
+          "pred": "Tools[101:110]=QuasarRAT"
+        },
+        {
+          "gold": "Tools[77:82]=Bozok",
+          "pred": "Tools[77:85]=BozokRAT"
+        }
+      ],
+      "type_examples": [
+        {
+          "gold": "Region[20:24]=卢甘斯克",
+          "pred": "Attacker[20:24]=卢甘斯克"
+        },
+        {
+          "gold": "Tools[0:4]=Crat",
+          "pred": "Attacker[0:4]=Crat"
+        },
+        {
+          "gold": "Attacker[0:3]=蔓灵花",
+          "pred": "Tools[0:3]=蔓灵花"
+        },
+        {
+          "gold": "Attacker[4:13]=Darkhotel",
+          "pred": "Campaign[4:13]=Darkhotel"
+        },
+        {
+          "gold": "Attacker[639:642]=蔓灵花",
+          "pred": "Campaign[639:642]=蔓灵花"
+        },
+        {
+          "gold": "Tools[9:18]=BaneChant",
+          "pred": "Attacker[9:18]=BaneChant"
+        },
+        {
+          "gold": "Tools[29:31]=我国",
+          "pred": "Region[29:31]=我国"
+        }
+      ]
+    },
+    "qwen_full_sft": {
+      "counts": {
+        "tp": 267,
+        "type_error": 6,
+        "boundary_error": 21,
+        "both_error": 2,
+        "missed": 136,
+        "spurious": 135
+      },
+      "gold_spans": 432,
+      "rates": {
+        "tp_rate": 0.6181,
+        "type_error_rate": 0.0139,
+        "boundary_error_rate": 0.0486,
+        "missed_rate": 0.3148
+      },
+      "top_type_confusions": [
+        {
+          "gold": "Region",
+          "pred": "Industry",
+          "n": 2
+        },
+        {
+          "gold": "Tools",
+          "pred": "Region",
+          "n": 2
+        },
+        {
+          "gold": "Industry",
+          "pred": "Tools",
+          "n": 1
+        },
+        {
+          "gold": "Region",
+          "pred": "Attacker",
+          "n": 1
+        },
+        {
+          "gold": "Industry",
+          "pred": "Region",
+          "n": 1
+        },
+        {
+          "gold": "Attacker",
+          "pred": "Tools",
+          "n": 1
+        }
+      ],
+      "boundary_examples": [
+        {
+          "gold": "Industry[14:16]=军工",
+          "pred": "Industry[14:18]=军工企业"
+        },
+        {
+          "gold": "Campaign[68:79]=针对安全研究人员的攻击",
+          "pred": "Campaign[68:76]=针对安全研究人员"
+        },
+        {
+          "gold": "Industry[62:64]=能源",
+          "pred": "Industry[62:66]=能源企业"
+        },
+        {
+          "gold": "Region[25:29]=半岛地区",
+          "pred": "Region[25:27]=半岛"
+        },
+        {
+          "gold": "Tools[34:43]=HallajPro",
+          "pred": "Tools[34:46]=HallajProRAT"
+        },
+        {
+          "gold": "Tools[84:91]=Houdini",
+          "pred": "Tools[84:94]=HoudiniRAT"
+        },
+        {
+          "gold": "Tools[53:59]=Xtreme",
+          "pred": "Tools[53:62]=XtremeRAT"
+        },
+        {
+          "gold": "Tools[72:79]=Revenge",
+          "pred": "Tools[72:83]=Revenge-RAT"
+        },
+        {
+          "gold": "Industry[49:53]=金融机构",
+          "pred": "Industry[49:59]=金融机构“ENGS”"
+        },
+        {
+          "gold": "Attacker[32:38]=Gorgon",
+          "pred": "Attacker[32:42]=Gorgon”APT"
+        }
+      ],
+      "type_examples": [
+        {
+          "gold": "Region[65:70]=库尔德斯坦",
+          "pred": "Industry[65:70]=库尔德斯坦"
+        },
+        {
+          "gold": "Region[8:12]=伊斯兰国",
+          "pred": "Industry[8:12]=伊斯兰国"
+        },
+        {
+          "gold": "Region[20:24]=卢甘斯克",
+          "pred": "Attacker[20:24]=卢甘斯克"
+        },
+        {
+          "gold": "Tools[29:31]=我国",
+          "pred": "Region[29:31]=我国"
+        },
+        {
+          "gold": "Tools[41:43]=我国",
+          "pred": "Region[41:43]=我国"
+        },
+        {
+          "gold": "Attacker[273:278]=KONNI",
+          "pred": "Tools[273:278]=KONNI"
+        }
+      ]
+    }
+  },
+  "type_confusion": {},
+  "case_candidates": {
+    "all_correct": {
+      "ids": [
+        "cdtier_clean_ner_test_00056",
+        "cdtier_clean_ner_test_00082",
+        "cdtier_clean_ner_test_00091"
+      ],
+      "texts": {
+        "cdtier_clean_ner_test_00056": "通过360安全大脑我们还原捕获到了Kimsuky组织的部分攻击样本和完整攻击流程",
+        "cdtier_clean_ner_test_00082": "主要针对领域有政府机构、军工企业、核能行业等",
+        "cdtier_clean_ner_test_00091": "Lazarus组织在Windows和MacOS平台上对加密货币方面的用户进行针对性的攻击，而且更加隐蔽"
+      }
+    },
+    "long_text": {
+      "ids": [
+        "cdtier_clean_ner_test_00017",
+        "cdtier_clean_ner_test_00051",
+        "cdtier_clean_ner_test_00053"
+      ],
+      "texts": {
+        "cdtier_clean_ner_test_00017": "附录IOCIPDomainil.**..plugin-verifica**.attachment-download.services.enc2globaattachment-download.**-stest.enc2globaauthen",
+        "cdtier_clean_ner_test_00051": "DomainIOCURLhttp:///ln.corehttp:///ln/a.asphttp:///dota3.tar.gzhttp:///a.jsphttp:///aa.jsphttp:///report.jsphttp:///ipc.",
+        "cdtier_clean_ner_test_00053": "异或解密过程中使用的密钥为：D762A7DE3BB6A4BADB0C605D4FEC69218C05CFAA93C717CA5F17E7D14A3B8B6F8E31E10F71C442CDF767608C6D00202A0CA82AB72B"
+      }
+    },
+    "campaign": {
+      "ids": [
+        "cdtier_clean_ner_test_00033",
+        "cdtier_clean_ner_test_00145",
+        "cdtier_clean_ner_test_00146"
+      ],
+      "texts": {
+        "cdtier_clean_ner_test_00033": "利用社会工程学方案攻击是Lazarus的显著特征之一，在近两年的时间内，该组织进行了多起类似方案的攻击活动，譬如“DreamJob”、“针对安全研究人员的攻击”等",
+        "cdtier_clean_ner_test_00145": "但在血茜草活动中，该诱骗活动与钓鱼网站活动同时进行的情况，在业界并不多见",
+        "cdtier_clean_ner_test_00146": "（一）约稿型（一）约稿型通过著名期刊进行约稿一直都是境外情报部门的常用伎俩，但不同的是，血茜草活动主要目的是，让受害者误以为对方是合法机构的让受害者误以为对方是合法机构的前提下前提下，发送内部信息到攻击者处"
+      }
+    },
+    "qwen_only": {
+      "ids": [
+        "cdtier_clean_ner_test_00141",
+        "cdtier_clean_ner_test_00163",
+        "cdtier_clean_ner_test_00194"
+      ],
+      "texts": {
+        "cdtier_clean_ner_test_00141": "同时奇安信威胁情报中心ALPHA平台(ti.qianxin.com)对此次攻击活动相关IOC已有APT-C-23标签",
+        "cdtier_clean_ner_test_00163": "图17钓鱼邮件3.2恶意宏代码执行图18恶意的邮件附件恶意代码被加密保存在诱饵文档excel表格的D500单元格的批注中（见图19）",
+        "cdtier_clean_ner_test_00194": "该漏洞是存在于AndroidBinder组件中的UAF漏洞，可被利用来提升权限到root级别"
+      }
+    }
+  }
+}

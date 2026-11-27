@@ -1,0 +1,387 @@
+{"id": "cdtier_clean_ner_test_00000", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00001", "pred_spans": [{"type": "Industry", "start": 18, "end": 20, "text": "外贸"}]}
+{"id": "cdtier_clean_ner_test_00002", "pred_spans": [{"type": "Attacker", "start": 9, "end": 11, "text": "灵猫"}]}
+{"id": "cdtier_clean_ner_test_00003", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00004", "pred_spans": [{"type": "Tools", "start": 14, "end": 23, "text": "MoleStage"}, {"type": "Tools", "start": 14, "end": 23, "text": "MoleStage"}, {"type": "Tools", "start": 14, "end": 23, "text": "MoleStage"}]}
+{"id": "cdtier_clean_ner_test_00005", "pred_spans": [{"type": "Tools", "start": 13, "end": 22, "text": "MoleStage"}, {"type": "Tools", "start": 13, "end": 22, "text": "MoleStage"}, {"type": "Tools", "start": 13, "end": 22, "text": "MoleStage"}]}
+{"id": "cdtier_clean_ner_test_00006", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00007", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00008", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00009", "pred_spans": [{"type": "Region", "start": 6, "end": 8, "text": "美国"}]}
+{"id": "cdtier_clean_ner_test_00010", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00011", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00012", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00013", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00014", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00015", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00016", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00017", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00018", "pred_spans": [{"type": "Region", "start": 15, "end": 17, "text": "中东"}]}
+{"id": "cdtier_clean_ner_test_00019", "pred_spans": [{"type": "Region", "start": 2, "end": 4, "text": "中东"}, {"type": "Region", "start": 2, "end": 4, "text": "中东"}]}
+{"id": "cdtier_clean_ner_test_00020", "pred_spans": [{"type": "Attacker", "start": 108, "end": 122, "text": "DomesticKitten"}, {"type": "Attacker", "start": 108, "end": 122, "text": "DomesticKitten"}]}
+{"id": "cdtier_clean_ner_test_00021", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00022", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00023", "pred_spans": [{"type": "Region", "start": 2, "end": 6, "text": "亚美尼亚"}, {"type": "Region", "start": 7, "end": 11, "text": "阿塞拜疆"}, {"type": "Region", "start": 33, "end": 35, "text": "中东"}, {"type": "Attacker", "start": 66, "end": 80, "text": "DomesticKitten"}, {"type": "Region", "start": 33, "end": 35, "text": "中东"}]}
+{"id": "cdtier_clean_ner_test_00024", "pred_spans": [{"type": "Tools", "start": 14, "end": 21, "text": "discord"}]}
+{"id": "cdtier_clean_ner_test_00025", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00026", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00027", "pred_spans": [{"type": "Attacker", "start": 103, "end": 108, "text": "Donot"}]}
+{"id": "cdtier_clean_ner_test_00028", "pred_spans": [{"type": "Industry", "start": 27, "end": 29, "text": "军工"}, {"type": "Industry", "start": 9, "end": 13, "text": "莱茵金属"}, {"type": "Industry", "start": 9, "end": 13, "text": "莱茵金属"}]}
+{"id": "cdtier_clean_ner_test_00029", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00030", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00031", "pred_spans": [{"type": "Region", "start": 37, "end": 39, "text": "韩国"}]}
+{"id": "cdtier_clean_ner_test_00032", "pred_spans": [{"type": "Region", "start": 12, "end": 14, "text": "美国"}, {"type": "Industry", "start": 14, "end": 16, "text": "军工"}]}
+{"id": "cdtier_clean_ner_test_00033", "pred_spans": [{"type": "Attacker", "start": 12, "end": 19, "text": "Lazarus"}]}
+{"id": "cdtier_clean_ner_test_00034", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00035", "pred_spans": [{"type": "Attacker", "start": 34, "end": 42, "text": "KonniAPT"}, {"type": "Region", "start": 59, "end": 62, "text": "俄罗斯"}]}
+{"id": "cdtier_clean_ner_test_00036", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00037", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00038", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00039", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00040", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00041", "pred_spans": [{"type": "Region", "start": 5, "end": 7, "text": "东亚"}, {"type": "Region", "start": 25, "end": 27, "text": "韩国"}, {"type": "Industry", "start": 27, "end": 29, "text": "政府"}, {"type": "Industry", "start": 30, "end": 34, "text": "新闻机构"}]}
+{"id": "cdtier_clean_ner_test_00042", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00043", "pred_spans": [{"type": "Region", "start": 20, "end": 22, "text": "东亚"}, {"type": "Attacker", "start": 27, "end": 34, "text": "Kimsuky"}]}
+{"id": "cdtier_clean_ner_test_00044", "pred_spans": [{"type": "Tools", "start": 17, "end": 23, "text": "Outlaw"}, {"type": "Industry", "start": 128, "end": 130, "text": "企业"}, {"type": "Industry", "start": 131, "end": 133, "text": "政府"}, {"type": "Industry", "start": 134, "end": 136, "text": "能源"}, {"type": "Industry", "start": 137, "end": 141, "text": "科研教育"}]}
+{"id": "cdtier_clean_ner_test_00045", "pred_spans": [{"type": "Tools", "start": 11, "end": 15, "text": "驱动人生"}, {"type": "Tools", "start": 21, "end": 27, "text": "Outlaw"}, {"type": "Tools", "start": 21, "end": 27, "text": "Outlaw"}, {"type": "Tools", "start": 11, "end": 15, "text": "驱动人生"}, {"type": "Tools", "start": 11, "end": 15, "text": "驱动人生"}, {"type": "Tools", "start": 21, "end": 27, "text": "Outlaw"}]}
+{"id": "cdtier_clean_ner_test_00046", "pred_spans": [{"type": "Campaign", "start": 4, "end": 13, "text": "BlackBall"}]}
+{"id": "cdtier_clean_ner_test_00047", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00048", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00049", "pred_spans": [{"type": "Region", "start": 7, "end": 9, "text": "河北"}, {"type": "Region", "start": 10, "end": 12, "text": "浙江"}, {"type": "Region", "start": 13, "end": 15, "text": "四川"}, {"type": "Region", "start": 16, "end": 18, "text": "湖北"}]}
+{"id": "cdtier_clean_ner_test_00050", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00051", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00052", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00053", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00054", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00055", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00056", "pred_spans": [{"type": "Attacker", "start": 17, "end": 24, "text": "Kimsuky"}]}
+{"id": "cdtier_clean_ner_test_00057", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00058", "pred_spans": [{"type": "Tools", "start": 28, "end": 36, "text": "OneDrive"}]}
+{"id": "cdtier_clean_ner_test_00059", "pred_spans": [{"type": "Tools", "start": 81, "end": 89, "text": "OneDrive"}]}
+{"id": "cdtier_clean_ner_test_00060", "pred_spans": [{"type": "Tools", "start": 44, "end": 50, "text": "Quasar"}]}
+{"id": "cdtier_clean_ner_test_00061", "pred_spans": [{"type": "Tools", "start": 77, "end": 87, "text": "teamviewer"}]}
+{"id": "cdtier_clean_ner_test_00062", "pred_spans": [{"type": "Tools", "start": 28, "end": 35, "text": "anydesk"}]}
+{"id": "cdtier_clean_ner_test_00063", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00064", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00065", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00066", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00067", "pred_spans": [{"type": "Attacker", "start": 38, "end": 41, "text": "响尾蛇"}, {"type": "Attacker", "start": 42, "end": 52, "text": "SideWinder"}]}
+{"id": "cdtier_clean_ner_test_00068", "pred_spans": [{"type": "Region", "start": 13, "end": 15, "text": "印度"}, {"type": "Region", "start": 13, "end": 15, "text": "印度"}, {"type": "Region", "start": 13, "end": 15, "text": "印度"}]}
+{"id": "cdtier_clean_ner_test_00069", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00070", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00071", "pred_spans": [{"type": "Attacker", "start": 13, "end": 16, "text": "响尾蛇"}]}
+{"id": "cdtier_clean_ner_test_00072", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00073", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00074", "pred_spans": [{"type": "Attacker", "start": 9, "end": 12, "text": "CIA"}]}
+{"id": "cdtier_clean_ner_test_00075", "pred_spans": [{"type": "Attacker", "start": 18, "end": 21, "text": "双尾蝎"}]}
+{"id": "cdtier_clean_ner_test_00076", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00077", "pred_spans": [{"type": "Region", "start": 10, "end": 13, "text": "土耳其"}, {"type": "Industry", "start": 99, "end": 103, "text": "电视应用"}, {"type": "Industry", "start": 104, "end": 110, "text": "社交保护应用"}, {"type": "Industry", "start": 111, "end": 115, "text": "保险应用"}, {"type": "Industry", "start": 116, "end": 120, "text": "网络应用"}, {"type": "Industry", "start": 121, "end": 125, "text": "游戏应用"}]}
+{"id": "cdtier_clean_ner_test_00078", "pred_spans": [{"type": "Tools", "start": 7, "end": 15, "text": "Fackbook"}, {"type": "Region", "start": 21, "end": 24, "text": "库尔德"}]}
+{"id": "cdtier_clean_ner_test_00079", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00080", "pred_spans": [{"type": "Region", "start": 32, "end": 34, "text": "加沙"}]}
+{"id": "cdtier_clean_ner_test_00081", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00082", "pred_spans": [{"type": "Industry", "start": 7, "end": 11, "text": "政府机构"}, {"type": "Industry", "start": 12, "end": 16, "text": "军工企业"}, {"type": "Industry", "start": 17, "end": 21, "text": "核能行业"}]}
+{"id": "cdtier_clean_ner_test_00083", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00084", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00085", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00086", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00087", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00088", "pred_spans": [{"type": "Tools", "start": 0, "end": 10, "text": "WarzoneRAT"}, {"type": "Tools", "start": 0, "end": 10, "text": "WarzoneRAT"}, {"type": "Region", "start": 58, "end": 61, "text": "意大利"}]}
+{"id": "cdtier_clean_ner_test_00089", "pred_spans": [{"type": "Industry", "start": 33, "end": 37, "text": "人力资源"}]}
+{"id": "cdtier_clean_ner_test_00090", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00091", "pred_spans": [{"type": "Attacker", "start": 0, "end": 7, "text": "Lazarus"}]}
+{"id": "cdtier_clean_ner_test_00092", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00093", "pred_spans": [{"type": "Attacker", "start": 16, "end": 23, "text": "Lazarus"}]}
+{"id": "cdtier_clean_ner_test_00094", "pred_spans": [{"type": "Attacker", "start": 8, "end": 15, "text": "Lazarus"}, {"type": "Attacker", "start": 8, "end": 15, "text": "Lazarus"}, {"type": "Attacker", "start": 8, "end": 15, "text": "Lazarus"}]}
+{"id": "cdtier_clean_ner_test_00095", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00096", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00097", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00098", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00099", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00100", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00101", "pred_spans": [{"type": "Industry", "start": 8, "end": 11, "text": "交易所"}, {"type": "Industry", "start": 21, "end": 27, "text": "数字货币用户"}, {"type": "Region", "start": 33, "end": 34, "text": "中"}, {"type": "Region", "start": 35, "end": 36, "text": "日"}, {"type": "Region", "start": 37, "end": 38, "text": "韩"}]}
+{"id": "cdtier_clean_ner_test_00102", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00103", "pred_spans": [{"type": "Region", "start": 25, "end": 27, "text": "半岛"}, {"type": "Attacker", "start": 35, "end": 42, "text": "Lazarus"}]}
+{"id": "cdtier_clean_ner_test_00104", "pred_spans": [{"type": "Region", "start": 42, "end": 50, "text": "eastAsia"}, {"type": "Region", "start": 52, "end": 57, "text": "ko-KR"}, {"type": "Attacker", "start": 209, "end": 216, "text": "Lazarus"}]}
+{"id": "cdtier_clean_ner_test_00105", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00106", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00107", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00108", "pred_spans": [{"type": "Attacker", "start": 12, "end": 15, "text": "响尾蛇"}]}
+{"id": "cdtier_clean_ner_test_00109", "pred_spans": [{"type": "Tools", "start": 28, "end": 33, "text": "Ghost"}, {"type": "Attacker", "start": 45, "end": 48, "text": "金眼狗"}]}
+{"id": "cdtier_clean_ner_test_00110", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00111", "pred_spans": [{"type": "Attacker", "start": 20, "end": 24, "text": "卢甘斯克"}, {"type": "Region", "start": 34, "end": 37, "text": "乌克兰"}, {"type": "Industry", "start": 37, "end": 39, "text": "政府"}, {"type": "Tools", "start": 123, "end": 132, "text": "QuasarRAT"}, {"type": "Tools", "start": 133, "end": 139, "text": "VERMIN"}]}
+{"id": "cdtier_clean_ner_test_00112", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00113", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00114", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00115", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00116", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00117", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00118", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00119", "pred_spans": [{"type": "Attacker", "start": 4, "end": 8, "text": "Infy"}]}
+{"id": "cdtier_clean_ner_test_00120", "pred_spans": [{"type": "Region", "start": 40, "end": 42, "text": "我国"}]}
+{"id": "cdtier_clean_ner_test_00121", "pred_spans": [{"type": "Region", "start": 14, "end": 16, "text": "我国"}, {"type": "Attacker", "start": 31, "end": 39, "text": "APT-C-41"}, {"type": "Attacker", "start": 61, "end": 65, "text": "蓝色魔眼"}]}
+{"id": "cdtier_clean_ner_test_00122", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00123", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00124", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00125", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00126", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00127", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00128", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00129", "pred_spans": [{"type": "Region", "start": 17, "end": 22, "text": "阿尔及利亚"}]}
+{"id": "cdtier_clean_ner_test_00130", "pred_spans": [{"type": "Attacker", "start": 8, "end": 11, "text": "北非狐"}]}
+{"id": "cdtier_clean_ner_test_00131", "pred_spans": [{"type": "Attacker", "start": 9, "end": 12, "text": "北非狐"}, {"type": "Tools", "start": 42, "end": 49, "text": "Mltqana"}]}
+{"id": "cdtier_clean_ner_test_00132", "pred_spans": [{"type": "Tools", "start": 34, "end": 46, "text": "HallajProRAT"}, {"type": "Tools", "start": 53, "end": 62, "text": "XtremeRAT"}, {"type": "Tools", "start": 72, "end": 83, "text": "Revenge-RAT"}, {"type": "Tools", "start": 84, "end": 94, "text": "HoudiniRAT"}]}
+{"id": "cdtier_clean_ner_test_00133", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00134", "pred_spans": [{"type": "Tools", "start": 18, "end": 26, "text": "Facebook"}]}
+{"id": "cdtier_clean_ner_test_00135", "pred_spans": [{"type": "Attacker", "start": 2, "end": 5, "text": "北非狐"}, {"type": "Attacker", "start": 8, "end": 16, "text": "APT-C-44"}, {"type": "Region", "start": 62, "end": 67, "text": "阿尔及利亚"}, {"type": "Industry", "start": 99, "end": 101, "text": "情报"}]}
+{"id": "cdtier_clean_ner_test_00136", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00137", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00138", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00139", "pred_spans": [{"type": "Tools", "start": 18, "end": 24, "text": "Empire"}]}
+{"id": "cdtier_clean_ner_test_00140", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00141", "pred_spans": [{"type": "Attacker", "start": 48, "end": 56, "text": "APT-C-23"}]}
+{"id": "cdtier_clean_ner_test_00142", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00143", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00144", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00145", "pred_spans": [{"type": "Campaign", "start": 2, "end": 5, "text": "血茜草"}]}
+{"id": "cdtier_clean_ner_test_00146", "pred_spans": [{"type": "Campaign", "start": 44, "end": 47, "text": "血茜草"}]}
+{"id": "cdtier_clean_ner_test_00147", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00148", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00149", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00150", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00151", "pred_spans": [{"type": "Attacker", "start": 8, "end": 11, "text": "毒云藤"}, {"type": "Tools", "start": 22, "end": 31, "text": "WinRARACE"}]}
+{"id": "cdtier_clean_ner_test_00152", "pred_spans": [{"type": "Region", "start": 32, "end": 34, "text": "美国"}, {"type": "Region", "start": 32, "end": 34, "text": "美国"}, {"type": "Region", "start": 32, "end": 34, "text": "美国"}]}
+{"id": "cdtier_clean_ner_test_00153", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00154", "pred_spans": [{"type": "Tools", "start": 69, "end": 75, "text": "Gafgyt"}, {"type": "Tools", "start": 76, "end": 81, "text": "Mirai"}]}
+{"id": "cdtier_clean_ner_test_00155", "pred_spans": [{"type": "Attacker", "start": 9, "end": 12, "text": "海毒蛇"}, {"type": "Attacker", "start": 9, "end": 12, "text": "海毒蛇"}]}
+{"id": "cdtier_clean_ner_test_00156", "pred_spans": [{"type": "Tools", "start": 27, "end": 32, "text": "excel"}, {"type": "Tools", "start": 34, "end": 38, "text": "word"}]}
+{"id": "cdtier_clean_ner_test_00157", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00158", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00159", "pred_spans": [{"type": "Attacker", "start": 24, "end": 27, "text": "海毒蛇"}, {"type": "Attacker", "start": 32, "end": 38, "text": "Gorgon"}, {"type": "Region", "start": 48, "end": 52, "text": "巴基斯坦"}]}
+{"id": "cdtier_clean_ner_test_00160", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00161", "pred_spans": [{"type": "Region", "start": 40, "end": 42, "text": "美国"}, {"type": "Region", "start": 42, "end": 47, "text": "阿拉巴马州"}, {"type": "Region", "start": 47, "end": 52, "text": "亨茨维尔市"}, {"type": "Industry", "start": 52, "end": 79, "text": "公共事业公司“HuntsvilleUtilities”"}]}
+{"id": "cdtier_clean_ner_test_00162", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00163", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00164", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00165", "pred_spans": [{"type": "Tools", "start": 3, "end": 12, "text": "RemcosRAT"}, {"type": "Tools", "start": 3, "end": 12, "text": "RemcosRAT"}, {"type": "Tools", "start": 3, "end": 12, "text": "RemcosRAT"}]}
+{"id": "cdtier_clean_ner_test_00166", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00167", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00168", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00169", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00170", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00171", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00172", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00173", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00174", "pred_spans": [{"type": "Attacker", "start": 15, "end": 22, "text": "Lazarus"}, {"type": "Region", "start": 29, "end": 31, "text": "韩国"}, {"type": "Industry", "start": 31, "end": 35, "text": "证券公司"}, {"type": "Attacker", "start": 0, "end": 4, "text": "Crat"}, {"type": "Attacker", "start": 0, "end": 4, "text": "Crat"}, {"type": "Attacker", "start": 0, "end": 4, "text": "Crat"}]}
+{"id": "cdtier_clean_ner_test_00175", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00176", "pred_spans": [{"type": "Attacker", "start": 2, "end": 8, "text": "BITTER"}, {"type": "Attacker", "start": 52, "end": 55, "text": "蔓灵花"}, {"type": "Attacker", "start": 2, "end": 8, "text": "BITTER"}, {"type": "Region", "start": 68, "end": 70, "text": "南亚"}, {"type": "Attacker", "start": 2, "end": 8, "text": "BITTER"}]}
+{"id": "cdtier_clean_ner_test_00177", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00178", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00179", "pred_spans": [{"type": "Attacker", "start": 14, "end": 30, "text": "TransparentTribe"}, {"type": "Attacker", "start": 43, "end": 51, "text": "ProjectM"}, {"type": "Attacker", "start": 52, "end": 59, "text": "C-Major"}, {"type": "Region", "start": 65, "end": 69, "text": "巴基斯坦"}, {"type": "Industry", "start": 85, "end": 89, "text": "印度政府"}, {"type": "Industry", "start": 90, "end": 94, "text": "军事目标"}]}
+{"id": "cdtier_clean_ner_test_00180", "pred_spans": [{"type": "Region", "start": 11, "end": 13, "text": "印度"}, {"type": "Attacker", "start": 43, "end": 59, "text": "TransparentTribe"}]}
+{"id": "cdtier_clean_ner_test_00181", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00182", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00183", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00184", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00185", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00186", "pred_spans": [{"type": "Tools", "start": 12, "end": 21, "text": "QuasarRAT"}, {"type": "Tools", "start": 12, "end": 21, "text": "QuasarRAT"}]}
+{"id": "cdtier_clean_ner_test_00187", "pred_spans": [{"type": "Attacker", "start": 2, "end": 5, "text": "摩诃草"}, {"type": "Tools", "start": 77, "end": 85, "text": "BozokRAT"}, {"type": "Tools", "start": 101, "end": 110, "text": "QuasarRAT"}]}
+{"id": "cdtier_clean_ner_test_00188", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00189", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00190", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00191", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00192", "pred_spans": [{"type": "Attacker", "start": 36, "end": 45, "text": "Darkhotel"}, {"type": "Attacker", "start": 46, "end": 54, "text": "APT-C-06"}]}
+{"id": "cdtier_clean_ner_test_00193", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00194", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00195", "pred_spans": [{"type": "Region", "start": 40, "end": 42, "text": "南亚"}, {"type": "Attacker", "start": 48, "end": 52, "text": "透明部落"}]}
+{"id": "cdtier_clean_ner_test_00196", "pred_spans": [{"type": "Tools", "start": 21, "end": 27, "text": "AhMyth"}]}
+{"id": "cdtier_clean_ner_test_00197", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00198", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00199", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00200", "pred_spans": [{"type": "Attacker", "start": 11, "end": 14, "text": "海莲花"}, {"type": "Tools", "start": 17, "end": 25, "text": "DenesRAT"}, {"type": "Tools", "start": 17, "end": 25, "text": "DenesRAT"}, {"type": "Attacker", "start": 11, "end": 14, "text": "海莲花"}]}
+{"id": "cdtier_clean_ner_test_00201", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00202", "pred_spans": [{"type": "Region", "start": 23, "end": 27, "text": "哥伦比亚"}, {"type": "Industry", "start": 29, "end": 31, "text": "卫生"}, {"type": "Industry", "start": 35, "end": 37, "text": "税务"}, {"type": "Industry", "start": 38, "end": 40, "text": "海关"}, {"type": "Industry", "start": 43, "end": 50, "text": "民事身份登记处"}, {"type": "Industry", "start": 51, "end": 54, "text": "检察院"}, {"type": "Industry", "start": 56, "end": 59, "text": "移民局"}]}
+{"id": "cdtier_clean_ner_test_00203", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00204", "pred_spans": [{"type": "Region", "start": 47, "end": 51, "text": "哥伦比亚"}, {"type": "Industry", "start": 53, "end": 57, "text": "政府部门"}]}
+{"id": "cdtier_clean_ner_test_00205", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00206", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00207", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00208", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00209", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00210", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00211", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00212", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00213", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00214", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00215", "pred_spans": [{"type": "Attacker", "start": 0, "end": 9, "text": "Gamaredon"}]}
+{"id": "cdtier_clean_ner_test_00216", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00217", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00218", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00219", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00220", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00221", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00222", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00223", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00224", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00225", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00226", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00227", "pred_spans": [{"type": "Tools", "start": 50, "end": 53, "text": "DHL"}, {"type": "Tools", "start": 68, "end": 77, "text": "AdwindRAT"}]}
+{"id": "cdtier_clean_ner_test_00228", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00229", "pred_spans": [{"type": "Attacker", "start": 25, "end": 34, "text": "Gamaredon"}, {"type": "Attacker", "start": 25, "end": 34, "text": "Gamaredon"}]}
+{"id": "cdtier_clean_ner_test_00230", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00231", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00232", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00233", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00234", "pred_spans": [{"type": "Attacker", "start": 9, "end": 11, "text": "幼象"}, {"type": "Attacker", "start": 9, "end": 11, "text": "幼象"}]}
+{"id": "cdtier_clean_ner_test_00235", "pred_spans": [{"type": "Tools", "start": 108, "end": 112, "text": "WRAT"}, {"type": "Tools", "start": 108, "end": 112, "text": "WRAT"}]}
+{"id": "cdtier_clean_ner_test_00236", "pred_spans": [{"type": "Attacker", "start": 95, "end": 97, "text": "幼象"}]}
+{"id": "cdtier_clean_ner_test_00237", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00238", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00239", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00240", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00241", "pred_spans": [{"type": "Attacker", "start": 336, "end": 343, "text": "Lazarus"}]}
+{"id": "cdtier_clean_ner_test_00242", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00243", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00244", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00245", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00246", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00247", "pred_spans": [{"type": "Attacker", "start": 22, "end": 30, "text": "WellMess"}]}
+{"id": "cdtier_clean_ner_test_00248", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00249", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00250", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00251", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00252", "pred_spans": [{"type": "Attacker", "start": 27, "end": 35, "text": "WellMess"}, {"type": "Attacker", "start": 27, "end": 35, "text": "WellMess"}, {"type": "Attacker", "start": 27, "end": 35, "text": "WellMess"}]}
+{"id": "cdtier_clean_ner_test_00253", "pred_spans": [{"type": "Region", "start": 23, "end": 27, "text": "巴基斯坦"}, {"type": "Region", "start": 28, "end": 30, "text": "中国"}, {"type": "Region", "start": 31, "end": 35, "text": "孟加拉国"}, {"type": "Region", "start": 40, "end": 43, "text": "东南亚"}, {"type": "Industry", "start": 53, "end": 55, "text": "政府"}, {"type": "Industry", "start": 56, "end": 60, "text": "军事领域"}]}
+{"id": "cdtier_clean_ner_test_00254", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00255", "pred_spans": [{"type": "Attacker", "start": 52, "end": 62, "text": "SideWinder"}, {"type": "Attacker", "start": 52, "end": 62, "text": "SideWinder"}]}
+{"id": "cdtier_clean_ner_test_00256", "pred_spans": [{"type": "Tools", "start": 40, "end": 44, "text": "双星突破"}]}
+{"id": "cdtier_clean_ner_test_00257", "pred_spans": [{"type": "Tools", "start": 7, "end": 10, "text": "AFC"}, {"type": "Tools", "start": 7, "end": 10, "text": "AFC"}, {"type": "Region", "start": 17, "end": 19, "text": "亚洲"}, {"type": "Region", "start": 17, "end": 19, "text": "亚洲"}, {"type": "Region", "start": 59, "end": 61, "text": "南亚"}, {"type": "Region", "start": 62, "end": 64, "text": "东亚"}, {"type": "Region", "start": 65, "end": 68, "text": "东南亚"}]}
+{"id": "cdtier_clean_ner_test_00258", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00259", "pred_spans": [{"type": "Attacker", "start": 11, "end": 21, "text": "SideWinder"}, {"type": "Attacker", "start": 29, "end": 38, "text": "Darkhotel"}]}
+{"id": "cdtier_clean_ner_test_00260", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00261", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00262", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00263", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00264", "pred_spans": [{"type": "Tools", "start": 23, "end": 31, "text": "BozokRAT"}]}
+{"id": "cdtier_clean_ner_test_00265", "pred_spans": [{"type": "Tools", "start": 200, "end": 208, "text": "hmfs.exe"}]}
+{"id": "cdtier_clean_ner_test_00266", "pred_spans": [{"type": "Attacker", "start": 29, "end": 32, "text": "摩诃草"}]}
+{"id": "cdtier_clean_ner_test_00267", "pred_spans": [{"type": "Tools", "start": 0, "end": 3, "text": "蔓灵花"}, {"type": "Tools", "start": 0, "end": 3, "text": "蔓灵花"}, {"type": "Attacker", "start": 43, "end": 49, "text": "Bitter"}, {"type": "Region", "start": 60, "end": 62, "text": "中国"}, {"type": "Region", "start": 63, "end": 67, "text": "巴基斯坦"}]}
+{"id": "cdtier_clean_ner_test_00268", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00269", "pred_spans": [{"type": "Attacker", "start": 233, "end": 238, "text": "APT28"}, {"type": "Region", "start": 251, "end": 253, "text": "波兰"}, {"type": "Region", "start": 251, "end": 253, "text": "波兰"}, {"type": "Region", "start": 251, "end": 253, "text": "波兰"}]}
+{"id": "cdtier_clean_ner_test_00270", "pred_spans": [{"type": "Region", "start": 7, "end": 9, "text": "中亚"}, {"type": "Industry", "start": 10, "end": 14, "text": "外交机构"}, {"type": "Attacker", "start": 21, "end": 26, "text": "APT28"}]}
+{"id": "cdtier_clean_ner_test_00271", "pred_spans": [{"type": "Tools", "start": 12, "end": 19, "text": "Zebrocy"}, {"type": "Tools", "start": 12, "end": 19, "text": "Zebrocy"}, {"type": "Tools", "start": 12, "end": 19, "text": "Zebrocy"}]}
+{"id": "cdtier_clean_ner_test_00272", "pred_spans": [{"type": "Tools", "start": 10, "end": 17, "text": "Zebrocy"}, {"type": "Tools", "start": 10, "end": 17, "text": "Zebrocy"}]}
+{"id": "cdtier_clean_ner_test_00273", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00274", "pred_spans": [{"type": "Attacker", "start": 39, "end": 44, "text": "Donot"}, {"type": "Attacker", "start": 39, "end": 44, "text": "Donot"}, {"type": "Attacker", "start": 39, "end": 44, "text": "Donot"}]}
+{"id": "cdtier_clean_ner_test_00275", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00276", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00277", "pred_spans": [{"type": "Attacker", "start": 4, "end": 13, "text": "Darkhotel"}, {"type": "Tools", "start": 15, "end": 21, "text": "Ramsay"}, {"type": "Campaign", "start": 4, "end": 13, "text": "Darkhotel"}, {"type": "Tools", "start": 15, "end": 21, "text": "Ramsay"}, {"type": "Tools", "start": 15, "end": 21, "text": "Ramsay"}]}
+{"id": "cdtier_clean_ner_test_00278", "pred_spans": [{"type": "Tools", "start": 13, "end": 17, "text": "7Zip"}]}
+{"id": "cdtier_clean_ner_test_00279", "pred_spans": [{"type": "Tools", "start": 8, "end": 12, "text": "7Zip"}]}
+{"id": "cdtier_clean_ner_test_00280", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00281", "pred_spans": [{"type": "Campaign", "start": 634, "end": 638, "text": "季风行动"}, {"type": "Campaign", "start": 639, "end": 642, "text": "蔓灵花"}, {"type": "Campaign", "start": 639, "end": 642, "text": "蔓灵花"}]}
+{"id": "cdtier_clean_ner_test_00282", "pred_spans": [{"type": "Tools", "start": 3, "end": 13, "text": "WarzoneRAT"}, {"type": "Attacker", "start": 54, "end": 57, "text": "蔓灵花"}]}
+{"id": "cdtier_clean_ner_test_00283", "pred_spans": [{"type": "Region", "start": 30, "end": 34, "text": "孟加拉国"}, {"type": "Region", "start": 48, "end": 50, "text": "美国"}, {"type": "Region", "start": 48, "end": 50, "text": "美国"}, {"type": "Region", "start": 48, "end": 50, "text": "美国"}, {"type": "Industry", "start": 58, "end": 62, "text": "能源部门"}, {"type": "Region", "start": 63, "end": 65, "text": "英国"}, {"type": "Region", "start": 66, "end": 68, "text": "韩国"}, {"type": "Attacker", "start": 84, "end": 91, "text": "Lazarus"}]}
+{"id": "cdtier_clean_ner_test_00284", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00285", "pred_spans": [{"type": "Region", "start": 57, "end": 59, "text": "南亚"}, {"type": "Attacker", "start": 64, "end": 69, "text": "Donot"}]}
+{"id": "cdtier_clean_ner_test_00286", "pred_spans": [{"type": "Attacker", "start": 21, "end": 23, "text": "隐士"}, {"type": "Attacker", "start": 21, "end": 23, "text": "隐士"}, {"type": "Attacker", "start": 32, "end": 38, "text": "Hermit"}, {"type": "Attacker", "start": 21, "end": 23, "text": "隐士"}]}
+{"id": "cdtier_clean_ner_test_00287", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00288", "pred_spans": [{"type": "Attacker", "start": 9, "end": 18, "text": "BaneChant"}]}
+{"id": "cdtier_clean_ner_test_00289", "pred_spans": [{"type": "Attacker", "start": 15, "end": 18, "text": "蔓灵花"}, {"type": "Region", "start": 45, "end": 49, "text": "巴基斯坦"}, {"type": "Region", "start": 84, "end": 86, "text": "印度"}]}
+{"id": "cdtier_clean_ner_test_00290", "pred_spans": [{"type": "Attacker", "start": 33, "end": 35, "text": "白象"}, {"type": "Region", "start": 39, "end": 43, "text": "巴基斯坦"}, {"type": "Region", "start": 44, "end": 48, "text": "孟加拉国"}, {"type": "Region", "start": 49, "end": 51, "text": "南亚"}]}
+{"id": "cdtier_clean_ner_test_00291", "pred_spans": [{"type": "Tools", "start": 1, "end": 7, "text": "MMCore"}, {"type": "Region", "start": 45, "end": 47, "text": "印度"}]}
+{"id": "cdtier_clean_ner_test_00292", "pred_spans": [{"type": "Attacker", "start": 11, "end": 14, "text": "蔓灵花"}, {"type": "Attacker", "start": 15, "end": 17, "text": "白象"}, {"type": "Attacker", "start": 18, "end": 21, "text": "孔夫子"}, {"type": "Attacker", "start": 22, "end": 27, "text": "donot"}]}
+{"id": "cdtier_clean_ner_test_00293", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00294", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00295", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00296", "pred_spans": [{"type": "Attacker", "start": 13, "end": 16, "text": "海莲花"}, {"type": "Region", "start": 29, "end": 31, "text": "我国"}, {"type": "Industry", "start": 31, "end": 34, "text": "某部委"}, {"type": "Region", "start": 35, "end": 38, "text": "武汉市"}]}
+{"id": "cdtier_clean_ner_test_00297", "pred_spans": [{"type": "Attacker", "start": 16, "end": 19, "text": "海莲花"}, {"type": "Tools", "start": 24, "end": 27, "text": "WPS"}]}
+{"id": "cdtier_clean_ner_test_00298", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00299", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00300", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00301", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00302", "pred_spans": [{"type": "Tools", "start": 23, "end": 31, "text": "fluxwire"}]}
+{"id": "cdtier_clean_ner_test_00303", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00304", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00305", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00306", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00307", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00308", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00309", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00310", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00311", "pred_spans": [{"type": "Region", "start": 48, "end": 50, "text": "中国"}, {"type": "Region", "start": 66, "end": 69, "text": "土耳其"}, {"type": "Region", "start": 48, "end": 50, "text": "中国"}]}
+{"id": "cdtier_clean_ner_test_00312", "pred_spans": [{"type": "Region", "start": 174, "end": 177, "text": "土耳其"}]}
+{"id": "cdtier_clean_ner_test_00313", "pred_spans": [{"type": "Region", "start": 5, "end": 7, "text": "我国"}, {"type": "Industry", "start": 7, "end": 11, "text": "航空航天"}, {"type": "Industry", "start": 12, "end": 16, "text": "科研机构"}, {"type": "Industry", "start": 17, "end": 21, "text": "石油行业"}, {"type": "Industry", "start": 22, "end": 29, "text": "大型互联网公司"}, {"type": "Industry", "start": 31, "end": 35, "text": "政府机构"}]}
+{"id": "cdtier_clean_ner_test_00314", "pred_spans": [{"type": "Tools", "start": 7, "end": 13, "text": "Vault7"}, {"type": "Attacker", "start": 63, "end": 66, "text": "CIA"}, {"type": "Attacker", "start": 63, "end": 66, "text": "CIA"}, {"type": "Attacker", "start": 63, "end": 66, "text": "CIA"}, {"type": "Attacker", "start": 63, "end": 66, "text": "CIA"}]}
+{"id": "cdtier_clean_ner_test_00315", "pred_spans": [{"type": "Attacker", "start": 39, "end": 42, "text": "CIA"}, {"type": "Region", "start": 45, "end": 47, "text": "我国"}, {"type": "Industry", "start": 47, "end": 51, "text": "航空航天"}, {"type": "Industry", "start": 52, "end": 56, "text": "科研机构"}]}
+{"id": "cdtier_clean_ner_test_00316", "pred_spans": [{"type": "Region", "start": 36, "end": 38, "text": "美国"}]}
+{"id": "cdtier_clean_ner_test_00317", "pred_spans": [{"type": "Attacker", "start": 7, "end": 15, "text": "APT-C-39"}, {"type": "Region", "start": 19, "end": 21, "text": "我国"}]}
+{"id": "cdtier_clean_ner_test_00318", "pred_spans": [{"type": "Tools", "start": 16, "end": 22, "text": "Vault7"}, {"type": "Tools", "start": 23, "end": 26, "text": "穹窿7"}]}
+{"id": "cdtier_clean_ner_test_00319", "pred_spans": [{"type": "Attacker", "start": 6, "end": 14, "text": "APT-C-39"}, {"type": "Region", "start": 28, "end": 30, "text": "美国"}]}
+{"id": "cdtier_clean_ner_test_00320", "pred_spans": [{"type": "Region", "start": 28, "end": 31, "text": "北美洲"}]}
+{"id": "cdtier_clean_ner_test_00321", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00322", "pred_spans": [{"type": "Attacker", "start": 46, "end": 49, "text": "诺崇狮"}]}
+{"id": "cdtier_clean_ner_test_00323", "pred_spans": [{"type": "Attacker", "start": 6, "end": 9, "text": "诺崇狮"}]}
+{"id": "cdtier_clean_ner_test_00324", "pred_spans": [{"type": "Tools", "start": 48, "end": 55, "text": "YouTube"}, {"type": "Tools", "start": 48, "end": 55, "text": "YouTube"}]}
+{"id": "cdtier_clean_ner_test_00325", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00326", "pred_spans": [{"type": "Attacker", "start": 1, "end": 8, "text": "Higaisa"}, {"type": "Attacker", "start": 9, "end": 12, "text": "黑格莎"}, {"type": "Attacker", "start": 79, "end": 86, "text": "higaisa"}, {"type": "Attacker", "start": 9, "end": 12, "text": "黑格莎"}]}
+{"id": "cdtier_clean_ner_test_00327", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00328", "pred_spans": [{"type": "Tools", "start": 143, "end": 148, "text": "gh0st"}, {"type": "Tools", "start": 143, "end": 148, "text": "gh0st"}]}
+{"id": "cdtier_clean_ner_test_00329", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00330", "pred_spans": [{"type": "Attacker", "start": 48, "end": 53, "text": "Hades"}]}
+{"id": "cdtier_clean_ner_test_00331", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00332", "pred_spans": [{"type": "Region", "start": 22, "end": 25, "text": "俄罗斯"}]}
+{"id": "cdtier_clean_ner_test_00333", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00334", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00335", "pred_spans": [{"type": "Attacker", "start": 23, "end": 26, "text": "月光鼠"}]}
+{"id": "cdtier_clean_ner_test_00336", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00337", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00338", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00339", "pred_spans": [{"type": "Industry", "start": 33, "end": 35, "text": "公安"}, {"type": "Industry", "start": 36, "end": 38, "text": "司法"}, {"type": "Industry", "start": 39, "end": 41, "text": "政府"}, {"type": "Industry", "start": 42, "end": 44, "text": "金融"}, {"type": "Industry", "start": 45, "end": 48, "text": "运营商"}, {"type": "Industry", "start": 49, "end": 51, "text": "能源"}, {"type": "Industry", "start": 52, "end": 54, "text": "制造"}]}
+{"id": "cdtier_clean_ner_test_00340", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00341", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00342", "pred_spans": [{"type": "Tools", "start": 10, "end": 15, "text": "Slide"}, {"type": "Region", "start": 27, "end": 29, "text": "中国"}, {"type": "Industry", "start": 29, "end": 31, "text": "军工"}]}
+{"id": "cdtier_clean_ner_test_00343", "pred_spans": [{"type": "Attacker", "start": 29, "end": 32, "text": "蔓灵花"}, {"type": "Tools", "start": 46, "end": 54, "text": "AndroRAT"}, {"type": "Tools", "start": 81, "end": 86, "text": "Slide"}, {"type": "Tools", "start": 81, "end": 86, "text": "Slide"}]}
+{"id": "cdtier_clean_ner_test_00344", "pred_spans": [{"type": "Tools", "start": 10, "end": 15, "text": "Slide"}]}
+{"id": "cdtier_clean_ner_test_00345", "pred_spans": [{"type": "Attacker", "start": 19, "end": 22, "text": "蔓灵花"}, {"type": "Industry", "start": 28, "end": 30, "text": "旅游"}, {"type": "Industry", "start": 50, "end": 56, "text": "干部网络学院"}]}
+{"id": "cdtier_clean_ner_test_00346", "pred_spans": [{"type": "Attacker", "start": 57, "end": 60, "text": "蔓灵花"}]}
+{"id": "cdtier_clean_ner_test_00347", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00348", "pred_spans": [{"type": "Attacker", "start": 13, "end": 20, "text": "Lazarus"}]}
+{"id": "cdtier_clean_ner_test_00349", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00350", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00351", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00352", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00353", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00354", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00355", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00356", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00357", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00358", "pred_spans": [{"type": "Attacker", "start": 21, "end": 24, "text": "拍拍熊"}, {"type": "Attacker", "start": 26, "end": 34, "text": "APT-C-37"}, {"type": "Campaign", "start": 58, "end": 62, "text": "月光再临"}]}
+{"id": "cdtier_clean_ner_test_00359", "pred_spans": [{"type": "Attacker", "start": 29, "end": 32, "text": "哈马斯"}]}
+{"id": "cdtier_clean_ner_test_00360", "pred_spans": [{"type": "Attacker", "start": 15, "end": 24, "text": "MoonLight"}, {"type": "Attacker", "start": 15, "end": 24, "text": "MoonLight"}]}
+{"id": "cdtier_clean_ner_test_00361", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00362", "pred_spans": [{"type": "Attacker", "start": 43, "end": 52, "text": "MoonLight"}]}
+{"id": "cdtier_clean_ner_test_00363", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00364", "pred_spans": [{"type": "Attacker", "start": 24, "end": 33, "text": "MoonLight"}, {"type": "Region", "start": 37, "end": 39, "text": "中东"}]}
+{"id": "cdtier_clean_ner_test_00365", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00366", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00367", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00368", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00369", "pred_spans": [{"type": "Region", "start": 17, "end": 21, "text": "巴勒斯坦"}, {"type": "Tools", "start": 62, "end": 69, "text": "Houdini"}]}
+{"id": "cdtier_clean_ner_test_00370", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00371", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00372", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00373", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00374", "pred_spans": [{"type": "Industry", "start": 10, "end": 14, "text": "金融机构"}]}
+{"id": "cdtier_clean_ner_test_00375", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00376", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00377", "pred_spans": [{"type": "Region", "start": 1, "end": 3, "text": "南亚"}]}
+{"id": "cdtier_clean_ner_test_00378", "pred_spans": [{"type": "Region", "start": 37, "end": 41, "text": "巴基斯坦"}, {"type": "Industry", "start": 41, "end": 43, "text": "军事"}, {"type": "Industry", "start": 44, "end": 47, "text": "原子能"}, {"type": "Industry", "start": 48, "end": 50, "text": "情报"}]}
+{"id": "cdtier_clean_ner_test_00379", "pred_spans": [{"type": "Region", "start": 37, "end": 41, "text": "马尔代夫"}]}
+{"id": "cdtier_clean_ner_test_00380", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00381", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00382", "pred_spans": [{"type": "Region", "start": 90, "end": 93, "text": "孟加拉"}, {"type": "Industry", "start": 93, "end": 95, "text": "海军"}, {"type": "Region", "start": 111, "end": 115, "text": "马尔代夫"}, {"type": "Industry", "start": 115, "end": 118, "text": "外交部"}, {"type": "Region", "start": 127, "end": 131, "text": "巴基斯坦"}, {"type": "Industry", "start": 131, "end": 134, "text": "原子能"}, {"type": "Industry", "start": 232, "end": 234, "text": "政府"}, {"type": "Industry", "start": 235, "end": 237, "text": "军事"}, {"type": "Industry", "start": 115, "end": 117, "text": "外交"}, {"type": "Industry", "start": 241, "end": 243, "text": "情报"}, {"type": "Industry", "start": 131, "end": 134, "text": "原子能"}, {"type": "Industry", "start": 248, "end": 250, "text": "高校"}]}
+{"id": "cdtier_clean_ner_test_00383", "pred_spans": [{"type": "Region", "start": 64, "end": 68, "text": "巴基斯坦"}, {"type": "Region", "start": 161, "end": 163, "text": "我国"}, {"type": "Industry", "start": 164, "end": 168, "text": "军事部门"}]}
+{"id": "cdtier_clean_ner_test_00384", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00385", "pred_spans": []}
+{"id": "cdtier_clean_ner_test_00386", "pred_spans": []}

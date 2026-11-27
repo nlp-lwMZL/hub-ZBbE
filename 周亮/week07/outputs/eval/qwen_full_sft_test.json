@@ -1,0 +1,61 @@
+{
+  "run_name": "qwen_full_sft",
+  "method": "Qwen3-0.6B full SFT",
+  "split": "test",
+  "num_samples": 387,
+  "metrics": {
+    "num_samples": 387,
+    "gold_entities": 432,
+    "pred_entities": 349,
+    "precision": 0.765,
+    "recall": 0.6181,
+    "f1": 0.6837,
+    "type_macro_f1": 0.6528,
+    "per_type": {
+      "Attacker": {
+        "precision": 0.9126,
+        "recall": 0.7287,
+        "f1": 0.8103,
+        "support": 129
+      },
+      "Campaign": {
+        "precision": 0.6667,
+        "recall": 0.5,
+        "f1": 0.5714,
+        "support": 8
+      },
+      "Industry": {
+        "precision": 0.5278,
+        "recall": 0.5672,
+        "f1": 0.5468,
+        "support": 67
+      },
+      "Region": {
+        "precision": 0.7791,
+        "recall": 0.7053,
+        "f1": 0.7403,
+        "support": 95
+      },
+      "Tools": {
+        "precision": 0.7805,
+        "recall": 0.4812,
+        "f1": 0.5953,
+        "support": 133
+      }
+    }
+  },
+  "engineering": {
+    "json_valid": 387,
+    "repaired": 1,
+    "noise_stripped": 0,
+    "illegal_type": 1,
+    "text_not_found": 1,
+    "empty_or_no_json": 0,
+    "unrepairable": 0,
+    "avg_latency_s": 0.42,
+    "avg_gen_tokens": 61.6
+  },
+  "ckpt": "/content/drive/MyDrive/week7_runs/checkpoints/qwen_full_sft/full",
+  "mode": "full",
+  "pred_path": "/content/drive/MyDrive/week7_runs/outputs/preds/qwen_full_sft_test.jsonl"
+}
