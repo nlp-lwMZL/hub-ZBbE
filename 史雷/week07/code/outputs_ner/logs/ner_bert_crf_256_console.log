@@ -1,0 +1,38 @@
+模型参数：102.3M，解码器=crf，BERT 层数=full
+  epoch 1 step 10/19 loss=82.8480
+epoch 1/10 | train_loss=59.9808 | dev_loss=33.9090 dev_F1=0.0000 | 24s
+  ★ dev 最优 → 保存 ner_bert_crf_256.pt
+  epoch 2 step 10/19 loss=20.2843
+epoch 2/10 | train_loss=17.8053 | dev_loss=14.6696 dev_F1=0.1732 | 22s
+  ★ dev 最优 → 保存 ner_bert_crf_256.pt
+  epoch 3 step 10/19 loss=8.8247
+epoch 3/10 | train_loss=6.9103 | dev_loss=8.5259 dev_F1=0.6326 | 21s
+  ★ dev 最优 → 保存 ner_bert_crf_256.pt
+  epoch 4 step 10/19 loss=3.0937
+epoch 4/10 | train_loss=2.8362 | dev_loss=7.6450 dev_F1=0.6901 | 22s
+  ★ dev 最优 → 保存 ner_bert_crf_256.pt
+  epoch 5 step 10/19 loss=1.6262
+epoch 5/10 | train_loss=1.5210 | dev_loss=7.0397 dev_F1=0.7059 | 22s
+  ★ dev 最优 → 保存 ner_bert_crf_256.pt
+  epoch 6 step 10/19 loss=0.7260
+epoch 6/10 | train_loss=0.6615 | dev_loss=7.7380 dev_F1=0.7415 | 22s
+  ★ dev 最优 → 保存 ner_bert_crf_256.pt
+  epoch 7 step 10/19 loss=0.5738
+epoch 7/10 | train_loss=0.3728 | dev_loss=8.5827 dev_F1=0.7586 | 22s
+  ★ dev 最优 → 保存 ner_bert_crf_256.pt
+  epoch 8 step 10/19 loss=0.3295
+epoch 8/10 | train_loss=0.3444 | dev_loss=8.8804 dev_F1=0.7772 | 22s
+  ★ dev 最优 → 保存 ner_bert_crf_256.pt
+  epoch 9 step 10/19 loss=0.1934
+epoch 9/10 | train_loss=0.1288 | dev_loss=8.8944 dev_F1=0.7820 | 22s
+  ★ dev 最优 → 保存 ner_bert_crf_256.pt
+  epoch 10 step 10/19 loss=0.0600
+epoch 10/10 | train_loss=0.1425 | dev_loss=9.0622 dev_F1=0.7673 | 22s
+加载最优 checkpoint（epoch 9，dev F1=0.7820）
+
+【test 实体级指标】overall P=0.761 R=0.8041 F1=0.782
+  人物: P=0.9273 R=0.8793 F1=0.9027 (n=58)
+  地理位置: P=0.7901 R=0.7619 F1=0.7758 (n=84)
+  组织机构: P=0.5942 R=0.7885 F1=0.6777 (n=52)
+非法 BIO：11/100 条序列
+训练耗时 222s | 推理 16.74 ms/句 | 结果写入 /Users/codeidiot/Desktop/AI/hub-ZBbE/史雷/week07/code/outputs_ner

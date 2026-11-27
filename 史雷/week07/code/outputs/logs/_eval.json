@@ -1,0 +1,58 @@
+{
+  "method": "",
+  "argv": [
+    "llm_zero_shot/llm_extract.py",
+    "--backend",
+    "api",
+    "--mode",
+    "few",
+    "--n",
+    "200"
+  ],
+  "args": "Namespace(backend='api', mode='few', n=200, seed=42, data=None, tag='', out='', model='deepseek/deepseek-v4.1-flash', model_path=None, max_tokens=512, max_new_tokens=384, gen_batch=8, dtype='auto', max_length=1280, retries=3, dry_run=False, print_prompt=False, no_eval=False, from_raw='')",
+  "env": {
+    "python": "3.12.7",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "time": "2026-11-26 21:35:11",
+    "torch": "2.15.0",
+    "cuda_available": false,
+    "transformers": "5.23.0"
+  },
+  "runtime_s": 581.37,
+  "metrics": {
+    "trigger": 0.5467,
+    "argument": 0.3776,
+    "event_exact": 0.0969
+  },
+  "type_macro_f1": 0.6052,
+  "report": {
+    "tag": "api_few_n200",
+    "backend": "api",
+    "mode": "few",
+    "n": 200,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "seed": 42,
+    "few_shot_examples": 6,
+    "json_valid_rate": 48.0,
+    "parse_fail": 104,
+    "empty_reply": 100,
+    "repaired": 14,
+    "noise_stripped": 0,
+    "type_invalid": 0,
+    "role_invalid": 4,
+    "trigger_not_in_source": 0,
+    "arg_not_in_source": 0,
+    "latency_mean_s": 2.904,
+    "latency_p50_s": 2.775,
+    "total_s": 581.0,
+    "prompt_tokens": 297291,
+    "completion_tokens": 89079,
+    "total_tokens": 386370,
+    "api_errors": 0,
+    "pred_path": "/Users/codeidiot/Desktop/AI/hub-ZBbE/史雷/week07/code/outputs/llm/pred_api_few_n200.jsonl",
+    "gold_subset": "/Users/codeidiot/Desktop/AI/hub-ZBbE/史雷/week07/code/outputs/llm/gold_n200.jsonl",
+    "eval_ids": "/Users/codeidiot/Desktop/AI/hub-ZBbE/史雷/week07/code/outputs/llm/eval_ids.json",
+    "is_mock": false
+  },
+  "notes": "LLM api/few 事件抽取"
+}
