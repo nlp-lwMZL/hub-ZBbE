@@ -1,0 +1,30 @@
+  epoch 1 step 50/162 loss=440.6859
+  epoch 1 step 100/162 loss=300.6744
+  epoch 1 step 150/162 loss=234.1120
+epoch 1/3 | train_loss=222.7132 | inner_loss=72.5918 inner_spanF1=0.4262 | dev_spanF1(监控)=0.4302 | 97s
+  ★ 内层验证最优 → 保存 hw7_crf_roberta.pt
+  epoch 2 step 50/162 loss=66.4419
+  epoch 2 step 100/162 loss=60.7905
+  epoch 2 step 150/162 loss=56.3934
+epoch 2/3 | train_loss=55.6110 | inner_loss=42.8131 inner_spanF1=0.5926 | dev_spanF1(监控)=0.6150 | 89s
+  ★ 内层验证最优 → 保存 hw7_crf_roberta.pt
+  epoch 3 step 50/162 loss=40.6977
+  epoch 3 step 100/162 loss=39.2645
+  epoch 3 step 150/162 loss=38.9563
+epoch 3/3 | train_loss=38.8760 | inner_loss=36.7127 inner_spanF1=0.6385 | dev_spanF1(监控)=0.6618 | 92s
+  ★ 内层验证最优 → 保存 hw7_crf_roberta.pt
+加载最优 checkpoint（epoch 3，内层验证 spanF1=0.6385）
+dev 解码：930 句，其中没抽到触发词 33 句
+样本数 930（缺预测 0 条）
+  trigger      P=0.8283 R=0.7989 F1=0.8134 (tp=743 fp=154 fn=187)
+  argument     P=0.5285 R=0.6380 F1=0.5781 (tp=2630 fp=2346 fn=1492)
+  event_exact  P=0.1717 R=0.1656 F1=0.1686 (tp=154 fp=743 fn=776)
+  type_macro_f1 = 0.7532
+  n200 子集：trigger F1=0.8112 arg F1=0.5804 → hw7_crf_roberta_n200.json
+  指标已写入 → F:\learn\ai-llm\badou\course\week7\week7-信息抽取\code\outputs\metrics\disc\hw7_crf_roberta.json
+
+【非法 BIO 统计（dev，模型原始输出）】
+  序列数 930：含非法序列 618 条（66.5%），其中非法开头 0 处、非法转移 1392 处
+  训练集对照：含非法序列 3441 条（66.5%）
+
+训练耗时 279s | 推理延迟 6.86 ms/句 | 峰值显存 1844 MiB

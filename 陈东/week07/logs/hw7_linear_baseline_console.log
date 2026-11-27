@@ -1,0 +1,30 @@
+  epoch 1 step 50/162 loss=2.6476
+  epoch 1 step 100/162 loss=1.7965
+  epoch 1 step 150/162 loss=1.4036
+epoch 1/3 | train_loss=1.3371 | inner_loss=0.4368 inner_spanF1=0.3940 | dev_spanF1(监控)=0.4072 | 60s
+  ★ 内层验证最优 → 保存 hw7_linear_baseline.pt
+  epoch 2 step 50/162 loss=0.4112
+  epoch 2 step 100/162 loss=0.3763
+  epoch 2 step 150/162 loss=0.3530
+epoch 2/3 | train_loss=0.3492 | inner_loss=0.2645 inner_spanF1=0.6064 | dev_spanF1(监控)=0.6094 | 59s
+  ★ 内层验证最优 → 保存 hw7_linear_baseline.pt
+  epoch 3 step 50/162 loss=0.2653
+  epoch 3 step 100/162 loss=0.2583
+  epoch 3 step 150/162 loss=0.2507
+epoch 3/3 | train_loss=0.2503 | inner_loss=0.2415 inner_spanF1=0.6245 | dev_spanF1(监控)=0.6459 | 59s
+  ★ 内层验证最优 → 保存 hw7_linear_baseline.pt
+加载最优 checkpoint（epoch 3，内层验证 spanF1=0.6245）
+dev 解码：930 句，其中没抽到触发词 48 句
+样本数 930（缺预测 0 条）
+  trigger      P=0.8492 R=0.8054 F1=0.8267 (tp=749 fp=133 fn=181)
+  argument     P=0.5179 R=0.6174 F1=0.5633 (tp=2545 fp=2369 fn=1577)
+  event_exact  P=0.1701 R=0.1613 F1=0.1656 (tp=150 fp=732 fn=780)
+  type_macro_f1 = 0.7512
+  n200 子集：trigger F1=0.8114 arg F1=0.5520 → hw7_linear_baseline_n200.json
+  指标已写入 → F:\learn\ai-llm\badou\course\week7\week7-信息抽取\code\outputs\metrics\disc\hw7_linear_baseline.json
+
+【非法 BIO 统计（dev，模型原始输出）】
+  序列数 930：含非法序列 611 条（65.7%），其中非法开头 1 处、非法转移 1505 处
+  训练集对照：含非法序列 3523 条（68.1%）
+
+训练耗时 178s | 推理延迟 3.02 ms/句 | 峰值显存 1843 MiB

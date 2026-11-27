@@ -1,0 +1,14 @@
+硬约束已装载：禁止 10878 个非法转移对、74 个非法起始标签
+硬约束解码后非法统计：非法开头 0 处 / 非法转移 186 处（含非法序列 76 句）
+样本数 930（缺预测 0 条）
+  trigger      P=0.8591 R=0.8194 F1=0.8387 (tp=762 fp=125 fn=168)
+  argument     P=0.6473 R=0.6844 F1=0.6653 (tp=2821 fp=1537 fn=1301)
+  event_exact  P=0.2289 R=0.2183 F1=0.2234 (tp=203 fp=684 fn=727)
+  type_macro_f1 = 0.7529
+  n200 子集：trigger F1=0.8389 arg F1=0.6722 → hw7_crf_roberta_hard_n200.json
+  指标已写入 → F:\learn\ai-llm\badou\course\week7\week7-信息抽取\code\outputs\metrics\disc\hw7_crf_roberta_hard.json
+
+【软约束 vs 硬约束（同 checkpoint / 同 dev）】
+  非法序列：618 句 → 76 句
+  非法转移：1392 处 → 186 处
+  论元 F1 ：0.5781 → 0.6653
