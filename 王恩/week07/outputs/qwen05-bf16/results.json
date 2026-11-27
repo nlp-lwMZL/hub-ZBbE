@@ -1,0 +1,1283 @@
+{
+  "seed": 42,
+  "train_n": 2400,
+  "eval_n": 40,
+  "api_max_tokens": 384,
+  "api_timeout": 60,
+  "datasets": {
+    "duee-fin": {
+      "data": {
+        "schema_types": 13,
+        "schema_roles": 92,
+        "excluded_non_single_event": {
+          "train": 0,
+          "dev": 0
+        },
+        "train_available": 5747,
+        "dev_before_dedup": 930,
+        "dev_duplicate_with_train": 10,
+        "dev_available": 920,
+        "train_used": 2400,
+        "dev_used": 40,
+        "train_sha256": "ec23c47540d0c92e162ab7eecc03c7ce63c8ea6ead9bdfe9ce5d192b978ab739",
+        "dev_sha256": "4d1eb5df63f0eacde58d74d4b1e206d7f2d6f9668162714b35deea177486d31b"
+      },
+      "methods": {
+        "qwen05-bf16-zero": {
+          "status": "ok",
+          "setup_seconds": 1.6125006368383765e-05,
+          "latency_ms_mean": 968.5779915747844,
+          "latency_ms_p95": 4999.764665997645,
+          "model": "default_model",
+          "base_url": "http://127.0.0.1:18081/v1",
+          "shots": 0,
+          "api": {
+            "valid_output_rate": 0.625,
+            "status": {
+              "invalid_json_or_shape": 15,
+              "ok": 25
+            },
+            "request_errors": {},
+            "finish_reasons": {
+              "stop": 37,
+              "length": 3
+            },
+            "response_models": [
+              "default_model"
+            ],
+            "wrapped_json": 0,
+            "unknown_type": 2,
+            "unknown_role": 19,
+            "unmatched_spans": 36,
+            "prompt_tokens": {
+              "sum": 24584,
+              "samples_with_usage": 40
+            },
+            "completion_tokens": {
+              "sum": 2784,
+              "samples_with_usage": 40
+            }
+          },
+          "metrics": {
+            "num_samples": 40,
+            "missing_predictions": 0,
+            "trigger": {
+              "precision": 0.08,
+              "recall": 0.05,
+              "f1": 0.0615,
+              "tp": 2,
+              "fp": 23,
+              "fn": 38
+            },
+            "argument": {
+              "precision": 0.1,
+              "recall": 0.0229,
+              "f1": 0.0372,
+              "tp": 4,
+              "fp": 36,
+              "fn": 171
+            },
+            "event_exact": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "tp": 0,
+              "fp": 25,
+              "fn": 40
+            },
+            "per_type": {
+              "中标": {
+                "precision": 1.0,
+                "recall": 0.8571,
+                "f1": 0.9231,
+                "tp": 6,
+                "fp": 0,
+                "fn": 1
+              },
+              "亏损": {
+                "precision": 1.0,
+                "recall": 0.25,
+                "f1": 0.4,
+                "tp": 1,
+                "fp": 0,
+                "fn": 3
+              },
+              "企业收购": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 4
+              },
+              "企业破产": {
+                "precision": 1.0,
+                "recall": 0.3333,
+                "f1": 0.5,
+                "tp": 1,
+                "fp": 0,
+                "fn": 2
+              },
+              "企业融资": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "tp": 2,
+                "fp": 0,
+                "fn": 0
+              },
+              "公司上市": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "回购": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "注销股份": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "股东减持": {
+                "precision": 1.0,
+                "recall": 0.75,
+                "f1": 0.8571,
+                "tp": 3,
+                "fp": 0,
+                "fn": 1
+              },
+              "股东增持": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "股份回购": {
+                "precision": 1.0,
+                "recall": 0.0909,
+                "f1": 0.1667,
+                "tp": 1,
+                "fp": 0,
+                "fn": 10
+              },
+              "被约谈": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 8,
+                "fn": 0
+              },
+              "解除质押": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "质押": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0,
+                "tp": 1,
+                "fp": 0,
+                "fn": 0
+              },
+              "高管变动": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              }
+            },
+            "per_role": {
+              "上市公司": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "中标公司": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 9
+              },
+              "中标日期": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 4
+              },
+              "中标标的": {
+                "precision": 0.5,
+                "recall": 0.125,
+                "f1": 0.2,
+                "tp": 1,
+                "fp": 1,
+                "fn": 7
+              },
+              "中标金额": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 2,
+                "fn": 5
+              },
+              "事件时间": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 3
+              },
+              "亏损变化": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "交易完成时间": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 4
+              },
+              "交易股票/股份数量": {
+                "precision": 1.0,
+                "recall": 0.25,
+                "f1": 0.4,
+                "tp": 1,
+                "fp": 0,
+                "fn": 3
+              },
+              "交易金额": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 11
+              },
+              "公司名称": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 4
+              },
+              "净亏损": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "减持方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 4
+              },
+              "减持部分占总股本比例": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 3
+              },
+              "占公司总股本比例": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 4
+              },
+              "变动类型": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "回购完成时间": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 9
+              },
+              "回购方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 11
+              },
+              "回购股份数量": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 10
+              },
+              "增持方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "投资方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 2
+              },
+              "披露日期": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 5
+              },
+              "披露时间": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 15
+              },
+              "招标方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 4
+              },
+              "收购完成时间": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "收购方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 3
+              },
+              "收购标的": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 4
+              },
+              "每股交易价格": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 12
+              },
+              "破产公司": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 3
+              },
+              "破产时间": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "股票简称": {
+                "precision": 1.0,
+                "recall": 0.5,
+                "f1": 0.6667,
+                "tp": 2,
+                "fp": 0,
+                "fn": 2
+              },
+              "融资轮次": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "融资金额": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 2
+              },
+              "被投资方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 2
+              },
+              "被收购方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 4
+              },
+              "财报周期": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "质押方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 2
+              },
+              "质押物": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "质押物所属公司": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "质押股票/股份数量": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "质权方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "领投方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "高管姓名": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "高管职位": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              }
+            },
+            "type_macro_f1": 0.3231
+          }
+        }
+      }
+    },
+    "duee": {
+      "data": {
+        "schema_types": 65,
+        "schema_roles": 217,
+        "excluded_non_single_event": {
+          "train": 1558,
+          "dev": 208
+        },
+        "train_available": 10400,
+        "dev_before_dedup": 1290,
+        "dev_duplicate_with_train": 1,
+        "dev_available": 1289,
+        "train_used": 2400,
+        "dev_used": 40,
+        "train_sha256": "bc3821b75e13a6e1c005f8165ff802efc75b74e0b9f14384ab85ad120588f671",
+        "dev_sha256": "a7293d9caefa3a81e0d71707c0b051c82829bfd3cdb6eb09af0fe63bb57cbc03"
+      },
+      "methods": {
+        "qwen05-bf16-zero": {
+          "status": "ok",
+          "setup_seconds": 1.9665996660478413e-05,
+          "latency_ms_mean": 1357.6049332506955,
+          "latency_ms_p95": 5145.697291998658,
+          "model": "default_model",
+          "base_url": "http://127.0.0.1:18081/v1",
+          "shots": 0,
+          "api": {
+            "valid_output_rate": 0.675,
+            "status": {
+              "ok": 27,
+              "invalid_json_or_shape": 13
+            },
+            "request_errors": {},
+            "finish_reasons": {
+              "stop": 35,
+              "length": 5
+            },
+            "response_models": [
+              "default_model"
+            ],
+            "wrapped_json": 0,
+            "unknown_type": 28,
+            "unknown_role": 72,
+            "unmatched_spans": 18,
+            "prompt_tokens": {
+              "sum": 45162,
+              "samples_with_usage": 40
+            },
+            "completion_tokens": {
+              "sum": 3913,
+              "samples_with_usage": 40
+            }
+          },
+          "metrics": {
+            "num_samples": 40,
+            "missing_predictions": 0,
+            "trigger": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "tp": 0,
+              "fp": 28,
+              "fn": 40
+            },
+            "argument": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "tp": 0,
+              "fp": 72,
+              "fn": 97
+            },
+            "event_exact": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "tp": 0,
+              "fp": 28,
+              "fn": 40
+            },
+            "per_type": {
+              "上市": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "产品行为-上映": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "产品行为-发布": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 7
+              },
+              "产品行为-召回": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "人生-死亡": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 3
+              },
+              "去世": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "发布": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 3,
+                "fn": 0
+              },
+              "召回": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "司法行为-入狱": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "司法行为-拘捕": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "司法行为-约谈": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "坍塌": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "坠机": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "完成/转会": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "开幕": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "收购": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "有期徒刑": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 2,
+                "fn": 0
+              },
+              "死亡": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "灾害/意外-坍/垮塌": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "灾害/意外-坠机": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "立案": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "竞赛行为-禁赛": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "竞赛行为-胜负": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 4
+              },
+              "竞赛行为-退赛": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "组织关系-加盟": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "组织关系-辞/离职": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 4
+              },
+              "组织关系-退出": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 3
+              },
+              "组织行为-开幕": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "罚款": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "联赛复出": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "胜利": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "融资": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "财经/交易-出售/收购": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "财经/交易-融资": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "轮奸": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "辞职": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 3,
+                "fn": 0
+              },
+              "进球": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "退出": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 2,
+                "fn": 0
+              },
+              "销售": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              },
+              "骚扰电话管控不力": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 0
+              }
+            },
+            "per_role": {
+              "上映影视": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "交易物": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "入狱者": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "出售价格": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "出售方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "刑期": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "加盟者": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "原所属组织": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 7
+              },
+              "发布产品": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 10
+              },
+              "发布方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 4
+              },
+              "受伤人数": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "召回内容": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "召回方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "地点": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "坍塌主体": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "所加盟组织": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "拘捕者": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "收购方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 1
+              },
+              "时间": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 12,
+                "fn": 17
+              },
+              "死亡人数": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 1
+              },
+              "死者": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 3
+              },
+              "死者年龄": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "活动名称": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "禁赛时长": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "禁赛机构": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "离职者": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 4
+              },
+              "约谈发起方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "约谈对象": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "胜者": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 4
+              },
+              "融资方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "融资轮次": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "融资金额": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 1
+              },
+              "被拘捕者": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2
+              },
+              "被禁赛人员": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              },
+              "败者": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 4
+              },
+              "赛事名称": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 3
+              },
+              "退出方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 1,
+                "fn": 2
+              },
+              "退赛方": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1
+              }
+            },
+            "type_macro_f1": 0.0
+          }
+        }
+      }
+    }
+  }
+}
