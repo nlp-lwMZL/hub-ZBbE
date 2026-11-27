@@ -1,0 +1,187 @@
+{
+  "split": "validation",
+  "total_samples": 2318,
+  "methods": {
+    "linear": {
+      "label": "BERT+Linear",
+      "kind": "判别式",
+      "precision": 0.955044,
+      "recall": 0.961073,
+      "f1": 0.958049,
+      "per_type": {
+        "LOC": 0.9641475367552231,
+        "ORG": 0.9229219143576827,
+        "PER": 0.984144960362401
+      },
+      "gold_count": {
+        "LOC": 1934,
+        "ORG": 984,
+        "PER": 884
+      },
+      "n_samples": 2318,
+      "max_length": 512,
+      "note": "epoch=5，非法序列 44 条"
+    },
+    "crf": {
+      "label": "BERT+CRF",
+      "kind": "判别式",
+      "precision": 0.957374,
+      "recall": 0.962914,
+      "f1": 0.960136,
+      "per_type": {
+        "LOC": 0.9667440061871616,
+        "ORG": 0.9268046441191318,
+        "PER": 0.9830124575311437
+      },
+      "gold_count": {
+        "LOC": 1934,
+        "ORG": 984,
+        "PER": 884
+      },
+      "n_samples": 2318,
+      "max_length": 512,
+      "note": "epoch=5，非法序列 30 条"
+    },
+    "sft": {
+      "label": "Qwen2-0.5B SFT",
+      "kind": "生成式",
+      "precision": 0.8734283319362951,
+      "recall": 0.8185388845247447,
+      "f1": 0.8450932684509327,
+      "per_type": {
+        "PER": 0.9459148446490219,
+        "ORG": 0.7869022869022868,
+        "LOC": 0.8281584582441114
+      },
+      "gold_count": {
+        "PER": 884,
+        "ORG": 984,
+        "LOC": 1951
+      },
+      "n_samples": 2318,
+      "ms_per_item": 1350.3,
+      "format_fail": 6,
+      "strict_f1": 0.7865612648221344,
+      "note": "格式失败 6 条，1350.3 ms/条"
+    }
+  },
+  "truncation_impact": [
+    {
+      "label": "BERT+Linear",
+      "f1_base": 0.956652,
+      "f1_full": 0.958049,
+      "per_type_base": {
+        "LOC": 0.9617516629711751,
+        "ORG": 0.9226856561546286,
+        "PER": 0.9841089670828603
+      },
+      "per_type_full": {
+        "LOC": 0.9641475367552231,
+        "ORG": 0.9229219143576827,
+        "PER": 0.984144960362401
+      },
+      "gold_base": 3657,
+      "gold_full": 3802
+    },
+    {
+      "label": "BERT+CRF",
+      "f1_base": 0.959498,
+      "f1_full": 0.960136,
+      "per_type_base": {
+        "LOC": 0.9648101967303961,
+        "ORG": 0.9281711665817627,
+        "PER": 0.9835320840431573
+      },
+      "per_type_full": {
+        "LOC": 0.9667440061871616,
+        "ORG": 0.9268046441191318,
+        "PER": 0.9830124575311437
+      },
+      "gold_base": 3657,
+      "gold_full": 3802
+    }
+  ],
+  "truncation_impact_residual": 17,
+  "deepseek": {
+    "model": "deepseek-chat",
+    "n_samples": 500,
+    "seed": 42,
+    "runs": [
+      {
+        "label": "zero-shot",
+        "n_shot": 0,
+        "precision": 0.774281805745554,
+        "recall": 0.6528258362168397,
+        "f1": 0.7083854818523154,
+        "format_fail": 1,
+        "ms_per_item": 744.0,
+        "per_type": {
+          "PER": 0.8854166666666665,
+          "ORG": 0.7136150234741784,
+          "LOC": 0.6192893401015228
+        },
+        "gold_count": {
+          "PER": 198,
+          "ORG": 206,
+          "LOC": 463
+        }
+      },
+      {
+        "label": "1-shot",
+        "n_shot": 1,
+        "precision": 0.7240506329113924,
+        "recall": 0.6597462514417531,
+        "f1": 0.6904043452021725,
+        "format_fail": 1,
+        "ms_per_item": 707.8,
+        "per_type": {
+          "PER": 0.8666666666666667,
+          "ORG": 0.6799116997792494,
+          "LOC": 0.6117936117936118
+        },
+        "gold_count": {
+          "PER": 198,
+          "ORG": 206,
+          "LOC": 463
+        }
+      },
+      {
+        "label": "3-shot",
+        "n_shot": 3,
+        "precision": 0.7477592829705506,
+        "recall": 0.6735870818915801,
+        "f1": 0.7087378640776699,
+        "format_fail": 1,
+        "ms_per_item": 836.2,
+        "per_type": {
+          "PER": 0.8740359897172236,
+          "ORG": 0.687089715536105,
+          "LOC": 0.6408977556109725
+        },
+        "gold_count": {
+          "PER": 198,
+          "ORG": 206,
+          "LOC": 463
+        }
+      }
+    ],
+    "bootstrap": {
+      "1": {
+        "delta": -0.0180605130454402,
+        "ci_low": -0.03402424028313751,
+        "ci_high": -0.0026564909073423727,
+        "share_negative": 0.9885,
+        "share_positive": 0.0115,
+        "n_boot": 2000
+      },
+      "3": {
+        "delta": 0.00032542897032604407,
+        "ci_low": -0.016916204279865288,
+        "ci_high": 0.017969109532492717,
+        "share_negative": 0.496,
+        "share_positive": 0.504,
+        "n_boot": 2000
+      }
+    }
+  }
+}
