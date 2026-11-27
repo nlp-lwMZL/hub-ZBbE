@@ -1,0 +1,2 @@
+Epoch 1/1 | train_loss=0.1308 val_loss=0.0924 | 768s（3.30s/step）
+  [ok] LoRA adapter已保存 → outputs\llm\ckpt_qwen2\sft_adapter

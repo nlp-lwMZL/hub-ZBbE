@@ -1,0 +1,90 @@
+{
+  "schema": {
+    "n_types": 13,
+    "n_enums": 1,
+    "enum_keys": [
+      "公司上市.环节"
+    ],
+    "total_roles": 92
+  },
+  "train_extract": {
+    "n_rows": 5747,
+    "n_spans_checked": 30940,
+    "n_args": 25193,
+    "n_type": 13,
+    "types": {
+      "股份回购": 979,
+      "企业收购": 746,
+      "中标": 706,
+      "亏损": 648,
+      "股东减持": 543,
+      "企业融资": 423,
+      "质押": 398,
+      "公司上市": 369,
+      "高管变动": 288,
+      "解除质押": 255,
+      "企业破产": 177,
+      "股东增持": 162,
+      "被约谈": 53
+    },
+    "n_dup_id_sentid": 0,
+    "n_empty_args_rows": 0
+  },
+  "train_extract_keys": [
+    "event",
+    "id",
+    "sent_id",
+    "text"
+  ],
+  "dev_extract": {
+    "n_rows": 930,
+    "n_spans_checked": 5052,
+    "n_args": 4122,
+    "n_type": 13,
+    "types": {
+      "股份回购": 178,
+      "中标": 116,
+      "企业收购": 116,
+      "亏损": 106,
+      "股东减持": 83,
+      "公司上市": 58,
+      "质押": 57,
+      "企业融资": 53,
+      "高管变动": 48,
+      "解除质押": 40,
+      "企业破产": 33,
+      "股东增持": 31,
+      "被约谈": 11
+    },
+    "n_dup_id_sentid": 0,
+    "n_empty_args_rows": 0
+  },
+  "dev_extract_keys": [
+    "event",
+    "id",
+    "sent_id",
+    "text"
+  ],
+  "train_detect": {
+    "n_rows": 32794,
+    "n_positive": 7249,
+    "n_negative": 25545
+  },
+  "dev_detect": {
+    "n_rows": 5302,
+    "n_positive": 1179,
+    "n_negative": 4123
+  },
+  "dev_docs": {
+    "n_docs": 985,
+    "n_events": 1493,
+    "n_spans_checked": 9151
+  },
+  "dedup_leakage": {
+    "train_dup_texts": 2450,
+    "dev_dup_texts": 285,
+    "train_dev_overlap": 201
+  },
+  "errors": [],
+  "n_errors": 0
+}

@@ -1,0 +1,20 @@
+{"id": "mockdoc000", "sent_id": "mocks000", "events": [], "has_event": 0}
+{"id": "mockdoc001", "sent_id": "mocks001", "events": [], "has_event": 0}
+{"id": "mockdoc002", "sent_id": "mocks002", "events": [], "has_event": 0}
+{"id": "mockdoc003", "sent_id": "mocks003", "events": [{"type": "企业收购", "trigger": {"text": "东", "start": 3, "end": 4}, "args": [{"role": "交易金额", "text": "控", "start": 0, "end": 1}, {"role": "收购方", "text": "股", "start": 1, "end": 2}, {"role": "交易金额", "text": "股", "start": 2, "end": 3}, {"role": "收购方", "text": "三", "start": 5, "end": 6}, {"role": "收购标的", "text": "持", "start": 8, "end": 9}, {"role": "收购完成时间", "text": "有", "start": 9, "end": 10}, {"role": "被收购方", "text": "的", "start": 10, "end": 11}, {"role": "披露时间", "text": "3", "start": 11, "end": 12}, {"role": "收购标的", "text": "0", "start": 12, "end": 13}, {"role": "交易金额", "text": "0", "start": 13, "end": 14}, {"role": "披露时间", "text": "万", "start": 15, "end": 16}, {"role": "收购方", "text": "给", "start": 19, "end": 20}, {"role": "交易金额", "text": "中", "start": 20, "end": 21}, {"role": "收购方", "text": "信", "start": 21, "end": 22}, {"role": "交易金额", "text": "托。", "start": 23, "end": 25}]}], "has_event": 1}
+{"id": "mockdoc004", "sent_id": "mocks004", "events": [{"type": "企业收购", "trigger": {"text": "现", "start": 21, "end": 22}, "args": [{"role": "交易金额", "text": "李", "start": 0, "end": 1}, {"role": "收购标的", "text": "四", "start": 1, "end": 2}, {"role": "交易金额", "text": "集", "start": 4, "end": 5}, {"role": "收购标的", "text": "中", "start": 5, "end": 6}, {"role": "收购标的", "text": "竞", "start": 6, "end": 7}, {"role": "被收购方", "text": "价", "start": 7, "end": 8}, {"role": "收购标的", "text": "减持", "start": 8, "end": 10}, {"role": "交易金额", "text": "公司", "start": 10, "end": 12}, {"role": "被收购方", "text": "股", "start": 12, "end": 13}, {"role": "被收购方", "text": "份", "start": 13, "end": 14}, {"role": "披露时间", "text": "2", "start": 14, "end": 15}, {"role": "收购标的", "text": "0", "start": 15, "end": 16}, {"role": "收购完成时间", "text": "0", "start": 16, "end": 17}, {"role": "披露时间", "text": "万", "start": 17, "end": 18}, {"role": "收购方", "text": "股", "start": 18, "end": 19}, {"role": "交易金额", "text": "，", "start": 19, "end": 20}, {"role": "被收购方", "text": "套", "start": 20, "end": 21}, {"role": "交易金额", "text": "36", "start": 23, "end": 25}, {"role": "被收购方", "text": "元", "start": 28, "end": 29}, {"role": "交易金额", "text": "。", "start": 29, "end": 30}]}], "has_event": 1}
+{"id": "mockdoc005", "sent_id": "mocks005", "events": [], "has_event": 0}
+{"id": "mockdoc006", "sent_id": "mocks006", "events": [], "has_event": 0}
+{"id": "mockdoc007", "sent_id": "mocks007", "events": [], "has_event": 0}
+{"id": "mockdoc008", "sent_id": "mocks008", "events": [], "has_event": 0}
+{"id": "mockdoc009", "sent_id": "mocks009", "events": [], "has_event": 0}
+{"id": "mockdoc010", "sent_id": "mocks010", "events": [{"type": "股份回购", "trigger": {"text": "谈", "start": 14, "end": 15}, "args": [{"role": "回购方", "text": "公司", "start": 0, "end": 2}, {"role": "回购完成时间", "text": "因", "start": 2, "end": 3}, {"role": "回购股份数量", "text": "信息", "start": 3, "end": 5}, {"role": "回购方", "text": "披", "start": 5, "end": 6}, {"role": "回购股份数量", "text": "露", "start": 6, "end": 7}, {"role": "回购方", "text": "违规被", "start": 7, "end": 10}, {"role": "回购股份数量", "text": "上", "start": 10, "end": 11}, {"role": "回购完成时间", "text": "交", "start": 11, "end": 12}, {"role": "回购方", "text": "所约", "start": 12, "end": 14}, {"role": "回购股份数量", "text": "。", "start": 15, "end": 16}]}], "has_event": 1}
+{"id": "mockdoc011", "sent_id": "mocks011", "events": [], "has_event": 0}
+{"id": "mockdoc012", "sent_id": "mocks012", "events": [], "has_event": 0}
+{"id": "mockdoc900", "sent_id": "mocke900", "events": [], "has_event": 0}
+{"id": "mockdoc901", "sent_id": "mocke901", "events": [], "has_event": 1}
+{"id": "mockdoc902", "sent_id": "mocke902", "events": [], "has_event": 0}
+{"id": "mockdoc903", "sent_id": "mocke903", "events": [], "has_event": 0}
+{"id": "mockdoc904", "sent_id": "mocke904", "events": [], "has_event": 0}
+{"id": "mockdoc905", "sent_id": "mocke905", "events": [], "has_event": 0}
+{"id": "mockdoc906", "sent_id": "mocke906", "events": [], "has_event": 0}

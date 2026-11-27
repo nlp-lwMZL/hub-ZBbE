@@ -1,0 +1,56 @@
+{
+  "method": "llm_lora_eval",
+  "argv": [
+    "llm_lora/evaluate_sft.py",
+    "--model_path",
+    "D:/workspace/nlp_study/pretrain_models/Qwen2-0.5B",
+    "--ckpt_dir",
+    "outputs/llm/ckpt_qwen2/sft_adapter",
+    "--n",
+    "200",
+    "--tag",
+    "qwen2_lora_n200",
+    "--gen_batch",
+    "8"
+  ],
+  "args": "Namespace(model_path='D:/workspace/nlp_study/pretrain_models/Qwen2-0.5B', ckpt_dir='outputs/llm/ckpt_qwen2/sft_adapter', data=None, n=200, seed=42, max_new_tokens=320, max_length=1280, gen_batch=8, dtype='auto', tag='qwen2_lora_n200')",
+  "env": {
+    "python": "3.10.17",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "time": "2026-11-26 23:16:24",
+    "torch": "2.7.0+cu118",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060",
+    "transformers": "5.20.2"
+  },
+  "runtime_s": 132.87,
+  "metrics": {
+    "trigger": 0.875,
+    "argument": 0.6234,
+    "event_exact": 0.1
+  },
+  "type_macro_f1": 0.7135,
+  "report": {
+    "tag": "qwen2_lora_n200",
+    "backend": "sft",
+    "ckpt_type": "lora",
+    "ckpt_dir": "D:\\workspace\\nlp_study\\徐鹏\\week07\\outputs\\llm\\ckpt_qwen2\\sft_adapter",
+    "model_path": "D:\\workspace\\nlp_study\\pretrain_models\\Qwen2-0.5B",
+    "n": 200,
+    "seed": 42,
+    "json_valid_rate": 100.0,
+    "parse_fail": 0,
+    "empty_reply": 0,
+    "repaired": 0,
+    "noise_stripped": 0,
+    "type_invalid": 3,
+    "role_invalid": 9,
+    "trigger_not_in_source": 4,
+    "arg_not_in_source": 13,
+    "latency_mean_s": 0.653,
+    "latency_p50_s": 0.558,
+    "total_s": 130.8
+  },
+  "ckpt_dir": "outputs/llm/ckpt_qwen2/sft_adapter",
+  "notes": "LoRA SFT 模型评测（生成式链路）"
+}

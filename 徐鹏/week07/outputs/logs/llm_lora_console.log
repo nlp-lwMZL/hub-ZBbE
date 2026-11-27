@@ -1,0 +1,2 @@
+Epoch 1/1 | train_loss=0.1001 val_loss=0.0742 | 2298s（9.86s/step）
+  ✓ LoRA adapter已保存 → outputs/llm\ckpt\sft_adapter
