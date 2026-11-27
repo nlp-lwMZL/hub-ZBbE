@@ -1,0 +1,945 @@
+{
+  "method": "bert_bio_128",
+  "argv": [
+    "src\\evaluate.py",
+    "--bert_path",
+    "pretrain_models/bert-base-chinese",
+    "--run_name",
+    "bert_bio_128"
+  ],
+  "args": {
+    "data_dir": null,
+    "bert_path": "pretrain_models/bert-base-chinese",
+    "run_name": "bert_bio_128",
+    "batch_size": 32,
+    "max_length": 0,
+    "num_workers": 0,
+    "device": "auto",
+    "split": "both",
+    "limit_eval": 0,
+    "num_badcases": 8
+  },
+  "env": {
+    "python": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "time": "2026-11-25 16:57:49",
+    "torch": "2.6.0+cu126",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "transformers": "5.5.3"
+  },
+  "runtime_s": 55.15,
+  "metrics": {
+    "validation": {
+      "n_sentences": 2318,
+      "precision": 0.953767,
+      "recall": 0.958983,
+      "f1": 0.956368,
+      "per_type": {
+        "LOC": {
+          "precision": 0.9589572933998891,
+          "recall": 0.9610894941634242,
+          "f1-score": 0.960022209883398,
+          "support": "1799"
+        },
+        "ORG": {
+          "precision": 0.9164149043303121,
+          "recall": 0.9323770491803278,
+          "f1-score": 0.9243270695784661,
+          "support": "976"
+        },
+        "PER": {
+          "precision": 0.985244040862656,
+          "recall": 0.9841269841269841,
+          "f1-score": 0.9846851956891661,
+          "support": "882"
+        },
+        "micro avg": {
+          "precision": 0.9537666576013054,
+          "recall": 0.9589827727645611,
+          "f1-score": 0.9563676029451867,
+          "support": "3657"
+        },
+        "macro avg": {
+          "precision": 0.9535387461976191,
+          "recall": 0.9591978424902453,
+          "f1-score": 0.9563448250503434,
+          "support": "3657"
+        },
+        "weighted avg": {
+          "precision": 0.9539432216280141,
+          "recall": 0.9589827727645611,
+          "f1-score": 0.9564439480685427,
+          "support": "3657"
+        }
+      },
+      "illegal": {
+        "sequences": 39,
+        "transitions": 45,
+        "rate": 0.0168
+      },
+      "truncation": {
+        "n_truncated": 41,
+        "ratio": 0.0177,
+        "dropped_entities": 162,
+        "partial_entities": 2
+      },
+      "sentence_exact_match": {
+        "n_complete_sentences": 2277,
+        "n_exact": 2121,
+        "rate": 0.9315
+      },
+      "error_breakdown": {
+        "counts": {
+          "miss": 61,
+          "spurious": 81,
+          "type": 19,
+          "boundary": 62
+        },
+        "examples": [
+          {
+            "text": "参加人权会的古巴代表团团长、司法部长卡洛斯·阿马特在表决前指出，美国对古巴的经济封锁是“发生在古巴的唯一的大规模侵犯人权案”。",
+            "kind": "boundary",
+            "gold": {
+              "type": "ORG",
+              "start": 2,
+              "end": 5,
+              "text": "人权会"
+            },
+            "pred": {
+              "type": "ORG",
+              "start": 2,
+              "end": 4,
+              "text": "人权"
+            }
+          },
+          {
+            "text": "新华社北京5月7日电国务院副总理李岚清今天在中南海会见了美国前商务部长芭芭拉·弗兰克林。",
+            "kind": "boundary",
+            "gold": {
+              "type": "ORG",
+              "start": 28,
+              "end": 34,
+              "text": "美国前商务部"
+            },
+            "pred": {
+              "type": "ORG",
+              "start": 31,
+              "end": 34,
+              "text": "商务部"
+            }
+          },
+          {
+            "text": "新华社北京5月7日电国务院副总理李岚清今天在中南海会见了美国前商务部长芭芭拉·弗兰克林。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "LOC",
+              "start": 28,
+              "end": 30,
+              "text": "美国"
+            }
+          },
+          {
+            "text": "根据测算，海卫1表面温度已经从“旅行者”号探测器1989年造访时的零下236摄氏度上升到零下234摄氏度。",
+            "kind": "type",
+            "gold": {
+              "type": "LOC",
+              "start": 15,
+              "end": 24,
+              "text": "“旅行者”号探测器"
+            },
+            "pred": {
+              "type": "ORG",
+              "start": 15,
+              "end": 24,
+              "text": "“旅行者”号探测器"
+            }
+          },
+          {
+            "text": "有心无力的前卫寰岛队只靠高峰扳回一球。",
+            "kind": "miss",
+            "gold": {
+              "type": "PER",
+              "start": 12,
+              "end": 14,
+              "text": "高峰"
+            },
+            "pred": null
+          },
+          {
+            "text": "上半时进行到20多分钟，右路进攻的辽宁队17号李从底线一记漂亮的斜射首破五牛队城门。",
+            "kind": "boundary",
+            "gold": {
+              "type": "PER",
+              "start": 23,
+              "end": 24,
+              "text": "李"
+            },
+            "pred": {
+              "type": "PER",
+              "start": 23,
+              "end": 25,
+              "text": "李从"
+            }
+          },
+          {
+            "text": "今年2月，金大中新政府成立后，社会舆论要求惩治对金融危机负有重大责任者。",
+            "kind": "type",
+            "gold": {
+              "type": "PER",
+              "start": 5,
+              "end": 8,
+              "text": "金大中"
+            },
+            "pred": {
+              "type": "ORG",
+              "start": 5,
+              "end": 8,
+              "text": "金大中"
+            }
+          },
+          {
+            "text": "一些标志性的宏伟建筑，如国家大剧院，将在广场西侧兴建。",
+            "kind": "type",
+            "gold": {
+              "type": "LOC",
+              "start": 12,
+              "end": 17,
+              "text": "国家大剧院"
+            },
+            "pred": {
+              "type": "ORG",
+              "start": 12,
+              "end": 17,
+              "text": "国家大剧院"
+            }
+          },
+          {
+            "text": "应该说像幸福工程这样的民间组织所从事的工作是政府行为无法代替的。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "ORG",
+              "start": 4,
+              "end": 8,
+              "text": "幸福工程"
+            }
+          },
+          {
+            "text": "那天，贺龙同志有事不在家，老总夫人薛明，再有彭真校长和夫人张洁清算我这方的代表；杨尚昆和李伯钊同志夫妇，王若飞和李培之同志夫妇是白林一方的代表，大家热热闹闹在一起吃了顿饭，说了些祝福的话，我俩就算是成婚了。",
+            "kind": "boundary",
+            "gold": {
+              "type": "PER",
+              "start": 29,
+              "end": 32,
+              "text": "张洁清"
+            },
+            "pred": {
+              "type": "PER",
+              "start": 29,
+              "end": 31,
+              "text": "张洁"
+            }
+          },
+          {
+            "text": "澳门日报社长李成俊在开幕式上说，周恩来总理生前关心澳门，为香港和澳门回归祖国倾注了心血。",
+            "kind": "boundary",
+            "gold": {
+              "type": "ORG",
+              "start": 0,
+              "end": 5,
+              "text": "澳门日报社"
+            },
+            "pred": {
+              "type": "ORG",
+              "start": 0,
+              "end": 4,
+              "text": "澳门日报"
+            }
+          },
+          {
+            "text": "●加拿大海军舰艇编队结束访华据新华社上海6月8日电（陈毛弟、刘谦）由加拿大海军太平洋舰队司令巴克海军少将率领的加拿大海军舰艇编队结束对中国为期6天的正式友好访问，今天上午驶离上海，继续他们的环太平洋航行。",
+            "kind": "miss",
+            "gold": {
+              "type": "ORG",
+              "start": 48,
+              "end": 50,
+              "text": "海军"
+            },
+            "pred": null
+          },
+          {
+            "text": "这篇新闻分析说，中国电视台现场直播联合记者招待会实况，说明江泽民主席对国内经济改革政策和发展对美关系充满信心。",
+            "kind": "miss",
+            "gold": {
+              "type": "LOC",
+              "start": 8,
+              "end": 10,
+              "text": "中国"
+            },
+            "pred": null
+          },
+          {
+            "text": "这篇新闻分析说，中国电视台现场直播联合记者招待会实况，说明江泽民主席对国内经济改革政策和发展对美关系充满信心。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "ORG",
+              "start": 8,
+              "end": 13,
+              "text": "中国电视台"
+            }
+          },
+          {
+            "text": "郑州铁路分局月山车站位于河南、山西交界处，是焦枝、侯月、新焦、太焦四条铁路线的交汇点。",
+            "kind": "boundary",
+            "gold": {
+              "type": "LOC",
+              "start": 6,
+              "end": 10,
+              "text": "月山车站"
+            },
+            "pred": {
+              "type": "LOC",
+              "start": 6,
+              "end": 8,
+              "text": "月山"
+            }
+          },
+          {
+            "text": "郑州铁路分局月山车站位于河南、山西交界处，是焦枝、侯月、新焦、太焦四条铁路线的交汇点。",
+            "kind": "boundary",
+            "gold": {
+              "type": "LOC",
+              "start": 28,
+              "end": 30,
+              "text": "新焦"
+            },
+            "pred": {
+              "type": "LOC",
+              "start": 28,
+              "end": 29,
+              "text": "新"
+            }
+          },
+          {
+            "text": "郑州铁路分局月山车站位于河南、山西交界处，是焦枝、侯月、新焦、太焦四条铁路线的交汇点。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "ORG",
+              "start": 8,
+              "end": 10,
+              "text": "车站"
+            }
+          },
+          {
+            "text": "郑州铁路分局月山车站位于河南、山西交界处，是焦枝、侯月、新焦、太焦四条铁路线的交汇点。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "LOC",
+              "start": 29,
+              "end": 30,
+              "text": "焦"
+            }
+          },
+          {
+            "text": "在汛期到来之前，办事处认真研究和分析了江西的汛情趋势，并成立“防汛救灾领导小组”，同时积极与水文、气象、防汛救灾部门联系，将有关情况及时反馈给相关客户，让客户对此做好充分的思想准备，并敦促其切实做好防汛抗灾工作。",
+            "kind": "miss",
+            "gold": {
+              "type": "ORG",
+              "start": 8,
+              "end": 11,
+              "text": "办事处"
+            },
+            "pred": null
+          },
+          {
+            "text": "据温州市失业保险机构1996年对全市二千三百八十三家国有、城镇集体企业（占此两类企业总数的三分之一）职工下岗情况的调查，下岗职工占在册职工总数的比重达41·4％，高出同期全国平均水平十六个百分点。",
+            "kind": "miss",
+            "gold": {
+              "type": "LOC",
+              "start": 1,
+              "end": 4,
+              "text": "温州市"
+            },
+            "pred": null
+          },
+          {
+            "text": "据温州市失业保险机构1996年对全市二千三百八十三家国有、城镇集体企业（占此两类企业总数的三分之一）职工下岗情况的调查，下岗职工占在册职工总数的比重达41·4％，高出同期全国平均水平十六个百分点。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "ORG",
+              "start": 1,
+              "end": 10,
+              "text": "温州市失业保险机构"
+            }
+          },
+          {
+            "text": "腾出时间『讲新话』（人民论坛）",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "ORG",
+              "start": 10,
+              "end": 12,
+              "text": "人民"
+            }
+          },
+          {
+            "text": "这次改革和开放，被日本国内外普遍认为是继明治维新、麦克阿瑟治理后的第三次大变革。",
+            "kind": "boundary",
+            "gold": {
+              "type": "PER",
+              "start": 20,
+              "end": 22,
+              "text": "明治"
+            },
+            "pred": {
+              "type": "PER",
+              "start": 21,
+              "end": 22,
+              "text": "治"
+            }
+          },
+          {
+            "text": "是时，安徽省巢县船工张孝华、张友香父子摇着自家的“巢县港1065”号木帆船，冒着纷飞的炮火和瓢泼似的弹雨，从北岸的泥汊镇强渡长江，最先将二十八名解放军指战员送上南岸的坂子矶。",
+            "kind": "boundary",
+            "gold": {
+              "type": "ORG",
+              "start": 24,
+              "end": 37,
+              "text": "“巢县港1065”号木帆船"
+            },
+            "pred": {
+              "type": "ORG",
+              "start": 25,
+              "end": 26,
+              "text": "巢"
+            }
+          },
+          {
+            "text": "是时，安徽省巢县船工张孝华、张友香父子摇着自家的“巢县港1065”号木帆船，冒着纷飞的炮火和瓢泼似的弹雨，从北岸的泥汊镇强渡长江，最先将二十八名解放军指战员送上南岸的坂子矶。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "LOC",
+              "start": 24,
+              "end": 25,
+              "text": "“"
+            }
+          },
+          {
+            "text": "是时，安徽省巢县船工张孝华、张友香父子摇着自家的“巢县港1065”号木帆船，冒着纷飞的炮火和瓢泼似的弹雨，从北岸的泥汊镇强渡长江，最先将二十八名解放军指战员送上南岸的坂子矶。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "LOC",
+              "start": 26,
+              "end": 27,
+              "text": "县"
+            }
+          },
+          {
+            "text": "是时，安徽省巢县船工张孝华、张友香父子摇着自家的“巢县港1065”号木帆船，冒着纷飞的炮火和瓢泼似的弹雨，从北岸的泥汊镇强渡长江，最先将二十八名解放军指战员送上南岸的坂子矶。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "ORG",
+              "start": 27,
+              "end": 30,
+              "text": "港10"
+            }
+          },
+          {
+            "text": "10日后每天进行的最后一场比赛，均到北京时间清晨4时45分左右结束，肯定赶不上当天上午出版的日报，按常规记者可先休息后再作报道，但是，网络版24小时运转，内容可随时更新，这迫使我们“全天候”工作。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "LOC",
+              "start": 19,
+              "end": 20,
+              "text": "京"
+            }
+          },
+          {
+            "text": "同时已有不少在欧美工作的青年学者申请到中心进行访问研究。",
+            "kind": "miss",
+            "gold": {
+              "type": "ORG",
+              "start": 19,
+              "end": 21,
+              "text": "中心"
+            },
+            "pred": null
+          },
+          {
+            "text": "几年来，井陉县在全县范围内大搞集径流工程建设，因地制宜推广综合配套技术，探索总结出一套以“夯实三个基础、强化四个结合”为主要内容的丘陵旱地作物增产新模式，不仅在全省创出“井陉模式”，而且被农业部定为国家级重点示范县。",
+            "kind": "miss",
+            "gold": {
+              "type": "LOC",
+              "start": 85,
+              "end": 87,
+              "text": "井陉"
+            },
+            "pred": null
+          }
+        ]
+      }
+    },
+    "test": {
+      "n_sentences": 4636,
+      "precision": 0.933263,
+      "recall": 0.947919,
+      "f1": 0.940534,
+      "per_type": {
+        "LOC": {
+          "precision": 0.9414954337899544,
+          "recall": 0.9523672055427251,
+          "f1-score": 0.9469001148105625,
+          "support": "3464"
+        },
+        "ORG": {
+          "precision": 0.886058981233244,
+          "recall": 0.9155124653739612,
+          "f1-score": 0.9005449591280654,
+          "support": "2166"
+        },
+        "PER": {
+          "precision": 0.9753424657534246,
+          "recall": 0.978021978021978,
+          "f1-score": 0.9766803840877915,
+          "support": "1820"
+        },
+        "micro avg": {
+          "precision": 0.9332628518567464,
+          "recall": 0.9479194630872483,
+          "f1-score": 0.9405340613970833,
+          "support": "7450"
+        },
+        "macro avg": {
+          "precision": 0.9342989602588743,
+          "recall": 0.9486338829795549,
+          "f1-score": 0.9413751526754731,
+          "support": "7450"
+        },
+        "weighted avg": {
+          "precision": 0.9336466072041398,
+          "recall": 0.9479194630872483,
+          "f1-score": 0.940698077612746,
+          "support": "7450"
+        }
+      },
+      "illegal": {
+        "sequences": 107,
+        "transitions": 132,
+        "rate": 0.0231
+      },
+      "truncation": {
+        "n_truncated": 79,
+        "ratio": 0.017,
+        "dropped_entities": 257,
+        "partial_entities": 6
+      },
+      "sentence_exact_match": {
+        "n_complete_sentences": 4557,
+        "n_exact": 4174,
+        "rate": 0.916
+      },
+      "error_breakdown": {
+        "counts": {
+          "miss": 147,
+          "spurious": 253,
+          "type": 55,
+          "boundary": 165
+        },
+        "examples": [
+          {
+            "text": "这佛湾最具传奇色彩的当属《九龙浴太子图》，它是以石灰岩为本色调雕出的九龙头，正中的巨龙头张着大嘴，汩汩泉水喷泻而出，释迦太子浴在泉下……远远望去，崖畔藤萝重绕，飞泉雾气腾腾，九龙恍如从云中飞出，气势夺人。",
+            "kind": "boundary",
+            "gold": {
+              "type": "PER",
+              "start": 58,
+              "end": 60,
+              "text": "释迦"
+            },
+            "pred": {
+              "type": "PER",
+              "start": 58,
+              "end": 62,
+              "text": "释迦太子"
+            }
+          },
+          {
+            "text": "这佛湾最具传奇色彩的当属《九龙浴太子图》，它是以石灰岩为本色调雕出的九龙头，正中的巨龙头张着大嘴，汩汩泉水喷泻而出，释迦太子浴在泉下……远远望去，崖畔藤萝重绕，飞泉雾气腾腾，九龙恍如从云中飞出，气势夺人。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "PER",
+              "start": 17,
+              "end": 18,
+              "text": "子"
+            }
+          },
+          {
+            "text": "可见牧牛图是根据宋神宗时，官拜礼部郎杨次公的“牧牛颂”而创作的。",
+            "kind": "boundary",
+            "gold": {
+              "type": "PER",
+              "start": 8,
+              "end": 11,
+              "text": "宋神宗"
+            },
+            "pred": {
+              "type": "PER",
+              "start": 9,
+              "end": 10,
+              "text": "神"
+            }
+          },
+          {
+            "text": "可见牧牛图是根据宋神宗时，官拜礼部郎杨次公的“牧牛颂”而创作的。",
+            "kind": "miss",
+            "gold": {
+              "type": "ORG",
+              "start": 15,
+              "end": 17,
+              "text": "礼部"
+            },
+            "pred": null
+          },
+          {
+            "text": "最大的龛图竟有八十多米，最小的也有十来米，还有记载宝顶山沿革和密宗史实的七通碑刻及各种题记十七则和两座保存很好的舍利塔。",
+            "kind": "type",
+            "gold": {
+              "type": "PER",
+              "start": 31,
+              "end": 33,
+              "text": "密宗"
+            },
+            "pred": {
+              "type": "LOC",
+              "start": 31,
+              "end": 33,
+              "text": "密宗"
+            }
+          },
+          {
+            "text": "他们唱着保育院院歌，进入这一个个新家，结束了流浪行乞的日子，重新得到了母亲温馨胸脯的抚慰和甘甜乳汁的滋养。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "ORG",
+              "start": 4,
+              "end": 5,
+              "text": "保"
+            }
+          },
+          {
+            "text": "刚建成的山西省最大的古玩交易市场将举行开业剪彩仪式，同时还展示长度为六百六十六点六米、创造吉尼斯世界纪录的中华巨龙，并推出一百零八种地方风味小吃，令嘉宾旅客切身感受平遥古城文化的独特魅力。",
+            "kind": "miss",
+            "gold": {
+              "type": "ORG",
+              "start": 45,
+              "end": 48,
+              "text": "吉尼斯"
+            },
+            "pred": null
+          },
+          {
+            "text": "如今，古阳关早湮没，遗址也不存在，只是在一座红沙岩的山峰上，矗立一座残破的古代烽燧。",
+            "kind": "type",
+            "gold": {
+              "type": "PER",
+              "start": 3,
+              "end": 6,
+              "text": "古阳关"
+            },
+            "pred": {
+              "type": "LOC",
+              "start": 3,
+              "end": 6,
+              "text": "古阳关"
+            }
+          },
+          {
+            "text": "到了宋代，河西走廊为西夏所有，敦煌废弃，随着海上通商的兴旺，丝绸之路也就日渐衰落。",
+            "kind": "miss",
+            "gold": {
+              "type": "LOC",
+              "start": 30,
+              "end": 34,
+              "text": "丝绸之路"
+            },
+            "pred": null
+          },
+          {
+            "text": "到了宋代，河西走廊为西夏所有，敦煌废弃，随着海上通商的兴旺，丝绸之路也就日渐衰落。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "LOC",
+              "start": 10,
+              "end": 12,
+              "text": "西夏"
+            }
+          },
+          {
+            "text": "当丁聪1993年的12月以贵宾的身份走进郑州越秀酒家，出席越秀艺苑和越秀书店开业典礼时，这里所呈现出来的一切，使他由衷感到一种温馨。",
+            "kind": "type",
+            "gold": {
+              "type": "LOC",
+              "start": 34,
+              "end": 38,
+              "text": "越秀书店"
+            },
+            "pred": {
+              "type": "ORG",
+              "start": 34,
+              "end": 38,
+              "text": "越秀书店"
+            }
+          },
+          {
+            "text": "那晚母亲睡下之后对父亲叹息道：“要不是文革，我们这几个孩子也会有一两个考上北大清华的。”",
+            "kind": "boundary",
+            "gold": {
+              "type": "ORG",
+              "start": 37,
+              "end": 39,
+              "text": "北大"
+            },
+            "pred": {
+              "type": "ORG",
+              "start": 37,
+              "end": 41,
+              "text": "北大清华"
+            }
+          },
+          {
+            "text": "那晚母亲睡下之后对父亲叹息道：“要不是文革，我们这几个孩子也会有一两个考上北大清华的。”",
+            "kind": "miss",
+            "gold": {
+              "type": "ORG",
+              "start": 39,
+              "end": 41,
+              "text": "清华"
+            },
+            "pred": null
+          },
+          {
+            "text": "谁仅隔一衣带水就成为一则背井离乡的典故别样的阳光能否映照出当初的模样谁乡愁如岩忧郁浩茫将炊烟搁置高楼很久很久谈风景总把故乡的依依杨柳牵进话题谁历尽了风雨和沧桑仍用海峡的风把馨香的佳期寻觅一遍一遍地计算重见祖国母亲的日期眼睛里流着渴望已久的目光",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "LOC",
+              "start": 81,
+              "end": 83,
+              "text": "海峡"
+            }
+          },
+          {
+            "text": "我未及到五勇士塔前留影，先是勘察了一下当年跳崖的地方。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "LOC",
+              "start": 5,
+              "end": 8,
+              "text": "勇士塔"
+            }
+          },
+          {
+            "text": "如今集团不但有了自己的后勤基地，还有了一大片山水林田路和一批强劳力。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "ORG",
+              "start": 2,
+              "end": 4,
+              "text": "集团"
+            }
+          },
+          {
+            "text": "1996年初，城郊乡农民李明东与另外3户农民合资创办了一个“东方农工联合社”，年获纯利15万余元，他们拿出一部分资金投资农业，一年粮食单产增长两成。",
+            "kind": "miss",
+            "gold": {
+              "type": "LOC",
+              "start": 7,
+              "end": 10,
+              "text": "城郊乡"
+            },
+            "pred": null
+          },
+          {
+            "text": "陕西省铜川市商务局一位叫张宝玲的下岗女工在培训结束时，赊账购置了1万多元的汽车护理用品。",
+            "kind": "boundary",
+            "gold": {
+              "type": "ORG",
+              "start": 0,
+              "end": 9,
+              "text": "陕西省铜川市商务局"
+            },
+            "pred": {
+              "type": "ORG",
+              "start": 3,
+              "end": 9,
+              "text": "铜川市商务局"
+            }
+          },
+          {
+            "text": "陕西省铜川市商务局一位叫张宝玲的下岗女工在培训结束时，赊账购置了1万多元的汽车护理用品。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "LOC",
+              "start": 0,
+              "end": 3,
+              "text": "陕西省"
+            }
+          },
+          {
+            "text": "中队的干部认为，武警战士不能搞有偿服务，这事不能干。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "ORG",
+              "start": 0,
+              "end": 2,
+              "text": "中队"
+            }
+          },
+          {
+            "text": "他觉得俭汤仿佛10年前的安波汤，很有感慨。",
+            "kind": "miss",
+            "gold": {
+              "type": "LOC",
+              "start": 3,
+              "end": 5,
+              "text": "俭汤"
+            },
+            "pred": null
+          },
+          {
+            "text": "他觉得俭汤仿佛10年前的安波汤，很有感慨。",
+            "kind": "type",
+            "gold": {
+              "type": "LOC",
+              "start": 12,
+              "end": 15,
+              "text": "安波汤"
+            },
+            "pred": {
+              "type": "PER",
+              "start": 12,
+              "end": 15,
+              "text": "安波汤"
+            }
+          },
+          {
+            "text": "他觉得俭汤仿佛10年前的安波汤，很有感慨。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "PER",
+              "start": 3,
+              "end": 4,
+              "text": "俭"
+            }
+          },
+          {
+            "text": "他觉得俭汤仿佛10年前的安波汤，很有感慨。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "PER",
+              "start": 4,
+              "end": 5,
+              "text": "汤"
+            }
+          },
+          {
+            "text": "鸟浴啁啾，俭汤空流，我们心里都不是滋味。",
+            "kind": "miss",
+            "gold": {
+              "type": "LOC",
+              "start": 5,
+              "end": 7,
+              "text": "俭汤"
+            },
+            "pred": null
+          },
+          {
+            "text": "此作品是历年拍卖会上尺幅最大的傅抱石作品，故受到收藏界的关注，最终被大连万达宝斋收藏。",
+            "kind": "boundary",
+            "gold": {
+              "type": "ORG",
+              "start": 34,
+              "end": 40,
+              "text": "大连万达宝斋"
+            },
+            "pred": {
+              "type": "ORG",
+              "start": 36,
+              "end": 40,
+              "text": "万达宝斋"
+            }
+          },
+          {
+            "text": "此作品是历年拍卖会上尺幅最大的傅抱石作品，故受到收藏界的关注，最终被大连万达宝斋收藏。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "LOC",
+              "start": 34,
+              "end": 36,
+              "text": "大连"
+            }
+          },
+          {
+            "text": "按照规划，包括图书馆、档案馆、作家博物馆等主体建筑在内的一期工程总面积一万四千平方米，预计投资一点五亿元，将于明年国庆五十周年前夕建成启用。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "LOC",
+              "start": 15,
+              "end": 17,
+              "text": "作家"
+            }
+          },
+          {
+            "text": "按照规划，包括图书馆、档案馆、作家博物馆等主体建筑在内的一期工程总面积一万四千平方米，预计投资一点五亿元，将于明年国庆五十周年前夕建成启用。",
+            "kind": "spurious",
+            "gold": null,
+            "pred": {
+              "type": "LOC",
+              "start": 18,
+              "end": 19,
+              "text": "物"
+            }
+          },
+          {
+            "text": "陪同的虞城县一位干部向我们介绍了基本情况，使我们对乔庄及乔庄所在的河南虞城县有了大概的了解。",
+            "kind": "boundary",
+            "gold": {
+              "type": "LOC",
+              "start": 25,
+              "end": 27,
+              "text": "乔庄"
+            },
+            "pred": {
+              "type": "LOC",
+              "start": 26,
+              "end": 27,
+              "text": "庄"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "notes": "evaluate.py：验证集 + 测试集，含逐类型指标/非法 BIO/截断/错误分类"
+}

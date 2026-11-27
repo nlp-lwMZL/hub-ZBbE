@@ -1,0 +1,176 @@
+{
+  "data_dir": ".\\data\\peoples_daily",
+  "label_names": [
+    "O",
+    "B-PER",
+    "I-PER",
+    "B-ORG",
+    "I-ORG",
+    "B-LOC",
+    "I-LOC"
+  ],
+  "splits": {
+    "train": {
+      "n_sentences": 20864,
+      "n_chars": 979180,
+      "char_len": {
+        "mean": 46.93,
+        "p50": 40,
+        "p90": 80,
+        "p95": 97,
+        "p99": 144,
+        "max": 574
+      },
+      "tag_counts": {
+        "O": 869087,
+        "B-LOC": 16571,
+        "I-LOC": 22531,
+        "B-PER": 8144,
+        "I-PER": 15881,
+        "B-ORG": 9277,
+        "I-ORG": 37689
+      },
+      "o_ratio": 0.8876,
+      "entity_counts": {
+        "LOC": 16571,
+        "PER": 8144,
+        "ORG": 9277
+      },
+      "n_entities": 33992,
+      "entities_per_sentence": {
+        "mean": 1.629,
+        "max": 125,
+        "zero": 8153
+      },
+      "illegal_sequences": 0,
+      "illegal_transitions": 0,
+      "tokenizer": {
+        "token_len": {
+          "mean": 48.93,
+          "p50": 42,
+          "p90": 82,
+          "p95": 99,
+          "p99": 146,
+          "max": 576
+        },
+        "max_length": 128,
+        "n_truncated": 357,
+        "truncated_ratio": 0.0171,
+        "dropped_chars": 18437,
+        "dropped_entities": 784,
+        "partial_entities": 17,
+        "multi_subword_chars": 0
+      }
+    },
+    "validation": {
+      "n_sentences": 2318,
+      "n_chars": 109870,
+      "char_len": {
+        "mean": 47.4,
+        "p50": 41,
+        "p90": 80,
+        "p95": 97,
+        "p99": 149,
+        "max": 568
+      },
+      "tag_counts": {
+        "O": 97811,
+        "B-ORG": 984,
+        "I-ORG": 3945,
+        "B-PER": 884,
+        "I-PER": 1714,
+        "B-LOC": 1951,
+        "I-LOC": 2581
+      },
+      "o_ratio": 0.8902,
+      "entity_counts": {
+        "ORG": 984,
+        "PER": 884,
+        "LOC": 1951
+      },
+      "n_entities": 3819,
+      "entities_per_sentence": {
+        "mean": 1.648,
+        "max": 46,
+        "zero": 918
+      },
+      "illegal_sequences": 0,
+      "illegal_transitions": 0,
+      "tokenizer": {
+        "token_len": {
+          "mean": 49.4,
+          "p50": 43,
+          "p90": 82,
+          "p95": 99,
+          "p99": 151,
+          "max": 570
+        },
+        "max_length": 128,
+        "n_truncated": 41,
+        "truncated_ratio": 0.0177,
+        "dropped_chars": 2979,
+        "dropped_entities": 162,
+        "partial_entities": 2,
+        "multi_subword_chars": 0
+      }
+    },
+    "test": {
+      "n_sentences": 4636,
+      "n_chars": 219197,
+      "char_len": {
+        "mean": 47.28,
+        "p50": 41,
+        "p90": 80,
+        "p95": 97,
+        "p99": 141,
+        "max": 577
+      },
+      "tag_counts": {
+        "O": 194185,
+        "B-LOC": 3658,
+        "B-PER": 1864,
+        "I-PER": 3601,
+        "I-LOC": 4948,
+        "B-ORG": 2185,
+        "I-ORG": 8756
+      },
+      "o_ratio": 0.8859,
+      "entity_counts": {
+        "LOC": 3658,
+        "PER": 1864,
+        "ORG": 2185
+      },
+      "n_entities": 7707,
+      "entities_per_sentence": {
+        "mean": 1.662,
+        "max": 61,
+        "zero": 1832
+      },
+      "illegal_sequences": 0,
+      "illegal_transitions": 0,
+      "tokenizer": {
+        "token_len": {
+          "mean": 49.28,
+          "p50": 43,
+          "p90": 82,
+          "p95": 99,
+          "p99": 143,
+          "max": 579
+        },
+        "max_length": 128,
+        "n_truncated": 79,
+        "truncated_ratio": 0.017,
+        "dropped_chars": 4655,
+        "dropped_entities": 257,
+        "partial_entities": 6,
+        "multi_subword_chars": 0
+      }
+    }
+  },
+  "duplicates": {
+    "train_vs_validation": 0,
+    "validation_size": 2318,
+    "train_vs_test": 0,
+    "test_size": 4636
+  }
+}

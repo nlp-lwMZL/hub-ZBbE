@@ -1,0 +1,108 @@
+{
+  "method": "bert_bio_128",
+  "argv": [
+    "src\\train.py",
+    "--bert_path",
+    "pretrain_models/bert-base-chinese",
+    "--run_name",
+    "bert_bio_128",
+    "--epochs",
+    "3",
+    "--batch_size",
+    "32",
+    "--max_length",
+    "128",
+    "--lr",
+    "2e-5",
+    "--head_lr_mult",
+    "5",
+    "--warmup_ratio",
+    "0.1",
+    "--seed",
+    "42",
+    "--log_every",
+    "50",
+    "--device",
+    "cuda"
+  ],
+  "args": {
+    "data_dir": null,
+    "bert_path": "pretrain_models/bert-base-chinese",
+    "run_name": "bert_bio_128",
+    "epochs": 3,
+    "batch_size": 32,
+    "max_length": 128,
+    "lr": 2e-05,
+    "head_lr_mult": 5.0,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "log_every": 50,
+    "num_workers": 0,
+    "device": "cuda",
+    "limit_train": 0,
+    "limit_eval": 0,
+    "save_ckpt": true
+  },
+  "env": {
+    "python": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "time": "2026-11-25 16:50:12",
+    "torch": "2.6.0+cu126",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "transformers": "5.5.3"
+  },
+  "params": 101682439,
+  "log_every": 50,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.143611,
+      "elapsed_s": 297.1,
+      "val": {
+        "loss": 0.020597,
+        "precision": 0.911757,
+        "recall": 0.935193,
+        "f1": 0.923326,
+        "illegal_sequences": 104,
+        "illegal_transitions": 132
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.017194,
+      "elapsed_s": 295.2,
+      "val": {
+        "loss": 0.016813,
+        "precision": 0.941574,
+        "recall": 0.951873,
+        "f1": 0.946696,
+        "illegal_sequences": 41,
+        "illegal_transitions": 56
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.008193,
+      "elapsed_s": 296.5,
+      "val": {
+        "loss": 0.016747,
+        "precision": 0.953767,
+        "recall": 0.958983,
+        "f1": 0.956368,
+        "illegal_sequences": 39,
+        "illegal_transitions": 45
+      }
+    }
+  ],
+  "total_elapsed_s": 893.8,
+  "finished": true,
+  "best_epoch": 3,
+  "best_val_f1": 0.956368,
+  "peak_gpu_mb": 3727.5,
+  "n_params": 101682439,
+  "train_size": 20864,
+  "val_size": 2318,
+  "notes": "BERT+Linear on peoples_daily BIO NER；重点在 BIO 数据处理与完整日志，不在刷 SOTA"
+}

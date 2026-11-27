@@ -1,0 +1,81 @@
+数据集规模：训练=20864，验证=2318，测试=4636
+max_length=128（含 [CLS]/[SEP]）
+
+==============================================================================
+BERT + Linear | 人民日报 NER（BIO）
+==============================================================================
+设备：cuda
+模型：pretrain_models/bert-base-chinese
+标签（7）：['O', 'B-PER', 'I-PER', 'B-ORG', 'I-ORG', 'B-LOC', 'I-LOC']
+可训练参数：101,682,439（101.7M）
+超参：epochs=3 batch=32 max_length=128 lr=2e-05 head_lr_mult=5.0 warmup=10% weight_decay=0.01 seed=42
+训练步数：1956（warmup 195）
+训练样本：20864，验证样本：2318
+Epoch 1/3 | step    0/651 | loss=1.7338 | lr=1.03e-07 | elapsed=2s
+Epoch 1/3 | step   50/651 | loss=0.4503 | lr=5.23e-06 | elapsed=23s
+Epoch 1/3 | step  100/651 | loss=0.1396 | lr=1.04e-05 | elapsed=45s
+Epoch 1/3 | step  150/651 | loss=0.0483 | lr=1.55e-05 | elapsed=67s
+Epoch 1/3 | step  200/651 | loss=0.0635 | lr=1.99e-05 | elapsed=88s
+Epoch 1/3 | step  250/651 | loss=0.0165 | lr=1.94e-05 | elapsed=110s
+Epoch 1/3 | step  300/651 | loss=0.0173 | lr=1.88e-05 | elapsed=131s
+Epoch 1/3 | step  350/651 | loss=0.0249 | lr=1.82e-05 | elapsed=153s
+Epoch 1/3 | step  400/651 | loss=0.0249 | lr=1.77e-05 | elapsed=174s
+Epoch 1/3 | step  450/651 | loss=0.0150 | lr=1.71e-05 | elapsed=196s
+Epoch 1/3 | step  500/651 | loss=0.0309 | lr=1.65e-05 | elapsed=217s
+Epoch 1/3 | step  550/651 | loss=0.0599 | lr=1.60e-05 | elapsed=239s
+Epoch 1/3 | step  600/651 | loss=0.0310 | lr=1.54e-05 | elapsed=260s
+Epoch 1/3 | step  650/651 | loss=0.0311 | lr=1.48e-05 | elapsed=282s
+Epoch 1/3 | step  651/651 | loss=0.0531 | lr=1.48e-05 | elapsed=282s
+
+Epoch 1/3 完成 | train_loss=0.1436 | val_loss=0.0206 | val_P=0.9118 | val_R=0.9352 | val_F1=0.9233 | 非法序列=104 | 用时=297s
+
+  ★ 新最优 val_F1=0.9233（epoch 1）
+  已保存 checkpoint → .\outputs\checkpoints\bert_bio_128.pt（约 388 MB）
+Epoch 2/3 | step    0/651 | loss=0.0079 | lr=1.48e-05 | elapsed=1s
+Epoch 2/3 | step   50/651 | loss=0.0514 | lr=1.42e-05 | elapsed=22s
+Epoch 2/3 | step  100/651 | loss=0.0091 | lr=1.37e-05 | elapsed=44s
+Epoch 2/3 | step  150/651 | loss=0.0069 | lr=1.31e-05 | elapsed=65s
+Epoch 2/3 | step  200/651 | loss=0.0315 | lr=1.25e-05 | elapsed=87s
+Epoch 2/3 | step  250/651 | loss=0.0194 | lr=1.20e-05 | elapsed=108s
+Epoch 2/3 | step  300/651 | loss=0.0134 | lr=1.14e-05 | elapsed=130s
+Epoch 2/3 | step  350/651 | loss=0.0133 | lr=1.08e-05 | elapsed=151s
+Epoch 2/3 | step  400/651 | loss=0.0080 | lr=1.03e-05 | elapsed=173s
+Epoch 2/3 | step  450/651 | loss=0.0343 | lr=9.69e-06 | elapsed=194s
+Epoch 2/3 | step  500/651 | loss=0.0091 | lr=9.12e-06 | elapsed=216s
+Epoch 2/3 | step  550/651 | loss=0.0156 | lr=8.55e-06 | elapsed=237s
+Epoch 2/3 | step  600/651 | loss=0.0085 | lr=7.98e-06 | elapsed=259s
+Epoch 2/3 | step  650/651 | loss=0.0130 | lr=7.42e-06 | elapsed=280s
+Epoch 2/3 | step  651/651 | loss=0.0181 | lr=7.40e-06 | elapsed=281s
+
+Epoch 2/3 完成 | train_loss=0.0172 | val_loss=0.0168 | val_P=0.9416 | val_R=0.9519 | val_F1=0.9467 | 非法序列=41 | 用时=295s
+
+  ★ 新最优 val_F1=0.9467（epoch 2）
+  已保存 checkpoint → .\outputs\checkpoints\bert_bio_128.pt（约 388 MB）
+Epoch 3/3 | step    0/651 | loss=0.0040 | lr=7.39e-06 | elapsed=1s
+Epoch 3/3 | step   50/651 | loss=0.0031 | lr=6.83e-06 | elapsed=22s
+Epoch 3/3 | step  100/651 | loss=0.0030 | lr=6.26e-06 | elapsed=44s
+Epoch 3/3 | step  150/651 | loss=0.0160 | lr=5.69e-06 | elapsed=65s
+Epoch 3/3 | step  200/651 | loss=0.0068 | lr=5.12e-06 | elapsed=87s
+Epoch 3/3 | step  250/651 | loss=0.0214 | lr=4.55e-06 | elapsed=108s
+Epoch 3/3 | step  300/651 | loss=0.0133 | lr=3.99e-06 | elapsed=130s
+Epoch 3/3 | step  350/651 | loss=0.0162 | lr=3.42e-06 | elapsed=151s
+Epoch 3/3 | step  400/651 | loss=0.0018 | lr=2.85e-06 | elapsed=172s
+Epoch 3/3 | step  450/651 | loss=0.0051 | lr=2.28e-06 | elapsed=194s
+Epoch 3/3 | step  500/651 | loss=0.0054 | lr=1.71e-06 | elapsed=216s
+Epoch 3/3 | step  550/651 | loss=0.0134 | lr=1.15e-06 | elapsed=238s
+Epoch 3/3 | step  600/651 | loss=0.0059 | lr=5.79e-07 | elapsed=260s
+Epoch 3/3 | step  650/651 | loss=0.0076 | lr=1.14e-08 | elapsed=282s
+Epoch 3/3 | step  651/651 | loss=0.0073 | lr=0.00e+00 | elapsed=282s
+
+Epoch 3/3 完成 | train_loss=0.0082 | val_loss=0.0167 | val_P=0.9538 | val_R=0.9590 | val_F1=0.9564 | 非法序列=39 | 用时=297s
+
+  ★ 新最优 val_F1=0.9564（epoch 3）
+  已保存 checkpoint → .\outputs\checkpoints\bert_bio_128.pt（约 388 MB）
+[log] 训练日志已写入 → outputs\logs\bert_bio_128_train.json
+[log] 逐步曲线 → outputs\logs\bert_bio_128_steps.jsonl
+[log] 控制台日志 → outputs\logs\bert_bio_128_console.log
+
+==============================================================================
+训练完成：best epoch=3  best val_F1=0.9564  总耗时=14.9 min  峰值显存=3728 MB
+Checkpoint：.\outputs\checkpoints\bert_bio_128.pt
+下一步：python src/evaluate.py --bert_path pretrain_models/bert-base-chinese --run_name bert_bio_128
