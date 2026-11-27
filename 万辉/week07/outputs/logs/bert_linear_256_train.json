@@ -1,0 +1,109 @@
+{
+  "method": "bert_linear_256",
+  "argv": [
+    "bert/train.py",
+    "--decoder",
+    "linear",
+    "--run_name",
+    "bert_linear_256"
+  ],
+  "args": {
+    "decoder": "linear",
+    "bert_path": "F:\\ai\\LLM\\7\\第七周 抽取任务\\week07\\pretrain_models\\roberta-base-chinese",
+    "bert_layers": 0,
+    "max_len": 256,
+    "epochs": 3,
+    "batch_size": 32,
+    "lr": 2e-05,
+    "head_lr_mult": 5.0,
+    "warmup_ratio": 0.1,
+    "grad_accum": 1,
+    "max_grad_norm": 1.0,
+    "weight_decay": 0.01,
+    "dropout": 0.1,
+    "inner_val": 0.1,
+    "hard_constraint": false,
+    "device": "",
+    "log_every": 50,
+    "seed": 42,
+    "run_name": "bert_linear_256",
+    "mock": false,
+    "data_dir": ""
+  },
+  "env": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "time": "2026-11-25 00:27:18",
+    "torch": "2.3.1+cu121",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "transformers": "4.51.3"
+  },
+  "params": 102382229,
+  "log_every": 50,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.9761,
+      "elapsed_s": 289.6,
+      "val": {
+        "inner_loss": 1.0349951320224338,
+        "inner_span_f1": 0.0,
+        "dev_span_f1_monitor": 0.0
+      },
+      "best_so_far": -1.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.854705,
+      "elapsed_s": 295.5,
+      "val": {
+        "inner_loss": 0.697318736049864,
+        "inner_span_f1": 0.2887298747763864,
+        "dev_span_f1_monitor": 0.2860622163179453
+      },
+      "best_so_far": 0.0
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6524,
+      "elapsed_s": 298.1,
+      "val": {
+        "inner_loss": 0.6049807568391165,
+        "inner_span_f1": 0.3932621747831888,
+        "dev_span_f1_monitor": 0.39027906497786014
+      },
+      "best_so_far": 0.28873
+    }
+  ],
+  "total_elapsed_s": 884.5,
+  "finished": true,
+  "best_epoch": 3,
+  "best_inner_val_span_f1": 0.393262,
+  "dev_metrics": {
+    "trigger": 0.5508,
+    "argument": 0.3112,
+    "event_exact": 0.043
+  },
+  "inference_latency_ms": 9.47,
+  "peak_gpu_mb": 1847.0,
+  "illegal_dev": {
+    "illegal_start": 43,
+    "illegal_transition": 3492,
+    "total_seqs": 930,
+    "illegal_seqs": 811,
+    "total_illegal": 3535,
+    "illegal_seq_rate": 0.872,
+    "illegal_per_seq": 3.801
+  },
+  "illegal_train_pred_sample": {
+    "illegal_start": 282,
+    "illegal_transition": 19121,
+    "total_seqs": 5173,
+    "illegal_seqs": 4582,
+    "total_illegal": 19403,
+    "illegal_seq_rate": 0.8858,
+    "illegal_per_seq": 3.751
+  },
+  "notes": "BERT 序列标注（linear）训练过程"
+}

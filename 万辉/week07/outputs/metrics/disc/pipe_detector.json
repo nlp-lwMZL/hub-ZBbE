@@ -1,0 +1,42 @@
+{
+  "method": "pipe_detector",
+  "dev_detect_full": {
+    "precision": 0.7974,
+    "recall": 0.7778,
+    "f1": 0.7875,
+    "tp": 917,
+    "fp": 233,
+    "fn": 262,
+    "accuracy": 0.9066,
+    "confusion": {
+      "tp": 917,
+      "fp": 233,
+      "fn": 262,
+      "tn": 3890
+    }
+  },
+  "dev_detect_clean": {
+    "precision": 0.7991,
+    "recall": 0.7841,
+    "f1": 0.7915,
+    "tp": 915,
+    "fp": 230,
+    "fn": 252,
+    "accuracy": 0.8999,
+    "confusion": {
+      "tp": 915,
+      "fp": 230,
+      "fn": 252,
+      "tn": 3418
+    }
+  },
+  "meta": {
+    "display_name": "检测器（BERT 二分类）",
+    "train_s": 0.0,
+    "ms_per_sentence": 5.8,
+    "dev_detect_n": 5302,
+    "detect_train_n": 32794,
+    "dev_detect_clean_n": 4815,
+    "note": "dev_detect 与 train 有 9.2% 文本重复（真实泄漏），clean 版去掉重复后指标更能代表真实泛化"
+  }
+}

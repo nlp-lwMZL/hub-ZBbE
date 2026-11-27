@@ -1,0 +1,50 @@
+{
+  "method": "llm_lora_eval",
+  "argv": [
+    "llm_lora\\evaluate_sft.py",
+    "--n",
+    "200",
+    "--gen_batch",
+    "8"
+  ],
+  "args": "Namespace(model_path='F:\\\\ai\\\\LLM\\\\7\\\\第七周 抽取任务\\\\week07\\\\pretrain_models\\\\Qwen3-0.6B', ckpt_dir='F:\\\\ai\\\\LLM\\\\7\\\\第七周 抽取任务\\\\week07\\\\outputs\\\\llm\\\\ckpt\\\\sft_adapter', data=None, n=200, seed=42, max_new_tokens=320, max_length=1280, gen_batch=8, dtype='auto', tag='')",
+  "env": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "time": "2026-11-26 00:01:39",
+    "torch": "2.3.1+cu121",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "transformers": "4.51.3"
+  },
+  "runtime_s": 183.68,
+  "metrics": {
+    "trigger": 0.87,
+    "argument": 0.5282,
+    "event_exact": 0.045
+  },
+  "type_macro_f1": 0.8468,
+  "report": {
+    "tag": "sft_lora_n200",
+    "backend": "sft",
+    "ckpt_type": "lora",
+    "ckpt_dir": "F:\\ai\\LLM\\7\\第七周 抽取任务\\week07\\outputs\\llm\\ckpt\\sft_adapter",
+    "model_path": "F:\\ai\\LLM\\7\\第七周 抽取任务\\week07\\pretrain_models\\Qwen3-0.6B",
+    "n": 200,
+    "seed": 42,
+    "json_valid_rate": 100.0,
+    "parse_fail": 0,
+    "empty_reply": 0,
+    "repaired": 2,
+    "noise_stripped": 0,
+    "type_invalid": 2,
+    "role_invalid": 15,
+    "trigger_not_in_source": 6,
+    "arg_not_in_source": 33,
+    "latency_mean_s": 0.903,
+    "latency_p50_s": 0.884,
+    "total_s": 180.9
+  },
+  "ckpt_dir": "F:\\ai\\LLM\\7\\第七周 抽取任务\\week07\\outputs\\llm\\ckpt\\sft_adapter",
+  "notes": "LoRA SFT 模型评测（生成式链路）"
+}
